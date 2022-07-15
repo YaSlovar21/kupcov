@@ -73,19 +73,15 @@
 @import url(../blocks/_ti/card/__title/card__title.css);
 
 /**/
-
-
-@import url(../blocks/_utermo/upf/upf.css);
-@import url(../blocks/_utermo/upf/__title/upf__title.css);
-@import url(../blocks/_utermo/upf/__slogan/upf__slogan.css);
-@import url(../blocks/_utermo/upf/__contact/upf__contact.css);
-@import url(../blocks/_utermo/upf/__form/upf__form.css);
+@import url(../blocks/_ti/askmore/askmore.css);
 
 @import url(../blocks/_utermo/form/form.css);
 @import url(../blocks/_utermo/form/__input/form__input.css);
 @import url(../blocks/_utermo/form/__input-error/form__input-error.css);
 @import url(../blocks/_utermo/form/__field/form__field.css);
 @import url(../blocks/_utermo/form/__submit-button/form__submit-button.css);
+
+
 
 
 @import url(../blocks/_utermo/ufooter/ufooter.css);

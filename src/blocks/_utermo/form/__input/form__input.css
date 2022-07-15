@@ -1,11 +1,10 @@
 .form__input {
   font-size: 20px;
   line-height: 1.2;
-  color: var(--theme-white-color);
+  color: var(--theme-text-color);
 
   border: none;
   outline: none;
-
 
   min-width: 300px;
   padding: 25px 22px;

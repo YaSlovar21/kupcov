@@ -1,0 +1,25 @@
+.askmore {
+  display: flex;
+
+  max-width: calc(100% - var(--aside-width));
+}
+
+.askmore__content {
+  padding: 40px 0;
+  flex-basis: 1300px;
+  padding-left: var(--aside-width);
+  background-color: var(--theme-light-gray-color);
+  box-sizing: border-box;
+}
+
+.askmore__form-container {
+  padding: 40px 0 0;
+  box-sizing: border-box;
+  flex-basis: 617px;
+}
+
+.askmore__form {
+  max-width: calc(100% - 20px);
+  margin: 0 auto;
+}
+

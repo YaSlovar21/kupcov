@@ -125,75 +125,44 @@
             </div>
           </div>
         <% }); %>
+      </div>
+    </section>
+    <section class="askmore">
+      <div class="askmore__content">
+        <h2 class="section-title">Мне только спросить</h2>
 
+      </div>
+      <div class="askmore__form-container">
+        <form class="askmore__form" method="post" action="#" id="formFreePopup" name="formFreePopup" novalidate>
+          <!--R-->
+          <h3 class="section-title">Остались вопросы?</h3>
+          <p class="bem__title" style="margin-bottom: 20px;">Напишите нам!</p>
+          <label class="form__field" style="margin-bottom: 10px;">
+            <span class="form__label-title">Как к Вам можно обращаться?</span>
+            <input data-alias="Имя или название компании" placeholder="Как к Вам обращаться?" type="text" name="name-free" id="name-free-input" class="form__input" required minlength="1">
+            <span class="form__input-error name-free-input-error">Тест ошибки</span>
+          </label>
+          <label class="form__field" style="margin-bottom: 10px;">
+            <span class="form__label-title">Контактный телефон</span>
+            <input data-alias="Телефон" placeholder="Телефон" type="text" name="tel-free" id="tel-free-input" class="form__input" required minlength="1">
+            <span class="form__input-error tel-free-input-error"></span>
+          </label>
+          <label class="form__field" style="margin-bottom: 10px;">
+            <span class="form__label-title">Электронная почта</span>
+            <input data-alias="Почта" placeholder="Электронная почта" type="email" name="email-free" id="email-free-input" class="form__input" required>
+            <span class="form__input-error email-free-input-error"></span>
+          </label>
+          <label class="form__field form__field_type_textarea" style="margin-bottom: 10px;">
+            <span class="form__label-title">Опишите Вашу задачу</span>
+            <textarea data-alias="Текст заявки" placeholder="Опишите Вашу задачу" type="text" name="comment-free" id="comment-free-input"  class="form__input" required minlength="1"></textarea>
+            <span class="form__input-error comment-free-input-error"></span>
+          </label>
+          <button class="bem__button form__submit-button" type="submit">Отправить</button>
+        </form>
       </div>
     </section>
   </div>
 
-    <section class="mainpage-btp">
-      <div class="mainpage-btp__content uwrapper">
-        <div class="mainpage-btp__desc">
-          <h2 class="section-title">Блочные тепловые пункты</h2>
-          <p class="bem__paragraph">Мы - производитель и изготавливаем тепловые пункты в заводских условиях с контролем
-            качества на каждом этапе.</p>
-          <h3 class="section-subtitle">Для Вас</h3>
-          <ul class="bem__list">
-            <li>Оперативный подбор БТП <span class="span-color-brand">(1-2 дня)</span> </li>
-            <li>Индивидуальный подход</li>
-            <li>Разработка технической документации</li>
-          </ul>
-          <h3 class="section-subtitle">P.S.</h3>
-          <ul class="bem__list">
-            <li>Доставим и разгрузим собственным транспортом</li>
-            <li>Водитель с отличным чувством юмора</li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-    <section class="mainpage-pto">
-      <div class="mainpage-pto__content uwrapper">
-        <div class="mainpage-pto__desc">
-          <h2 class="section-title mainpage-pto__title section-title_underline_right">Пластинчатые теплообменники</h2>
-          <ul class="bem__list" style="margin-top: 40px; max-width: 600px;">
-            <li class="bem__list-item">Собственное производство пластин и уплотнений.</li>
-            <li class="bem__list-item">Комплектация ответными фланцами.</li>
-            <li class="bem__list-item">Изготовление направляющих из нержавеющей стали.</li>
-            <li class="bem__list-item">100% выходной контроль качества.</li>
-            <li class="bem__list-item">Производство 3-5ти секционных теплообменников для процессов пастеризации на пищевых предприятиях.</li>
-            <li class="bem__list-item">Доставка до ближайшего к клиенту терминала транспортной компании включена в стоимость.</li>
-            <li class="bem__list-item">Собственная программа подбора.</li>
-            <li class="bem__list-item">Скорость подбора от 10 минут до 2 часов.</li>
-            <li class="bem__list-item">Покраска плит в оранжевый цвет для поднятия настроения.</li>
-          </ul>
-        </div>
-        <div class="mainpage-pto__image-container">
-          <img class="mainpage-pto__image" src="<%=require('./images/ti45_new.png')%>" alt="Теплообменники Ютермо">
-        </div>
-      </div>
-    </section>
-
-    <section class="mainpage-company" style="position: relative; min-height: 900px; background-color: var(--bg-darker-color);">
-      <div class="mainpage-company__content">
-        <div class="uwrapper" style="padding: 50px 0;">
-          <h2 class="section-title">О компании</h2>
-          <div style="max-width: 600px;">
-          <p class="bem__paragraph">Наша компания является производителем блочных тепловых пунктов под маркой Ютермо.</p>
-            <ul class="bem__list" style="margin-top: 40px;">
-              <li class="bem__list-item">Каждый блочный тепловой пункт подбирается индивидуально согласно данных, предоставленных проектировщиком или
-                заказчиком.</li>
-              <li class="bem__list-item">Разрабатывается принципиальная тепловая схема теплового пункта, подбирается оборудование, показывается размещение
-                блоков на плане помещения.</li>
-              <li class="bem__list-item">Конструкторами создаётся 3D модели блоков БТП, исходя из размеров помещения и дверных проёмов.</li>
-              <li class="bem__list-item">По этим моделям на производстве изготавливаются готовые блоки.</li>
-              <li class="bem__list-item">Каждый БТП комплектуется шкафами управления.</li>
-            </ul>
-          </div>
-        </div>
-        <img src="<%=require('./images/mainpage-about.png')%>">
-      </div>
-        <img src="<%=require('./images/svg-elems/mainpage-svg-section.svg')%>" style="position: absolute; top: 0; left: 0;">
-    </section>
 
     <section class="mainpage-reference uwrapper" style="padding: 10%;">
       <%=require('./insets/schemes/svg-schemes/russia-map.svg')%>
