@@ -1,0 +1,44 @@
+.ds-intro__link-to {
+  /* position: absolute; */
+  padding-left: 10px;
+  position: relative;
+  z-index: 3;
+  text-decoration: none;
+  color: #f77b42;
+  line-height: 1.4;
+  font-size: 22px;
+  font-weight: 500;
+  max-width: 260px;
+  justify-self: flex-end;
+  /* align-self: flex-end; */
+  background-color: #2f2f2f4f;
+}
+
+.ds-intro__link-to::before {
+  content: "Перейти в раздел";
+  width: 100%;
+  font-size: 11px;
+  font-style: italic;
+  font-weight: 200;
+  display: inline-flex;
+  color: rgba(242, 242, 242, 0.5);
+}
+
+@media screen and (max-width: 1440px),
+       screen and (max-height: 800px) {
+  .ds-intro__link-to {
+    font-size: 18px;
+  }
+  .ds-intro__link-to::before {
+    font-size: 10px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .ds-intro__link-to {
+    display: none;
+  }
+  .ds-intro__link-to::before {
+    display: none;
+  }
+}

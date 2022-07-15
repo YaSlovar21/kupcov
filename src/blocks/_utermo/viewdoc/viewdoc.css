@@ -1,0 +1,51 @@
+.viewdoc {
+  display: flex;
+  flex-direction: column;
+  max-width: 345px;
+  margin-right: 10px;
+  box-shadow: 4px 4px 1px rgba(0, 0, 0, 0.25);
+}
+
+.viewdoc:last-of-type {
+  margin-right: 0;
+}
+
+.viewdoc__view {
+  flex-basis: 386px;
+  position: relative;
+  min-height: 100px;
+}
+
+.viewdoc__view::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #1f1f1f;
+  opacity: .4;
+}
+
+.viewdoc__view-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
+}
+
+.viewdoc__title {
+  padding: 27px 0;
+
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 27px;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  /*на случай примеси с display:flex; ссылки с иконкой*/
+  justify-content: center;
+
+  color: var(--theme-white-color);
+  background-color: #1f1f1f;
+
+}

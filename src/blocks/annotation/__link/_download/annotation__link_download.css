@@ -1,0 +1,6 @@
+.annotation__link_download {
+  margin-left: 25px;
+}
+.annotation__link_download:nth-of-type(n + 1) {
+  margin-top: 18px;
+}

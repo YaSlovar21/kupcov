@@ -1,0 +1,201 @@
+.plates {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.plates__interactive {
+    /*display: flex;*/
+    position: relative;
+    justify-content: flex-end;
+    align-items:center;
+
+    /*min-height: 600px;*/
+    margin-bottom: 40px;
+    max-width: 1000px;
+    /*margin: 0 auto;*/
+    padding-left: 15%;
+    padding-right: 15%;
+    padding-top: 5%;
+    padding-bottom: 10%;
+}
+
+@media screen and (min-width:1440px) {
+  .plates__interactive {
+    min-width: 1000px;
+    margin: 0 auto;
+  }
+}
+
+.plates__svg {
+  margin-top:30px;
+  transform: skewY(-15deg);
+}
+
+.plates__svg_page_main {
+  transform: none;
+  width: 95%;
+  margin-top:30px;
+  margin-bottom:50px;
+  height: auto;
+}
+
+@media screen and (max-width:1024px) {
+  .plates__svg_page_main {
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+  }
+}
+
+
+
+
+
+
+.plates__description {
+    box-shadow: 3px;
+    /*background-color: #2f2f2f;*/
+    color: white;
+    flex-basis: 550px;
+    border-right: 2px solid #ec24ec;
+}
+
+.plates__description-title {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 1.55;
+    text-align: center;
+    color: white;
+}
+
+.plates__description-text {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 155.5%;
+    margin: 0;
+    padding: 20px;
+}
+
+@media screen and (max-width: 1024px) {
+    .plates__description-text {
+        font-size: 18px;
+    }
+}
+
+.illustration__stripe-green {
+    z-index: 4;
+    position: absolute;
+      left: 15%;
+      bottom: -13%;
+      width: 15.58%;
+      padding-top: 6%;
+      transform-origin: right;
+      transform: skewY(20deg);
+      border-radius: 0 4px 4px 4px;
+      /*background: linear-gradient(40deg,#f19429,#fde0b9);*/
+      background: linear-gradient(40deg,#f2f2f2,#cfcfce18);
+      animation: l .9s cubic-bezier(.47,0,.65,.78) both; /*.9s;*/
+  }
+
+  .illustration__stripe-blue {
+    position: absolute;
+      bottom: 0%;
+      left: 15%;
+      /* left: 50%; */
+      width: 70%;
+      /* margin-left: -39.5%; */
+      /* margin-bottom: -25%; */
+    padding-top: 6%;
+    transform-origin: left;
+    transform: skewY(-15.5deg);
+    border-radius: 4px;
+    box-shadow: 0 0 40px rgba(99,255,221,.2);
+    /*background-image: linear-gradient(70deg,#0171f6,#0098f6);*/
+    background-image: linear-gradient(40deg,#E7441C,#e7451c2d);
+    animation: m .6s cubic-bezier(.39,.58,.57,1) both; /* 1.2s;*/
+  }
+
+  .illustration__tmb {
+    position: absolute;
+    z-index: 5;
+    /*width: 140px;
+    height: 40px;*/
+    width: 8vw;
+    height: calc(0.29 * 8vw);
+    background-image: url(../../images/svg-teplohit.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    transform: skewY(-20.5deg);
+
+    bottom: -2%;
+    left: 15%;
+    animation: l .9s cubic-bezier(.47,0,.65,.78) both .9s;
+  }
+
+
+  @media screen and (max-width:768px) {
+    .plates {
+      width: 95%;
+      margin: 0 auto;
+    }
+    .plates__interactive {
+        /*max-width: 500px;
+        min-height: 0;
+        padding-left: 5%;
+        padding-right: 5%;
+        padding-top: 5%;
+        padding-bottom: 10%;*/
+        padding: 0;
+    }
+    .plates__svg {
+      transform: none;
+    }
+    .illustration__stripe-blue, .illustration__stripe-green, .illustration__tmb{
+      display: none;
+    }
+}
+
+
+
+@keyframes m{0%{transform:skewY(-15deg) scaleX(0)}to{transform:skewY(-15deg) scaleX(1)}}
+
+@keyframes l
+{
+  0% {
+    transform:skewY(20deg) scaleX(0)
+  }
+  100% {transform:skewY(20deg) scaleX(1)}
+}
+/*
+.plast:hover {
+  transform: translate(10px, 10px);
+  fill:rgba(39, 39, 39, 0.8);
+  fill: #ff5e3aee;
+  stroke: #e4e4e4b6;
+  cursor: pointer;
+}
+.plast {
+transition: all .2s linear;
+stroke: #d3d3d3;
+stroke: #1b1b1b;
+stroke-width: 1px;
+fill:rgba(247, 247, 247, 0.811);
+}
+.podp {
+fill: rgba(255, 255, 255);
+}
+#pl1 {
+  position: relative;
+  width: 200px;
+  height: 300px;
+}
+.pl1__text {
+  font-size: 20px;
+  color:white;
+  width: 50px;
+  height: 20px;
+}*/

@@ -1,0 +1,57 @@
+.apps {
+  margin-top: 115px;
+}
+
+.apps__heading {
+  margin-left: var(--aside-width);
+}
+
+.apps__description {
+  margin: 20px 0 60px var(--aside-width);
+
+}
+.apps__list {
+  padding-left: var(--aside-width);/*КОСТЫЛЬ*/
+  max-width: calc(100% - var(--aside-width));
+  box-sizing: border-box;
+}
+
+.apps__desc-n-button {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+ 
+}
+
+.apps__change-view-button {
+  flex-basis: 600px;
+}
+
+.apps__dynamic-section {
+  background-color: var(--bg-darker-color);
+  padding: 15px 15px 15px 0;
+  margin: 40px 0 8px;
+  box-sizing: border-box;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 15px;
+
+  padding-left:  var(--aside-width); /*КОСТЫЛЬ*/
+  max-width: calc(100% - var(--aside-width));
+}
+
+.apps__card {
+  background-color: var(--bg-color);
+  padding: 28px;
+  overflow: hidden;
+}
+
+.apps__more-button {
+  display: block;
+  background-color: var(--bg-darker-color);
+  color: var(--theme-white-color);
+  max-width: calc(100% - var(--aside-width)*2);
+  margin: 0 auto;
+}
+

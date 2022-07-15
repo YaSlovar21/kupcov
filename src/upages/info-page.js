@@ -1,0 +1,2 @@
+import './info-page.css';
+

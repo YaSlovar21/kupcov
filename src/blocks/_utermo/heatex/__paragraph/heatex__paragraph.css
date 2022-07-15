@@ -1,0 +1,9 @@
+.heatex__paragraph {
+  font-style: normal;
+  font-weight: 500;
+  font-size: var(--p-size);
+  line-height: 142.52%;
+  letter-spacing: -0.035em;
+
+  color: var(--theme-white-color);
+}

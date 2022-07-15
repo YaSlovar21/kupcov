@@ -1,0 +1,25 @@
+.khan__title_page_heatex {
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 142.52%;
+    /* or 51px */
+
+    text-align: justify;
+    letter-spacing: -0.035em;
+    text-transform: uppercase;
+
+    color: #E7441C;
+}
+
+@media screen and (max-width: 1024px) {
+    .khan__title_page_heatex {
+        font-size: 28px;
+
+        /*переопределить
+              width: 100%;
+      font-size: 18px;
+      line-height: 1.4;
+      letter-spacing: 0.05em;
+        */
+    }
+}

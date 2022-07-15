@@ -1,0 +1,15 @@
+.footer__link {
+    text-decoration: none;
+    color: white;
+    margin-bottom: 10px;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+  }
+
+
+@media screen and (max-width: 1024px) {
+  .footer__link {
+    font-size: 10px;
+  }
+}

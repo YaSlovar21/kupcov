@@ -1,0 +1,25 @@
+.footer__columns {
+    display: flex;
+    max-width: 1600px;
+    margin: auto;
+    justify-content: space-between;
+
+  }
+
+
+@media screen and (max-width: 1640px) {
+  .footer__columns {
+    max-width: calc(100% - 40px);
+  }
+}
+@media screen and (max-width: 1024px) {
+  .footer__columns {
+    flex-direction: column-reverse;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .footer__columns {
+    max-width: calc(100% - 20px);
+  }
+}

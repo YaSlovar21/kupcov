@@ -1,0 +1,18 @@
+.raschet-bem__select {
+  border-radius: 0px;
+  border: none;
+  color: #fff;
+  font-weight: 300;
+  font-size: 16px;
+  margin: 0 0 0 10px;
+  border-bottom: 1px solid #c2c2c2;
+  border-bottom: 2px solid #565656b7;
+  background: transparent;
+
+  padding: 7px 0;
+  box-sizing: border-box;
+  outline: none;
+  position: relative;
+  transition: all .6s linear;
+}
+

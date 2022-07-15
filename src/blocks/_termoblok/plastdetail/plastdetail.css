@@ -1,0 +1,165 @@
+/*Пластинка с 3мя преимуществами*/
+
+.plastdetail {
+  padding-top: 100px;
+}
+
+.plastdetail__content {
+  max-width: 80%;
+  margin: 0 auto;
+  position: relative;
+}
+
+.plastdetail__image {
+  opacity: 0.6;
+}
+
+.plastdetail__title {
+  position: absolute;
+  left: 270px;
+  top: 20px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 1.2;
+  /* identical to box height */
+
+  text-transform: uppercase;
+  font-weight: 500;
+  letter-spacing: .05em;
+  color: #BEBEBE;
+}
+
+.plastdetail__detailslist {
+  padding: 0;
+  list-style-type: none;
+
+  position: absolute;
+  top: 160px;
+  left: 120px;
+}
+
+.plastdetail__detailslist-item {
+  display: flex;
+  align-items: flex-start;
+  margin-top: 45px;
+}
+
+.plastdetail__detailslist-item:nth-of-type(2) {
+  margin-top: 10px;
+}
+
+
+.plastdetail__ititle {
+  margin: 0;
+  padding: 10px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 1.2;
+  text-transform: uppercase;
+
+  color: #F2F2F2;
+  border-bottom: 5px solid #E7441C;
+}
+
+.plastdetail__idesc {
+  max-width: 678px;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 1.2;
+
+  color: #A6A6A6;
+
+  padding-left: 10px;
+}
+
+
+@media screen and (max-width: 1440px) {
+  .plastdetail__content {
+    max-width: 95%;
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  .plastdetail {
+    padding-top: 50px;
+  }
+  .plastdetail__title {
+    left: 190px;
+  }
+  .plastdetail__image {
+    max-width: 175px;
+  }
+  .plastdetail__detailslist {
+    left: 85px;
+    top: 80px;
+  }
+  .plastdetail__ititle {
+    font-size: 18px;
+    padding: 5px;
+    border-bottom: 3px solid #E7441C;
+  }
+  .plastdetail__idesc {
+    font-size: 14px;
+  }
+  .plastdetail__iimage {
+    max-width: 175px;
+  }
+}
+
+@media screen and (max-width:768px) {
+  .plastdetail {
+    padding-top: 30px;
+  }
+  .plastdetail__content {
+    max-width: 95%;
+  }
+  .plastdetail__title {
+    left: 125px;
+    margin: 0;
+    font-size: 12px;
+  }
+  .plastdetail__image {
+    max-width: 120px;
+  }
+  .plastdetail__ititle {
+    font-size: 12px;
+    font-weight: 300;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+  }
+  .plastdetail__iimage {
+    max-width: 100px;
+  }
+  .plastdetail__detailslist {
+    left: 12px;
+    top: 40px;
+  }
+  .plastdetail__idesc {
+    font-size: 11px;
+  }
+}
+
+@media screen and (max-width:500px) {
+  .plastdetail__image {
+    opacity: 0.2;
+  }
+  .plastdetail__title {
+    left: 0;
+  }
+  .plastdetail__detailslist {
+    left: 0;
+    top: 10px;
+  }
+  .plastdetail__iimage {
+    max-width: 80px;
+  }
+  .plastdetail__ititle {
+    font-size: 10px;
+  }
+  .plastdetail__idesc {
+    color: #c4c4c4;
+  }
+}

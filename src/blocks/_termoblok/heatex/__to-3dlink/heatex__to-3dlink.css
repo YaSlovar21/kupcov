@@ -1,0 +1,19 @@
+.heatex__to-3dlink {
+    position: relative;
+    color: #f2f2f2;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+.heatex__to-3dlink::before{
+    position: relative;
+    display: inline-block;
+    content: '';
+    width: 32px;
+    height: 32px;
+    background-image: url(../../../images/yandexdisk.svg);
+    background-position: bottom;
+    margin-right: 10px;
+}
+

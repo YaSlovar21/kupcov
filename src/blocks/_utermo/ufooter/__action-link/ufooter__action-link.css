@@ -1,0 +1,19 @@
+.ufooter__action-link{
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 25px;
+  /* identical to box height */
+
+
+  color: #CDCDCD;
+
+  display: flex;
+  align-items: center;
+
+  margin-right: 40px;
+}
+
+.ufooter__action-link:last-of-type {
+  margin-right: 0;
+}

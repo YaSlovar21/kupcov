@@ -1,0 +1,19 @@
+.bem__list-item {
+  margin-bottom: .4em;
+  color: var(--theme-text-color);
+  letter-spacing: .03em;
+}
+
+.bem__list-item:last-of-type {
+  margin-bottom: 0;
+}
+
+.bem__list-item::before {
+  content: '↳';
+  color: var(--main-equivalent-color);
+  margin-right: 5px;
+}
+
+.bem__list-item_nodisk::before {
+  content: '';
+}

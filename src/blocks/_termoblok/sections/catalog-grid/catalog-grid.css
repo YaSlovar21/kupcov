@@ -1,0 +1,67 @@
+.catalog-grid {
+  display: flex; align-items: flex-end;
+}
+
+@media screen and (max-width: 1024px) {
+  .catalog-grid {
+    flex-direction: column;
+  }
+}
+.catalog-grid__ti {
+  grid-column: 2/3;
+  grid-row: 1/4;
+}
+.catalog-grid__food {
+  grid-column: 2/3;
+  grid-row: 4/5;
+}
+
+.catalog-grid__pdf-preview {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  /*margin: 30px auto;
+  margin: 30px auto;*/
+  margin: 30px 30px;
+  flex-basis: 400px;
+  flex-shrink: 1;
+  align-self: flex-start;
+  background-color: #f2f2f21a
+}
+@media screen and (max-width: 1024px) {
+  .catalog-grid__pdf-preview{
+    max-height: 300px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .catalog-grid__pdf-preview{
+    margin: 10px;
+  }
+}
+.catalog-grid__preview-img {
+  margin: 20px;
+  max-width: 90%;
+}
+@media screen and (max-width: 1024px)  {
+  .catalog-grid__preview-img {
+    margin: 20px;
+  max-width: 90%;
+  /* max-height: 90%; */
+  object-fit: contain;
+  min-height: 0;
+  }
+}
+.catalog-grid__preview-link {
+  color: #E7441C;
+  padding: 20px 0;
+  background-color: rgba(47,47,47,.5);;
+  text-decoration: none;
+  text-align: center;
+  font-size: 22px;
+  font-weight: 700;
+}
+@media screen and (max-width: 768px) {
+  .catalog-grid__preview-link {
+    font-size: 18px;
+  }
+}

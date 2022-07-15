@@ -1,0 +1,25 @@
+.raschet-bem__label-title {
+  font-size: 13px;
+  color: #f2f2f2;
+}
+
+.raschet-bem__label-title_fluid {    /* Стиль для плавающего span *//* работает в связке с класом [input-id]-placeholder*/
+  color: #ececec;
+    font-size: 16px;
+    left: 0;
+    line-height: 19px;
+    pointer-events: none;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%) scale(1);
+    transition: .3s;
+}
+
+.raschet-bem__input:focus + .raschet-bem__label-title_fluid,
+.raschet-bem__label-title_fluid_is-fixed {
+  color: #979797;
+  font-size: 12px;
+  line-height: 14px;
+  transform: translateY(-190%) scale(1);
+}
+

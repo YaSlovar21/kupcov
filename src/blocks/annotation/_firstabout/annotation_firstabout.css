@@ -1,0 +1,9 @@
+.annotation_firstabout {
+  margin-left: 20px;
+}
+
+@media screen and (max-width: 1024px) {
+  .annotation_firstabout {
+    margin-left: 0;
+  }
+}

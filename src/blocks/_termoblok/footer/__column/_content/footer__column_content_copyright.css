@@ -1,0 +1,13 @@
+.footer__column_content_copyright {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    min-height: 250px;
+    flex-basis: 511px;
+  }
+
+@media screen and (max-width: 1024px) {
+  .footer__column_content_copyright {
+    flex-basis: auto;
+  }
+}

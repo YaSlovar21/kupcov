@@ -1,0 +1,5 @@
+.raschet-form__sidetemperatures {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}

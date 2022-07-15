@@ -1,0 +1,22 @@
+.circle {
+    min-height: 790px;
+    background: url(../../images/circle_svg1.svg) center no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+@media screen and (max-width: 767px) {
+    .circle {
+        flex-direction: column;
+        justify-content: space-between;
+        background: url(../../images/circle_svg1.svg) top no-repeat;
+        background-size: contain;
+    }
+    .circle__image {
+        width: 70%;
+    }
+}
+
+

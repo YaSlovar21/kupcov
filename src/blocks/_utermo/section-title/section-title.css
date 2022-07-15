@@ -1,0 +1,43 @@
+.section-title {
+  font-style: normal;
+  font-weight: 800;
+  font-size: 32px;
+  line-height: 44px;
+  letter-spacing: -0.015em;
+  color: #EC2C02;
+  max-width: 722px;
+  margin: 0;
+
+}
+
+.section-title_underline_left {
+  position: relative;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.section-title_underline_left::before {
+  content: '';
+  position: absolute;
+  height: 3px;
+  width: 200%;
+  bottom: 0;
+  right: 0;
+  background-color: var(--theme-main-color);
+}
+
+.section-title_underline_right {
+  position: relative;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.section-title_underline_right::before {
+  content: '';
+  position: absolute;
+  height: 3px;
+  width: 200%;
+  bottom: 0;
+  left: 0;
+  background-color: var(--theme-main-color);
+}

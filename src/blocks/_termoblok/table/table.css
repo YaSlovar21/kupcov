@@ -1,0 +1,62 @@
+@import url(./_theme/table_theme_dark.css);
+
+
+@import url(./__cell/table__cell.css);
+@import url(./__cell/_theme/table__cell_theme_dark.css);
+@import url(./__cell/_size_large/table__cell_size_large.css);
+
+@import url(./__heading/table__heading.css);
+@import url(./__heading/_theme/table__heading_theme_dark.css);
+@import url(./__heading/_page/table__heading_page_btp.css);
+
+@import url(./__text/table__text.css);
+@import url(./__text/_theme/table__text_theme_dark.css);
+@import url(./__text/_page/table__text_page_btp.css);
+
+
+.table
+{
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1100px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+@media screen and (max-width:850px) {
+  .table {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width:600px) {
+  .table {
+    /*max-width: 300px;*/
+    margin: 0 auto;
+  }
+}
+
+
+.table_page_btp {
+  margin: 0;
+  max-width: 570px;
+  flex-wrap: wrap;
+  align-content: space-between;
+  justify-content: space-between;
+  margin-bottom: 60px;
+
+  padding: 50px;
+}
+
+
+
+.table_type_grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 90%;
+}
+

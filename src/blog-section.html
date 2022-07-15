@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title><%= htmlWebpackPlugin.options.title %></title>
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link href="<%= canonicalURL %>/blog-proizvodstva"  rel="canonical" />
+</head>
+<body>
+  <%= require('html-loader!./inner-metrika.html').default %>
+  <!--<div class="bg"></div>-->
+  <div class="page">
+  <header class="header">
+    <a href="/" class="header__logo">
+      <img class="header__logo-img"  src="<%=require('./images/svg-elems/u-flogo.svg')%>" alt="Лого Ютермо" >
+    </a>
+    <div class="header__right">
+      <%= require('html-loader!./insets/asides/nav-page.html').default %>
+    </div>
+  </header>
+
+
+  <main class="content blog-grid">
+    <div class="flexburton__breadcrumbs blog-grid__breadcrums">
+      <a class="flexburton__breadcrumbs-link" href="#">Главная</a>
+      <a class="flexburton__breadcrumbs-link flexburton__breadcrumbs-link_type_here" href="/<%= htmlWebpackPlugin.options.filename %>">Блог производителя</a>
+    </div>
+    <h1 class="content__title blog-grid__title">Статьи и информация</h1>
+    <form class="filter-form blog-grid__filter" name="filterForm" id="filterForm">
+      <label>
+        <input class="filter-form__input" type="checkbox" name="filterbox" value="objects">
+        <span class="blog-grid__filter-span">Наши объекты</span>
+      </label>
+      <label>
+        <input class="filter-form__input" type="checkbox" name="filterbox" value="gkh">
+        <span class="blog-grid__filter-span">Теплообменники в жилично-коммунальном хозяйстве</span>
+      </label>
+      <label>
+        <input class="filter-form__input"  type="checkbox" name="filterbox" value="food">
+        <span class="blog-grid__filter-span">Теплообменники в пищевой отрасли</span>
+
+      </label>
+      <label>
+        <input class="filter-form__input"  type="checkbox" name="filterbox" value="news">
+        <span class="blog-grid__filter-span">Новости компании</span>
+      </label>
+    </form>
+    <div class="infocards blog-grid__articles">
+          <ul class="infoitems cards-js-rendered">
+            <!-- Сюда рендерятся статейки
+            <li class="infoitem">
+              <div class="infoitem__header">
+                <span class="infoitem__span-button">Проект</span>
+                <span class="infoitem__span-button">Отопление</span>
+              </div>
+              <a class="infoitem__link" href="/blog-proizvodstva/plastinchatye-teploobmenniki-otopleniya.html">
+                <h2 class="infoitem__name">Пластинчатые пастеризаторы</h2>
+                <p class="infoitem__description">Пластинчатые теплообменники в технологических процессах пастеризации жидкости.</p>
+              </a>
+            </li>
+            -->
+          </ul>
+          <button class="infocards__more-button infocards__more-button_hidden button-bem button-bem_blog">Показать еще</button>
+        </div>
+
+
+        </main>
+        <!--<section class="up-footer">
+          <ul class="up-footer__list">
+            <li class="up-footer__list-item  wow animate__slideInUp" data-wow-duration="1s" data-wow-delay=".4s">Рассчитать теплообменник</li>
+            <li class="up-footer__list-item  wow animate__slideInUp" data-wow-duration="1s" data-wow-delay="1.2s">Заявка на обратный звонок</li>
+            <li class="up-footer__list-item  wow animate__slideInUp" data-wow-duration="1s" data-wow-delay="2.0s">Скачать опросный лист</li>
+          </ul>
+      </section>-->
+        <%= require('html-loader!./insets/asides/inner-footer.html').default %>
+        <template id="article-template">
+          <li class="infoitem">
+            <div class="infoitem__header">
+              <!--<span class="infoitem__span-button">Проект</span>
+              <span class="infoitem__span-button">ГВС</span>
+              <span class="infoitem__span-button">ТИ82</span>-->
+            </div>
+            <a class="infoitem__link" href="info.html">
+              <h2 class="infoitem__name">Пластинчатые пастеризаторы</h2>
+              <p class="infoitem__description">Пластинчатые теплообменники в технологических процессах пастеризации жидкости.</p>
+            </a>
+          </li>
+        </template>
+        </div>
+
+</body>
+</html>

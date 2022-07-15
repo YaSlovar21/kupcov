@@ -1,0 +1,5 @@
+.popup__image-view {
+    flex-direction: column;
+    display: flex;
+    max-width: 100%;
+}

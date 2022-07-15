@@ -1,0 +1,103 @@
+
+@import url(./__title/khan__title.css);
+@import url(./__quote/khan__quote.css);
+@import url(./__list/khan__list.css);
+
+
+@import url(./__quote-author/khan__quote-author.css);
+@import url(./__quote-author-subline/khan__quote-author-subline.css);
+
+@import url(./__container/khan__container.css);
+@import url(./__buy-link/khan__buy-link.css);
+@import url(./__book-pic/khan__book-pic.css);
+@import url(./__book-container/khan__book-container.css);
+@import url(./__author/khan__author.css);
+
+@import url(./__title/_page_heatex/khan__title_page_heatex.css);
+@import url(./__quote/_page_heatex/khan__quote_page_heatex.css);
+@import url(./__container/_page_heatex/khan__container_page_heatex.css);
+@import url(./__book-container/_page_heatex/khan__book-container_page_heatex.css);
+
+
+.khan {
+    /*background-color: #F2F2F2;*/
+    padding-top: 100px;
+    padding-bottom: 30px;
+  }
+
+
+
+.khan__pagination-list {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    flex-wrap: wrap;
+}
+@media screen and (max-width:420px) {
+    .khan__pagination-list {
+        flex-direction: column;
+    }
+}
+.khan__pagination-list-item {
+    margin: 15px 5px 15px 0;
+    list-style-type: none;
+    background-color: #f2f2f22d;
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 20px;
+    padding: 15px 25px;
+    box-sizing: border-box;
+
+    /*border-radius: 25px;*/
+    cursor: pointer;
+
+    will-change: color,background-color;
+
+    transition: opacity 1s ease-in-out, color 1s ease-in-out;
+    opacity: 1;
+
+    color: #d6d6d6;
+
+    position: relative;
+}
+
+
+@media screen and (max-width:420px) {
+    .khan__pagination-list-item {
+        margin: 5px 0;
+    }
+}
+
+@media screen and (max-width: 768px) {
+  .khan__pagination-list-item {
+    font-size: 12px;
+    flex-basis: calc(50% - 5px);
+    padding: 10px;
+    flex-shrink: 2;
+    margin-bottom: 0;
+  }
+}
+
+.khan__pagination-list-item_active {
+    /*background-color: #ee6f07b8;*/
+    border-left: 5px solid #FF5E3A;
+    color: #FF5E3A;
+    background-color: #f2f2f211;
+}
+
+
+
+.khan__pagination-list-item:hover {
+    cursor: pointer;
+    color: white;
+}
+.khan__pagination-list-item_active:hover {
+    cursor: pointer;
+    color: #FF5E3A;
+}
+.khan__pagination-list-item:focus {
+    outline: 0px;
+  }
+
+
+

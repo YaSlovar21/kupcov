@@ -1,0 +1,8 @@
+.scheme-description__paragraph {
+  max-width: 1000px;
+  margin-bottom: 40px;
+}
+
+.scheme-description__paragraph:last-of-type {
+  margin-bottom: 0;
+}

@@ -1,0 +1,25 @@
+.khan__quote {
+    line-height: 1.4;
+    font-size: 24px;
+    font-weight: normal;
+    margin: 50px 0 0 0;
+    color: white;
+    max-width: 892px;
+  }
+
+  @media screen and (max-width:1440px) {
+    .khan__quote {
+      max-width: 720px;
+      font-size: 22px;
+    }
+  }
+
+  @media screen and (max-width:768px) {
+    .khan__quote {
+      font-size: 14px;
+      line-height: 1.5;
+      letter-spacing: 0.05em;
+      margin-top: 30px;
+    }
+  }
+

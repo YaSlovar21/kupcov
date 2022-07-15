@@ -1,0 +1,9 @@
+.popup__desc-container {
+    flex: 0 1 721px;
+    width: 100%;
+
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}

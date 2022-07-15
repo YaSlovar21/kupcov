@@ -1,0 +1,11 @@
+.burton__description {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.35;
+
+  color: var(--theme-text-color);
+
+  max-width: 507px;
+}
+

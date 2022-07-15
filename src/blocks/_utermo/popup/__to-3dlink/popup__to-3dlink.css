@@ -1,0 +1,13 @@
+.popup__to-3dlink {
+    position: relative;
+}
+
+.popup__to-3dlink::before{
+    position: relative;
+    display: inline-block;
+    content: '';
+    width: 32px;
+    height: 32px;
+    background-image: url(../../../images/yandexdisk.svg);
+    background-position: bottom;
+}

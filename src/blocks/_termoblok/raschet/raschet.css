@@ -1,0 +1,121 @@
+.raschet {
+    max-width: 970px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+
+    transform: translateX(-100%) scale(0);
+    
+    
+    list-style: none;
+    
+    max-height: 0;
+    overflow: hidden;
+    padding: 0;
+    transition: max-height 1s linear,transform 1s linear, margin .5s linear;
+
+    /*background-color: rgba(242, 242, 232, .1);*/
+    padding-top: 100px;
+
+    margin-bottom: 60px;
+
+}
+
+
+.raschet__image {
+    align-self: flex-start; 
+    opacity: .7;
+    max-width: 33vw;
+}
+
+
+.raschet__nagrevaemaya {
+    display: flex;
+    flex-direction: column;
+}
+
+.raschet_active {
+    max-height: 2000px;
+    
+  
+    transition: max-height 1s ease-in-out, transform 1s ease-out;
+    transform: translateX(0) scale(1);
+}
+
+.raschet__head-min {
+    position: relative;
+
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    color: rgba(242, 242, 232, .9);
+    margin-bottom: 5px;
+}
+
+.raschet__span_type_heat {
+    font-weight: 600;
+    color: #FF5E3A;
+}
+
+.raschet__span_type_cold {
+    font-weight: 600;
+    color: #009EE0;
+}
+
+
+.raschet__input {
+    border-radius: 0px;
+    color: #fff;
+    font-weight: 300;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    background: transparent;
+    
+    height: 36px;
+    padding: 0 20px;
+    box-sizing: border-box;
+    outline: none;
+
+    margin-bottom: 20px;
+    position: relative;
+
+    transition: all .6s linear;
+}
+
+
+
+.raschet__input_heatin::after {
+    position: absolute;
+    top: 40%;
+    right: -calc((50% - 1px));
+    width: calc(50% - 1px);
+    height: 5px;
+    content: '';
+    background-color: #FF5E3A;
+}
+
+.raschet__input_double-columns {
+    width: 282px;
+    display: flex;
+}
+
+.raschet__mini-input {
+    width: 190px;
+}
+
+.raschet__mini-metrica {
+    width: 92px;
+}
+
+.raschet__input_one {
+    width: 282px;
+    transition: border-left .1s linear;
+}
+
+.raschet__input_one:focus {
+    border-left: 5px solid #FF5E3A;
+}
+
+.raschet__option {
+    color: black;
+}

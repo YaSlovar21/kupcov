@@ -1,0 +1,45 @@
+@import url(./__models-heading/heatex__models-heading.css);
+@import url(./__models-heading/_theme_dark/heatex__models-heading_theme_dark.css);
+
+@import url(./__to-3dlink/heatex__to-3dlink.css);
+
+@import url(./__to-desc/heatex__to-desc.css);
+@import url(./__to-desc/_theme_dark/heatex__to-desc_theme_dark.css);
+
+@import url(./__img-container/heatex__img-container.css);
+@import url(./__to-img/heatex__to-img.css);
+@import url(./__to-info/heatex__to-info.css);
+@import url(./__to-name/heatex__to-name.css);
+
+.heatex {
+
+    margin: 50px auto 50px;
+    padding: 50px 0 50px;
+    position: relative;
+    max-width: 1600px;
+}
+
+@media screen and (max-width: 1640px) {
+  .heatex {
+    max-width: calc(100% - 40px);
+  }
+}
+@media screen and (max-width: 1300px) {
+  .heatex {
+    max-width: calc(100% - 20px);
+  }
+}
+
+
+.heatex__content {
+  max-width: 1200px;
+  display: flex;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 1440px) {
+  .heatex__content {
+    max-width: 1290px;
+  }
+}

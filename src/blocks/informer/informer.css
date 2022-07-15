@@ -1,0 +1,40 @@
+.informer {
+  background: #2f2f2f;
+  position: fixed;
+  bottom: 0;
+  right: 20%;
+  margin-right: -150px;
+  /*width: 200px;*/
+
+  display: flex;
+  align-items: stretch;
+  border-radius: 2px 0 0 2px;
+  height: 50px;
+  padding: 10px 0;
+  border-top: 2px solid #ff6e3d;
+
+}
+
+.informer_maxi {
+  margin-right: 0;
+}
+
+.informer__view-changer {
+  background: #1b1b1b url(../../images/svg-elems/arrow2.png) no-repeat 0 center;
+  color: #fff;
+  font-size: 14px;
+  padding: 0 15px 0 25px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+.informer__link {
+  color: #fff;
+  text-decoration: none;
+  padding-left: 55px;
+  text-decoration: none;
+  width: 100%;
+  position: relative;
+  background: url(../../images/svg-elems/calc.png) no-repeat;
+}

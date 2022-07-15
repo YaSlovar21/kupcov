@@ -1,0 +1,6 @@
+@media screen and (max-width: 767px) {
+    .circle__list {
+        position: static;
+        list-style-type: lower-roman;
+    }
+}

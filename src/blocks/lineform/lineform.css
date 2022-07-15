@@ -1,0 +1,24 @@
+@import url(./__heading/lineform__heading.css);
+@import url(./__line/lineform__line.css);
+@import url(./__field/lineform__field.css);
+
+@import url(./__input/lineform__input.css);
+@import url(./__input-error/lineform__input-error.css);
+
+@import url(./__button-save/lineform__button-save.css);
+@import url(./__description/lineform__description.css);
+
+.lineform {
+    padding-bottom: 80px;
+}
+
+.lineform_page_btp {
+  margin: 0 auto;
+  max-width: 80%;
+}
+
+@media screen and (max-width: 1440px) {
+  .lineform_page_btp {
+    max-width: 95%;
+  }
+}

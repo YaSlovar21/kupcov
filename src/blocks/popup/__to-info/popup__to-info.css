@@ -1,0 +1,8 @@
+/*контейнер для ТО + описание со ссылками справа*/
+.popup__to-info {
+    width: 80vw;
+    max-height: 80vh;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-evenly;
+}

@@ -1,0 +1,14 @@
+.free-form__desc-field {
+  flex-basis: 384px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-left: 30px;
+}
+
+@media screen and (max-width: 768px) {
+  .free-form__desc-field {
+    flex-basis: 228px;
+    margin: 30px 0 0;
+  }
+}

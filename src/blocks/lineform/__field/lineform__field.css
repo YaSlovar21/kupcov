@@ -1,0 +1,15 @@
+.lineform__field {
+  display: flex;
+  flex-direction: column;
+  max-width: 228px;
+  margin-right: 20px;
+  position: relative;
+}
+
+@media screen and (max-width: 768px) {
+  .lineform__field {
+    max-width: 100%;
+    margin-bottom: 28px;
+    margin-right: 0;
+  }
+}

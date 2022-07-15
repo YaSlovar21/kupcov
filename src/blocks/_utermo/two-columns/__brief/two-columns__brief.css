@@ -1,0 +1,6 @@
+.two-columns__brief {
+  flex-basis: 700px;
+  display: flex;
+  flex-direction: column;
+  margin-right: 40px;
+}

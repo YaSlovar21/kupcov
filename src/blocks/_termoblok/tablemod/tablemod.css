@@ -1,0 +1,22 @@
+.tablemod
+{
+  display: flex;
+  margin: 60px auto;
+
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+@media screen and (max-width:1150px) {
+  .tablemod {
+    max-width: 70%;
+  }
+}
+
+@media screen and (max-width:833px) {
+  .tablemod {
+    max-width: calc(100% - 20px);
+    justify-content: space-evenly;
+    overflow: hidden;
+  }
+}

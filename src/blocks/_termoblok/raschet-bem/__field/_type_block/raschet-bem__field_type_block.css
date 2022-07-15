@@ -1,0 +1,7 @@
+.raschet-bem__field_type_block {
+  margin-bottom: 15px;
+}
+
+.raschet-bem__field_type_block:last-of-type {
+  margin-bottom: 30px;
+}

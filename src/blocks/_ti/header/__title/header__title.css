@@ -1,0 +1,10 @@
+.header__title {
+  font-style: normal;
+  font-weight: 800;
+  font-size: 64px;
+  line-height: 1.4;
+
+  color: var(--theme-text-color);
+
+  max-width: 827px;
+}

@@ -1,0 +1,126 @@
+:root {
+  --back-color-intro: #b9b9b911;
+  --border-color-intro: #e7451ca1;
+}
+
+.introgrid {
+    padding: 30px 0;
+    background-color: var(--back-color-intro);
+}
+
+.introgrid__wrapper {
+  display: grid;
+  grid-template-columns: minmax(min-content, 500px) 1fr;
+  grid-template-rows: minmax(min-content, 100px) auto minmax(min-content, 100px);
+  grid-template-areas:
+      "header feat"
+      "desc feat"
+      "button feat";
+  column-gap: 30px;
+  margin: 50px auto 100px;
+    max-width: 1600px;
+}
+
+
+.introgrid__header {
+  position: relative;
+  grid-area: header;
+  margin: 0;
+  /*background-color: var(--back-color-intro);*/
+
+  font-size: 36px;
+
+  color: #f2f2f2;
+
+  text-align: left;
+  font-weight: 800;
+  padding: 30px;
+  box-sizing: border-box;
+  border-right: 2px solid var(--border-color-intro);
+}
+/*
+.introgrid__header::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: -150px;
+  width: 148px;
+  height: 2px;
+  background-color: var(--border-color-intro);
+}
+*/
+.introgrid__desc {
+  grid-area: desc;
+  margin: 0;
+ /* background-color: var(--back-color-intro);*/
+ border-right: 2px solid var(--border-color-intro);
+  color: #c4c4c4b6;
+  font-weight: 300;
+  font-size: 16px;
+
+  padding: 30px;
+
+}
+
+.introgrid__button {
+  grid-area: button;
+  /*background-color: var(--back-color-intro);*/
+  border-right: 2px solid var(--border-color-intro);
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  padding: 0 20px;
+}
+
+.introgrid__feat{
+  grid-area: feat;
+  max-width: 100%;
+  display: grid;
+  /*grid-template-columns: 1fr 1fr;*/
+  justify-items: center;
+
+}
+
+@media screen and (max-width: 1100px) {
+  .introgrid__wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+        "header"
+        "desc"
+        "feat"
+        "button";
+  }
+  .introgrid__wrapper {
+    max-width: 95%;
+    margin: 0 auto;
+  }
+  .introgrid__feat{
+    background-color: transparent;
+  }
+  .introgrid__header {
+    padding: 0;
+    border-right: none;
+  }
+  .introgrid__desc {
+    padding: 0;
+    border-right: none;
+  }
+  .introgrid__button {
+    padding: 0;
+    border-right: 0;
+  }
+
+}
+
+@media screen and (max-width: 768px) {
+  .introgrid__header {
+    font-size: 24px;
+  }
+  .introgrid__desc {
+    font-size: 12px;
+  }
+  .introgrid__button {
+    font-size: 16px;
+  }
+}

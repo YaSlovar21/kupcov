@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title><%= htmlWebpackPlugin.options.title %></title>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <link href="<%= canonicalURL %>/<%= htmlWebpackPlugin.options.filename %>"  rel="canonical" />
+  </head>
+
+  <body>
+    <%= require('html-loader!./inner-metrika.html').default %>
+    <div class="bg"></div>
+    <div class="page">
+      <header class="header">
+        <a href="/" class="header__logo"><img class="header__logo-img" src="<%=require('./images/header-logo-1.svg')%>" alt="Лого Термоблок"/></a>
+        <div class="header__right">
+          <%= require('html-loader!./insets/asides/inner-header.html').default %>
+        </div>
+      </header>
+
+      <main class="content">
+        <div class="flexburton__breadcrumbs company-description__breadcrubs ">
+          <a class="flexburton__breadcrumbs-link" href="/">Главная</a>
+          <a class="flexburton__breadcrumbs-link flexburton__breadcrumbs-link_type_here" href="/<%= htmlWebpackPlugin.options.filename %>">О компании</a>
+        </div>
+        <h1>О компании</h1>
+        <p>Компания ООО «Ютермо» основана в 2018 году. Основным направлением её деятельности является производство тепловых
+          пунктов заводской готовности (БТП). Помимо этого компания ООО «Ютермо» специализируется на подборе и реализации
+          пластинчатых теплообменников марки «Теплохит», производство которых располагается в г. Барнауле. Завод, где
+          изготавливаются теплообменники работает с 1995 года, и выпускает теплообменники не только для коммунальной энергетики,
+          но и для их использования на пищевых предприятиях.
+        </p>
+        <blockquote>
+          <h2>Руководитель компании - Спасский Владимир Васильевич:</h2>
+          <p>
+            Для меня собственное производство – это огромный шаг вперед. Собрав команду профессионалов и единомышленников, мы
+            создали уникальный продукт со своей концепцией. Нашим клиентам мы предоставляем комплексное решение от разработки
+            технической документации до отгрузки на объект. Приведу некоторые преимущества для наших клиентов при работе с нами:
+          </p>
+          <ul>
+            <li>Индивидуальный подход к подбору каждого БТП</li>
+            <li>Применение оборудования только проверенных производителей</li>
+            <li>Разработка тепломеханической части для проекта БТП</li>
+            <li>Маркировка всех проводов шкафа управления</li>
+            <li>Контроль качества сварных швов</li>
+            <li>Применение нержавеющей стали в контуре ГВС</li>
+            <li>Четкое соблюдение сроков производства и отгрузки готового БТП на объект</li>
+          </ul>
+        </blockquote>
+        <section class="map">
+          <h2 class="map__heading">География работы: от Калининграда до Чукотки</h2>
+          <div class="map__list-container">
+            <ul class="map__list">
+            </ul>
+            <!--Сюда встанут карточки партнеров-->
+            <div class="map__popup">
+              <span class="map__popup-close">&lt;-- Назад</span>
+              <ul class="map__popup-container"></ul>
+            </div>
+          </div>
+          <div class="map__partner"></div>
+        </section>
+      </main>
+      
+
+      <%= require('html-loader!./insets/asides/inner-footer.html').default %>
+
+      <!--Форма модального окна с картинкой-->
+      <div class="popup popup_darked popup-viewport">
+        <div class="popup__container">
+            <button class="popup__button-close link-beauty" type="button"></button>
+            <div class="popup__image-view popup__image-view_food">
+                <img class="popup__image popup__image_food" alt="картинка под загрузку" src="<%=require('./images/svg-elems/preloader.gif')%>">
+                <p class="popup__image-description popup__image-description_food"></p>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <!--Шаблон элемента партнера на карте-->
+    <template id="partner-item-template">
+      <li class="map__list-item">Чита</li>
+    </template>
+  </body>
+</html>

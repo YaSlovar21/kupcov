@@ -1,0 +1,26 @@
+.raschet-intro {
+  display: flex;
+  padding: 50px 0;
+  max-width: calc(100% - var(--aside-width)*2);
+  margin: 80px auto 0;
+  justify-content: space-between;
+}
+
+.raschet-intro__intro {
+  flex-basis: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.raschet-intro__viewdocs {
+  display: flex;
+}
+
+.raschet-intro__description {
+  max-width: 631px;
+  margin: 40px 0 60px;
+}
+.raschet-intro__link {
+  font-size: 24px;
+}

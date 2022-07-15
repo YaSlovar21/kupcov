@@ -1,0 +1,12 @@
+.card__image-container_darked {
+  position: relative;
+}
+
+.card__image-container_darked::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: var(--bg-color);
+  opacity: .4;
+}

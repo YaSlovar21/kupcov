@@ -1,0 +1,14 @@
+.annotation__intro {
+  max-width: 377px;
+  font-size: 18px;
+  line-height: 1.4;
+  color: #c4c4c4;
+  font-weight: 300;
+  margin: 12px 0 0;
+}
+
+@media screen and (max-width: 1024px) {
+  .annotation__intro {
+    font-size: 16px;
+  }
+}

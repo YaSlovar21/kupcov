@@ -1,0 +1,14 @@
+.table__text_page_btp {
+    color: #f2f2f2;
+    /*margin: 0;*/
+    line-height: 1.3;
+
+
+}
+
+@media screen and (max-width: 768px) {
+  .table__text_page_btp {
+    width: calc(100% - 20px);
+    margin: 20px auto;
+  }
+}

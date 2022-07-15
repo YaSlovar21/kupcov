@@ -1,0 +1,126 @@
+/*3D__SLIDER на главной!!!!!!!!!*/
+
+.product-types {
+    width: 100%;
+    margin-top: 70px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    overflow: hidden;
+    list-style: none;
+
+    display: flex;
+
+}
+
+.product-types__type {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+.product-types__image {
+    max-height: 80vw;
+    max-width: 80vw;
+    object-fit: contain;
+    object-position: center;
+    /*width="100%" height="450px"*/
+}
+
+@media screen and (max-height: 500px) {
+  .product-types__image {
+    max-height: 40vw;
+  }
+}
+
+.product-types__category-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.product-types__heading {
+    margin: 20px 0 10px;
+    font-size: 28px;
+
+    font-size: 24px;
+    font-weight: 600;
+    color: #f2f2f2;
+
+    opacity: 0.8;
+    text-align: left;
+    text-transform: uppercase;
+}
+
+
+
+@media screen and (max-width:768px) {
+    .product-types__heading {
+
+        font-size: 18px;
+        width: 100%;
+        max-width: 95%;
+        margin: 0 auto 15px;
+    }
+}
+
+.product-types__p {
+    color: #f2f2f2;
+    font-size: 18px;
+    line-height: 1.3;
+    margin: 0 0 10px;
+
+    font-weight: 400;
+
+}
+
+@media screen and (max-width:768px) {
+    .product-types__p {
+        font-size: 18px;
+        max-width: 95%;
+        margin: 0 auto 10px;
+        line-height: 1.5;
+        font-weight: 400;
+    }
+}
+
+@media screen and (max-width:768px) {
+  .product-types__p {
+      font-size: 14px;
+  }
+}
+
+.product-types__link{
+    margin-top: 10px;
+    z-index: 22;
+    text-decoration: none;
+    font-size: 18px;
+    color: #FF5E3A;
+    align-self: flex-start;
+}
+
+.product-types .swiper-button-next {
+    color: #FF5E3A;
+
+    top: 40%;
+    right: 8%;
+}
+
+.product-types .swiper-button-prev {
+    color: #FF5E3A;
+
+    top: 40%;
+    left: 8%;
+}
+
+@media screen and (max-width:768px) {
+    .product-types__link {
+        font-size: 16px;
+        text-align: center;
+        margin-left: 2.5%;
+        font-size: 12px;
+        font-weight: 600;
+    }
+}
+

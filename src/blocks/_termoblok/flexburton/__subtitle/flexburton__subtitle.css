@@ -1,0 +1,54 @@
+.flexburton__subtitle {
+    /*position: absolute;*/
+    line-height: 1.33;
+    font-size: 18px;
+    font-weight: normal;
+    width: 420px;
+    /*bottom: 30px;
+    left: 64px;*/
+
+    z-index: 1;
+    margin: 0;
+    /*margin-left: 64px;*/
+    color: #c4c4c4;
+  }
+
+  @media screen and (max-width: 1440px) {
+    .flexburton__subtitle{
+      font-size: 14px;
+      font-weight: 800;
+      letter-spacing: 0.015em;
+    }
+  }
+
+  @media screen and (max-width: 1024px) {
+    .flexburton__subtitle {
+
+      font-size: 16px;
+      width: 300px;
+      margin-left: 10px;
+    }
+  }
+
+
+  @media screen and (max-width: 768px) {
+    .flexburton__subtitle {
+      font-weight: 300;
+      font-size: 14px;
+      width: 270px;
+
+    }
+  }
+
+
+  @media screen and (max-width: 550px) {
+    .flexburton__subtitle {
+      /*position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;*/
+      font-size: 12px;
+      width: 100%;
+      visibility: hidden;
+    }
+  }

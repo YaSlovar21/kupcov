@@ -1,0 +1,221 @@
+.map {
+    max-width: 100%;
+    padding-top: 80px;
+    background-color: #2f2f2f;
+}
+
+
+
+.map__heading {
+    margin: 0 auto;
+    width: 650px;
+    text-align: center;
+    color: white;
+    font-size: 36px;
+}
+
+@media screen and (max-width: 768px) {
+    .map__heading {
+    font-size: 18px;
+    width: 100%;
+    }
+}
+
+.map__list {
+    position: relative;
+    background-image: url(../../images/map_up_footer.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    list-style-type: none;
+    /* display: flex; */
+    /* flex-direction: column; */
+    flex-wrap: wrap;
+    height: 390px;
+    justify-content: center;
+    /* align-items: center; */
+    margin: 52px auto 30px;
+    padding: 0;
+    display: grid;
+    /* grid-template-columns: repeat(auto-fit, 192px); */
+    grid-template-rows: repeat;
+    max-width: 80%;
+    grid-auto-flow: column;
+    grid-template-rows: repeat(auto-fill, 38px);
+    gap: 10px;
+}
+
+
+.map__popup {
+    content: '';
+    position: absolute;
+    display: flex;
+    align-items: center;
+    flex-direction: column-reverse;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(49, 49, 49, 0.7);
+    padding: 0 5px;
+    box-sizing: border-box;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.7s, visibility 0s linear 0.3s;
+    -webkit-transition: opacity 0.7s, visibility 0s linear 0.3s;
+    -moz-transition: opacity 0.7s, visibility 0s linear 0.3s;
+    -ms-transition: opacity 0.7s, visibility 0s linear 0.3s;
+    -o-transition: opacity 0.7s, visibility 0s linear 0.3s;
+}
+
+.map__popup-container {
+    width: auto;
+    margin: 0 auto;
+    text-align: center;
+    color: #f2f2f2;
+}
+
+.map__popup-container a {
+    color:#f2f2f2;
+}
+
+.map__popup-close {
+    font-size: 18px;
+    font-weight: 800;
+    color: #e7451c;
+    cursor: pointer;
+
+    position: relative;
+    z-index: 2;
+}
+.map__popup-close::after {
+   /* content: '';
+    position: absolute;
+    height: 4px;
+    width: 50%;
+    background-color: rgba(255, 255, 255, 0.9);
+
+    bottom: -1px;
+    right: -8px;
+    z-index: -1;*/
+}
+
+
+@media screen and (max-width:768px) {
+    .map__popup {
+        position: fixed;
+    }
+}
+
+.map__popup_opened {
+    display: flex;
+    opacity: 1;
+    visibility: visible;
+    transition-delay: 0s;
+}
+
+@media screen and (max-width: 1250px) {
+    .map__list {
+        width: 90%;
+        height: 500px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .map__list {
+        width: 730px;
+        height: 620px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .map__list {
+        width: 90%;
+        height: 900px;
+    }
+}
+
+@media screen and (max-width: 430px) {
+    .map__list {
+        width: 95%;
+        height: 650px;
+    }
+}
+
+
+.map__list-item {
+    box-sizing: border-box;
+    padding: 10px;
+
+    position: relative;
+
+    background-color: #f2f2f223;
+    color: white;
+
+    width: 192px;
+    cursor: pointer;
+    transition: opacity .2s ease-in;
+}
+
+.map__list-item_active {
+    background-color: #f2f2f217;
+    color: #e7451c;
+    border-left: 3px solid #e7451c;
+}
+
+@media screen and (max-width: 450px) {
+    .map__list-item {
+        width: 135px;
+        font-size: 14px;
+        padding: 6px;
+
+    }
+}
+
+.map__partner {
+    width: 100%;
+    height: 0;
+    color: white;
+
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+
+    background-color: rgba(245, 245, 245, 0.144);
+    position: relative;
+    overflow: hidden;
+}
+
+.map__partner::after {
+    content: '';
+    position: absolute;
+    left: -100px;
+    top:0;
+
+    width: 200px;
+    background-color: #e7451ca8;
+    height: 100%;
+    transform: skew(-40deg);
+}
+
+
+
+/*.map__list-item:focus {
+    outline: none;
+}
+
+
+
+.map__list-item:focus::before{
+    content: attr(data-html);
+    width: 120%;
+    height: auto;
+    white-space: pre;
+    position: absolute;
+    top:-100%;
+    left: -10%;
+    right: 0;
+    background-color: #2f2f2f;
+    z-index: 3;
+    animation: fadeInUp 1s;
+}*/

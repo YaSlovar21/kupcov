@@ -1,0 +1,8 @@
+.form__submit-button {
+  width: 100%;
+  background-color: var(--theme-main-color);
+  color: #1f1f1f;
+  padding: 20px 0;
+  max-width: calc(100% - 10px);
+  margin: 5px auto;
+}

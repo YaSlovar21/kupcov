@@ -1,0 +1,30 @@
+.header {
+    margin: 0 auto 0 10px;
+    padding: 20px 0;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    flex-wrap: no-wrap;
+    max-width: calc(99% - var(--aside-width));
+}
+
+.header_block {
+  display: block;
+  margin: 0;
+  padding: 0;
+  max-width: calc(100% - var(--aside-width));
+
+}
+
+.header__under-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__breadcrumbs {
+    padding: 15px 0;
+    position: relative;
+}
+

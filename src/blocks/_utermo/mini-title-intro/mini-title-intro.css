@@ -1,0 +1,32 @@
+.mini-title-intro {
+  color: var(--theme-text-color);
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 16px;
+  font-weight: 200;
+  margin: 0 20px 0 0;
+  max-width: 75px;
+}
+
+
+
+.mini-title-intro__span {
+  font-size: 48px;
+  font-weight: 700;
+}
+
+.mini-title-intro__span_ti {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 72px;
+  line-height: 1.4;
+  /* identical to box height */
+  color: #1940C1;
+}
+
+
+.mini-title-intro_wider {
+  max-width: 223px;
+}
+
+

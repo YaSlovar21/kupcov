@@ -1,0 +1,6 @@
+.nav__link {
+  color: var(--theme-blue-color);
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+}

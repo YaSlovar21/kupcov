@@ -1,0 +1,7 @@
+.card__header {
+  padding: var(--padding-inner);
+  border-bottom: 3px solid var(--card-container-bg-color);
+
+  display: flex;
+  justify-content: space-between;
+}

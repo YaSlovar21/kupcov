@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title><%= htmlWebpackPlugin.options.title %></title>
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link href="<%= canonicalURL %>/<%= htmlWebpackPlugin.options.filename %>"  rel="canonical" />
+</head>
+<body class="page">
+  <aside class="aside">
+    <%= require('html-loader!./insets/asides/in-aside.html').default %>
+  </aside>
+  <header class="header">
+    <a href="/" class="header__logo-link-container">
+      <img class="header__logo-img"  src="<%=require('./images/svg-elems/u-flogo.svg')%>" alt="Лого Ютермо">
+    </a>
+    <div class="header__nav-side">
+      <%= require('html-loader!./insets/asides/nav-page.html').default %>
+    </div>
+  </header>
+  <main class="content">
+    <section class="burton burton_nolp">
+      <div class="burton__content uwrapper">
+        <div class="burton__info">
+          <div class="burton__breadcrumbs">
+            <a class="burton__breadcrumbs-link" href="/">Главная</a>
+            <ul class="bem__list">
+              <li class="bem__list-item"><a class="burton__breadcrumbs-link" href="/production.html">Оборудование</a></li>
+              <li class="bem__list-item"><a class="burton__breadcrumbs-link burton__breadcrumbs-link_type_here">Пластинчатые теплообменники</a></li>
+            </ul>
+          </div>
+          <h1 class="burton__title burton__title_nolp section-title"><%= htmlWebpackPlugin.options.heading %></h1>
+          <p class="burton__subtitle">Каталоги пластинчатых теплообменников, блочных тепловых пунктов.</p>
+        </div>
+      </div>
+    </section>
+    <div class="uwrapper" style="display: flex; margin-top: 50px;">
+      <div style="flex-basis: 1020px;">
+        <%= require('html-loader!./insets/docs/'+ nameId+ '.html').default %>
+      </div>
+      <div style="flex-basis: 700px;">
+        <ul class="listchoices listchoices_column">
+          <li class="listchoices__list-item listchoices__list-item_column <%= (nameId==='opros') ? 'listchoices__list-item_active' : '' %>">Опросные листы</li>
+          <li class="listchoices__list-item listchoices__list-item_column <%= (nameId==='catalogs') ? 'listchoices__list-item_active' : '' %>">Каталоги оборудования</li>
+          <li class="listchoices__list-item listchoices__list-item_column <%= (nameId==='sert') ? 'listchoices__list-item_active' : '' %>">Сертификаты</li>
+        </ul>
+      </div>
+    </div>
+</main>
+
+<!--FOOTER-->
+<%= require('html-loader!./insets/asides/inner-footer.html').default %>
+<!--Форма расчёта теплообменника  -->
+
+<!--Шаблон элемента партнера на карте-->
+<template id="partner-item-template">
+  <li class="map__list-item" data-html="<b>ООО «Интерсервис»</b><br> Тел.: 8-914-130-30-30<br>">Чита</li>
+</template>
+<!--Шаблон карточки проекта-->
+<template id="project-template">
+  <div class="projects__item" >
+    <img  class="projects__image" alt="Здесь будет фото проекта с теплообменником"  src="<%=require('./images/svg-elems/preloader.gif')%>">
+    <p class="projects__item-description">Кондитерский комбинат «Кубань», г. Тимашевск, Краснодарский край</p>
+  </div>
+</template>
+<!--Шаблон карточки проекта в горизонтальном виде-->
+<template id="project-horizontal-template">
+  <div class="projects__item projects__item_horizontal">
+    <img class="projects__image projects__image_horizontal" src="<%=require('./images/ufa_zaton.png')%>">
+    <div class="column-description">
+      <h3 class="projects__item-description column-description__title">Котельная в квартале 34, г. Уфа, жилой район «Затон-Восточный»</h3>
+      <ul class="bem__list column-description__list">
+        <li>Темлообменник: <span class="span_color_orange span-bold projects__to-model">ТИ52-87</span></li>
+        <li>Мощность: <span class="span-bold projects__to-q">5,6 Гкал/час</span></li>
+        <li>Назначение: <span class="span-bold projects__to-naznach">ГВС</span></li>
+      </ul>
+      <a class="column-description__link link-beauty" href="#">Подробнее &#8594; </a>
+    </div>
+  </div>
+</template>
+
+<!--Форма модального окна с картинкой-->
+<div class="popup popup_darked popup-viewport">
+</div>
+
+</body>
+</html>

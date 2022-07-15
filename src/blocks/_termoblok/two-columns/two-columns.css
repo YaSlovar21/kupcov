@@ -1,0 +1,96 @@
+@import url(./__brief/two-columns__brief.css);
+@import url(./__main-text/two-columns__main-text.css);
+@import url(./__paragraph/two-columns__paragraph.css);
+@import url(./__span-accent/two-columns__span-accent.css);
+@import url(./__image/two-columns__image.css);
+
+@import url(./__brief/_page_service/two-columns__brief_page_service.css);
+@import url(./__brief/_flexed/two-columns__brief_flexed.css);
+
+.two-columns {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    /*background-color: white;*/
+    position: relative;
+
+
+    /*animation: min40 .4s linear;*/
+  }
+
+@media screen and (max-width: 768px) {
+  .two-columns {
+    padding-bottom: 60px;
+    padding-top: 40px;
+  }
+  .two-columns_food {
+    padding: 0;
+    bottom: 8px;
+  }
+  .two-columns_plastdetail {
+    padding-top: 60px;
+  }
+}
+
+@media screen and (max-width:400px) {
+  .two-columns_food {
+    bottom: 16px;
+  }
+}
+
+
+
+.two-columns_wide {
+  width: 90%;
+}
+.two-columns_shadow {
+  box-shadow: 0px 2px #ff5e3a5e;
+  border-top: 2px solid #FF5E3A5e;
+  padding-top: 20px;
+}
+
+.two-columns_type_underheader {
+
+  padding: 30px;
+  /*background-color: #2f2f2f5d;*/
+  margin-top: 40px;
+  margin-bottom: 40px;
+  width: 100%;
+}
+
+@media screen and (max-width: 1440px) {
+  .two-columns {
+    width: 95%;
+  }
+}
+@media screen and (max-width: 769px) {
+  .two-columns {
+    flex-direction: column;
+  }
+}
+
+@keyframes min40
+{
+  0% {
+    top: 0;
+    opacity: 0.5;
+  }
+  100% {
+    top: 40px
+  }
+}
+
+
+.two-columns_page_service {
+  width: 100%;
+  top: 0;
+}
+
+@media screen and (max-width: 1280px) {
+  .two-columns_page_service {
+    padding: 20px 0;
+  }
+}

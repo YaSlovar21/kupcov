@@ -1,0 +1,128 @@
+.bsz-new {
+  background-color: #2f2f2f49;
+
+  margin-top: 50px;
+
+}
+.bsz-new__content {
+
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+
+}
+
+@media screen and (max-width: 768px) {
+  .bsz-new__content {
+    flex-direction: column-reverse;
+    align-items: center;
+    padding-top: 30px;
+  }
+}
+
+.bsz-new__intro {
+  max-width: 95%;
+}
+
+@media screen and (max-width: 768px) {
+ .bsz-new__intro {
+   margin: 0 auto;
+ }
+}
+
+.bsz-new__img-container {
+  flex-basis: 40%;
+  background-image: url(../../images/place_new.png);
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: top;
+  flex-shrink: 0;
+  position: relative;
+  bottom: 50px;
+  background-size: cover;
+  max-height: 220px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.bsz-new__img-container::after {
+  position: absolute;
+  content: '';
+  top:0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #1f1f1f;
+  opacity: .5;
+  transition: opacity .4s ease-in;
+}
+
+.bsz-new__img-container:hover::after {
+  opacity: .8;
+}
+
+@media screen and (max-width: 768px) {
+  .bsz-new__img-container {
+    flex-basis: 150px;
+    bottom: 0;
+    max-width: 95%;
+    object-fit: cover;
+    object-position: center;
+  }
+}
+
+
+.bsz-new__img {
+  min-width: 0;
+  min-height: 0;
+  position: relative;
+  bottom: 50px;
+  width: 100%;
+}
+
+.bsz-new__logo {
+  width: 88px;
+  position: relative;
+  z-index: 2;
+}
+
+
+@media screen and (max-width: 768px) {
+  .bsz-new__logo {
+    width: 60px;
+  }
+}
+
+.bsz-new__link-blank {
+  text-decoration: none;
+  color: rgb(0, 147, 221);
+  font-weight: 700;
+  font-size: 18px;
+  position: relative;
+  z-index: 2;
+}
+
+@media screen and (max-width: 768px) {
+  .bsz-new__link-blank {
+    font-size: 14px;
+  }
+}
+
+
+.bsz-new__text {
+  margin: 30px 0;
+  font-size: 22px;
+  line-height: 1.4;
+  color: #C9C9C9;
+  max-width: 600px;
+
+}
+
+@media screen and (max-width: 1024px) {
+  .bsz-new__text{
+    font-size: var(--cell-heading-font);
+  }
+}
+
+

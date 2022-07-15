@@ -1,0 +1,12 @@
+.nav__menu-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  flex-wrap: wrap;
+
+  width: 100%;
+}

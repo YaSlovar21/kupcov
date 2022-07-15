@@ -1,0 +1,57 @@
+.timodels {
+  justify-content:baseline;
+  flex-basis: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 89px);
+  grid-template-rows: repeat(3, 67px);
+  gap: 30px 60px;
+  grid-auto-flow: column;
+  /*ul*/
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+.timodels__link {
+  text-decoration: none;
+}
+
+
+
+.timodels__ptotitle {
+  margin: 0;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 28px;
+
+  color: #E4E4E4;
+  transition: color 0.4s linear;
+}
+
+.timodels__link:hover .timodels__ptotitle {
+  color: #ff5e3a;
+}
+
+.timodels__ptodu {
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.3;
+
+  color: #939393;
+
+}
+
+@media screen and (max-width: 768px) {
+  .timodels {
+    grid-template-columns: repeat(4, 65px);
+    gap: 20px 17px;
+  }
+  .timodels__ptotitle {
+    font-size: 18px;
+    font-weight: 600;
+  }
+  .timodels__ptodu {
+    font-size: 10px;
+  }
+}

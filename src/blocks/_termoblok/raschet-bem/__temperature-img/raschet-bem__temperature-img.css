@@ -1,0 +1,7 @@
+.raschet-bem__temperature-img {
+  flex-basis: 172px;
+  object-fit: contain;
+  /*height: 100%;*/
+  width: 100%;
+  min-height: 0;
+}

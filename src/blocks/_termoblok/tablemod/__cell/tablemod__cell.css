@@ -1,0 +1,56 @@
+.tablemod__cell {
+    width: 282px;
+    position: relative;
+
+  }
+
+.tablemod__cell:nth-of-type(1)::before {
+    content: '1';
+  }
+  .tablemod__cell:nth-of-type(2)::before {
+    content: '2';
+  }
+  .tablemod__cell:nth-of-type(3)::before {
+    content: '3';
+  }
+  .tablemod__cell:nth-of-type(4)::before {
+    content: '4';
+  }
+  .tablemod__cell:nth-of-type(5)::before {
+    content: '5';
+  }
+  .tablemod__cell:nth-of-type(6)::before {
+    content: '6';
+  }
+
+  .tablemod__cell::before {
+    content: '';
+    position: absolute;
+    left: -10px;
+    top: -20px;
+    font-weight: 600;
+    font-size: 110px;
+    line-height: 1;
+    text-align: center;
+
+    color: rgba(0, 147, 221, 0.22);
+    /*color: #ff5e3a25;*/
+  }
+  @media screen and (max-width:1024px) {
+    .tablemod__cell {
+      margin-top: 20px;
+    }
+  }
+  @media screen and (max-width:500px) {
+    .tablemod__cell {
+      width: 141px;
+      margin-bottom: 8px;
+      margin-top: 30px;
+    }
+    .tablemod__cell::before {
+      font-size: 60px;
+      font-weight: 600;
+      left: 0;
+      top: -10px;
+    }
+  }

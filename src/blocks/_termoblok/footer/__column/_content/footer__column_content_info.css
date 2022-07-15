@@ -1,0 +1,10 @@
+.footer__column_content_info {
+    color: white;
+    margin-right: 30px;
+}
+
+@media screen and (max-width: 1024px) {
+  .footer__column_content_info {
+    margin-right: 0;
+  }
+}

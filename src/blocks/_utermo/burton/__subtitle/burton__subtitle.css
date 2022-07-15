@@ -1,0 +1,7 @@
+.burton__subtitle {
+  position: relative;
+  max-width: 390px;
+  color: var(--theme-white-color);
+  position:relative;
+  z-index: 3;
+}

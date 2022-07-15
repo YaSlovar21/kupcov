@@ -1,0 +1,52 @@
+@import url(./__heading/food-grid__heading.css);
+@import url(./__comment/food-grid__comment.css);
+@import url(./__description/food-grid__description.css);
+@import url(./__item/food-grid__item.css);
+@import url(./__image/food-grid__image.css);
+
+.food-grid {
+
+    width: 80%;
+    margin: 20px auto;
+
+
+    display: grid;
+    grid-template-columns: repeat(28, 1fr);
+    /*grid-template-rows: repeat(28, calc(100% / 12));*/
+    /*grid-template-columns: repeat(28, 50px);
+    grid-template-rows: repeat(25, 50px);*/
+
+    grid-template-rows: repeat(25, 40px);
+
+    /*min-height: 840px;*/
+
+    justify-items: stretch;
+    align-content: center;
+}
+
+
+@media screen and (max-width: 1550px) {
+  .food-grid {
+    width: 95%;
+  }
+}
+@media screen and (max-width:1100px) {
+    .food-grid {
+        width: 97vw;
+        margin: 40px auto;
+        grid-template-columns: repeat(28, 1fr);
+        grid-template-rows: repeat(25, calc(97vw / 28));
+
+    }
+}
+
+@media screen and (max-width: 768px) {
+  .food-grid {
+    margin: 0 auto;
+  }
+}
+
+
+
+
+

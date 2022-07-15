@@ -1,0 +1,35 @@
+
+@import url(../styles/normalize.css);
+@import url(../blocks/root/root.css);
+
+@import url(../vendor/fonts/fonts.css);
+/*Спаны*/
+@import url(../blocks/span/span.css);
+
+@import url(../blocks/nav/nav.css);
+@import url(../blocks/flexburton/__breadcrumbs/flexburton__breadcrumbs.css);
+@import url(../blocks/flexburton/__breadcrumbs-link/flexburton__breadcrumbs-link.css);
+
+@import url(../blocks/header/header.css);
+@import url(../blocks/header/__title/header__title.css);
+@import url(../blocks/header/__link/header__link.css);
+@import url(../blocks/header/__lang-link/header__lang-link.css);
+@import url(../blocks/header/__lang-link/_underlined/header__lang-link_underlined.css);
+@import url(../blocks/header/__lang-column/header__lang-column.css);
+@import url(../blocks/header/__contacts/header__contacts.css);
+
+
+
+/*КАРТОЧКА КАТАЛОГА СТАТЕЙ*/
+@import url(../blocks/info-card/info-card.css);
+@import url(../blocks/infocards/infocards.css);
+
+
+
+@import url(../blocks/footer/footer.css);
+
+@import url(../blocks/button-bem/button-bem.css);
+
+@import url(../blocks/section-loading/section-loading.css);
+@import url(../blocks/sections/blog-grid/blog-grid.css);
+@import url(../blocks/filter-form/filter-form.css);

@@ -1,0 +1,42 @@
+.flexburton__title {
+    /*position: absolute;*/
+    line-height: 1.2;
+    font-size: 76px;
+    font-weight: bold;
+    /*margin-left: 64px;*/
+    z-index: 1;
+    color: #e0e0e0;
+    max-width: 700px;
+    margin: 0;
+  }
+
+  @media screen and (max-width: 1440px) {
+    .flexburton__title {
+
+      font-size: 62px;
+      margin-left: 10px;
+    }
+  }
+
+  @media screen and (max-width: 1023px) {
+    .flexburton__title {
+
+      font-size: 48px;
+      margin-left: 10px;
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .flexburton__title {
+      font-size: 36px;
+      margin-left: 10px;
+    }
+  }
+
+  @media screen and (max-width: 550px) {
+    .flexburton__title {
+      font-size: 20px;
+      margin-left: 0px;
+    }
+  }
+
+

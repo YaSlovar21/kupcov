@@ -1,0 +1,5 @@
+.lp-btp-schemes {
+  margin: 0 auto;
+  max-width: calc(100% - var(--aside-width)*2);
+}
+

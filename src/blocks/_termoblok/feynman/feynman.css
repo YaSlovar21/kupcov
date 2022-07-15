@@ -1,0 +1,55 @@
+.feynman {
+    position: relative;
+    padding-top: 152px;
+    min-height: 577px;
+    /*background-position:;*/
+    background-size: 682px 455px;
+    background: url(../../images/feynman8.png) no-repeat bottom left;
+    /*border-bottom: 2px solid black;*/
+  }
+
+.feynman_bg_orange {
+    background: url(../../images/feynman7.png) no-repeat bottom left;
+  }
+
+.feynman_size_50 {
+  padding-top: 0;
+  display: flex; 
+  flex-direction: column; 
+  justify-content:flex-start;
+  align-items: center;
+  max-width: 50%;
+  height: 100%;
+  /*background-size: 582px 355px;*/
+}
+
+
+
+  @media screen and (max-width:1024px) {
+    .feynman {
+    background-size: 450px;
+    }
+  }
+
+  @media screen and (max-width:600px) {
+    .feynman {
+    background-size: 373px;
+    }
+  }
+
+.feynman__after {
+  transition: all 1s linear;
+
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  height: 2px;
+  width: calc(100% - 682px);
+  background: linear-gradient(90.05deg, rgba(196, 196, 196, 0) 0.03%, #74686573 71.01%, rgba(196, 196, 196, 0) 99.51%);
+  /*animation: fadeInOutMy 3s linear;*/
+}
+
+
+
+  
+

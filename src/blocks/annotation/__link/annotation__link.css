@@ -1,0 +1,8 @@
+.annotation__link {
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 600;
+  color: #c4c4c4;
+  opacity: 0.8;
+  transition: color .5s ease-in-out;
+}

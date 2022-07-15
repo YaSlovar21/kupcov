@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title><%= htmlWebpackPlugin.options.title %></title>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <link href="https://www.termoblok.ru/<%= htmlWebpackPlugin.options.filename %>"  rel="canonical" />
+  </head>
+  <body class="page">
+    <aside class="aside">
+      <%= require('html-loader!./insets/asides/in-aside.html').default %>
+    </aside>
+      <header class="header">
+        <a href="/" class="header__logo-link-container">
+          <img class="header__logo-img"  src="<%=require('./images/svg-elems/u-flogo.svg')%>" alt="Лого Ютермо">
+        </a>
+        <div class="header__nav-side">
+          <%= require('html-loader!./insets/asides/nav-page.html').default %>
+        </div>
+      </header>
+      <p style="color: #f2f2f2;"><%= compilation.assets.source %></p>
+      <main class="content">
+        <div class="flexburton__breadcrumbs flexburton__breadcrumbs_outside">
+          <a class="flexburton__breadcrumbs-link" href="/">Главная</a>
+          <a class="flexburton__breadcrumbs-link" href="/production.html">Продукция</a>
+          <a class="flexburton__breadcrumbs-link" href="/plastinchatye-teploobmenniki.html">Пластинчатые теплообменники</a>
+          <a class="flexburton__breadcrumbs-link flexburton__breadcrumbs-link_type_here" href="/<%= htmlWebpackPlugin.options.filename %>"><%=heading%></a>
+        </div>
+
+        <section class="to-info-secret">
+          <div class="to-info-secret__content heatex">
+            <div class="heatex__info">
+              <h2 class="heatex__title heatex__title_place_popup">ТИ077</h2>
+              <p class="heatex__paragraph">ТИ077 – имеет широкую гамму подключения подтрубков: Ду20, Ду25, Ду32, Ду40. Конструкция пластины позволяет формировать 12 разновидностей каналов для прохода различных жидкостей, что позволяет изменять гидравлическое сопротивление и теплопередачу, при этом сопротивление греющей и нагревающей жидкости может быть разное. </p>
+              <img src="<%=require('./images/svg-elems/buto_3d.svg')%>" style="max-width: 298px;">
+            </div>
+            <img class="heatex__image heatex__image_place_popup" src="<%=require('./images/descTO/ti077.png')%>">
+          </div>
+        </section>
+
+        <section class="khan khan_page_heatex" style="background-color: #252525; overflow: hidden; max-width: calc(100% - var(--aside-width)); margin-right: auto; padding: 50px 0;">
+          <div class="khan__container" style=" max-width: calc(100% - var(--aside-width)); margin-left: auto;">
+            <h2 class="section-title section-title_gray">Чертеж пластинчатого теплообменника <%= heading%></h2>
+            <!--<p class="khan__quote khan__quote_page_heatex">
+              Чертеж пластинчатого теплообменника <%= heading%> поможет разобраться в типоразмерах нашего модельного ряда, который отличается от других производителей.
+              При необходимости в 3D моделях определенного формата, Вы всегда можете обратиться к нашим инженерам.
+              Также размеры теплообменника указываются в документе "Технические данные", который идет вместе с коммерческим предложением (расчётом теплообменного аппарата).
+            </p>-->
+            <div style="display: flex; justify-content: space-between;">
+              <div class="khan__book-container khan__book-container_page_heatex" style="flex-basis: 950px;">
+                <img style="width: 100%" src="<%=require('./images/drawings/'+ drawalias)%>" class="khan__book-pic khan__book-pic_page_heatex" alt="Чертеж пластинчатого теплообменника <%= heading%>"/>
+              </div>
+              <div style="flex-basis: 350px;">
+                <a class="bem__link bem__link_download bem__link_bgright" href="#">Скачать опросный лист</a>
+                <a class="bem__link bem__link_download bem__link_bgright" style="margin-top:10px;" href="#">Скачать каталог</a>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <%= require('html-loader!./insets/asides/inner-footer.html').default %>
+
+  </body>
+</html>

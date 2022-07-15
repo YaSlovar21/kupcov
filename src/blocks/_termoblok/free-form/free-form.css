@@ -1,0 +1,15 @@
+.free-form {
+  display: flex;
+  width: calc(100% - 40px);
+  margin: 0 auto;
+  flex-basis: 223px;
+  margin-bottom: 50px;
+}
+
+@media screen and (max-width: 768px) {
+  .free-form {
+    flex-direction: column;
+    max-height: 80vh;
+    margin-bottom: 10px;
+  }
+}

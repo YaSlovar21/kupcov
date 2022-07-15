@@ -1,0 +1,94 @@
+/*Принцип работы пластинчатого теплообменника со страницы пл. пто.*/
+
+.princip {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    padding-bottom: 150px;
+    padding-top: 50px;
+}
+
+.princip__description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 700px;
+    flex: 1 0 70%;
+}
+
+.princip__heading {
+    width: 636px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 1.22;
+    text-align: center;
+    color: #C0C0C0;
+}
+
+@media screen and (max-width:768px) {
+    .princip__heading {
+        width: 100%;
+        font-size: 24px;
+    }
+}
+
+.princip__image {
+    transform: skewY(15deg);
+    margin-right: 70px;
+
+    flex: 0 1 280px;
+}
+
+@media screen and (min-width: 1440px) {
+  .princip__image {
+    margin-right: 210px;
+  }
+}
+
+.princip__image-svg {
+    width: 100%;
+    height: auto;
+}
+
+
+.princip__text {
+    font-size: 18px;
+    line-height: 1.5;
+    color: #E7E7E7;
+    text-align: center;
+}
+
+@media screen and (max-width:1024px) {
+  .princip {
+    flex-direction: column-reverse;
+    max-width: calc(100% - 20px);
+  }
+  .princip__image {
+    margin: 0;
+  }
+    .princip__text {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+  .princip__heading {
+    font-size: 18px;
+    font-weight: 700;
+    text-align: right;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .princip__text {
+    font-size: 14px;
+    letter-spacing: .05em;
+    text-align: left;
+    text-indent: 2.5em;
+  }
+}

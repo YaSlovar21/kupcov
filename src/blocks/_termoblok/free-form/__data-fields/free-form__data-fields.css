@@ -1,0 +1,12 @@
+.free-form__data-fields{
+  flex-basis: 384px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+@media screen and (max-width: 768px) {
+  .free-form__data-fields {
+    flex-basis: 180px;
+  }
+}

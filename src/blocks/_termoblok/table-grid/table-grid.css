@@ -1,0 +1,45 @@
+@import url(./__last-food/table-grid__last-food.css);
+
+
+.table-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  width: 100%;
+  margin: 30px 0;
+  padding: 0;
+  list-style-type: none;
+
+  color: #f2f2f2;
+}
+
+@media screen and (max-width: 768px) {
+  .table-grid {
+    column-gap: 20px
+  }
+}
+.table-grid_food {
+  margin-bottom: 0;
+}
+
+.table-grid__list-item {
+
+}
+
+.table-grid__list-item:hover {
+  background-color: #2f2f2f;
+}
+
+.table-grid__heading {
+  font-size: var(--cell-heading-font);
+  font-weight: 700;
+  line-height: 1.15;
+  margin: 0;
+}
+
+.table-grid__description {
+  font-size: var(--cell-description-font);
+  font-weight: 400;
+  line-height: 1.25;
+  margin: 20px 0 0;
+}

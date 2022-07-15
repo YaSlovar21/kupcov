@@ -1,0 +1,11 @@
+.popup__image-description_food {
+  font-size: 14px;
+  margin: 20px auto 0;
+  max-width: 95%;
+}
+
+@media screen and (max-width: 768px) {
+  .popup__image-description_food {
+    font-size: 12px;
+  }
+}

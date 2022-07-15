@@ -1,0 +1,8 @@
+.bem__paragraph_readable{
+  max-width: 1100px;
+  margin-bottom: 40px;
+}
+
+.bem__paragraph_readable:last-of-type {
+  margin-bottom: 0;
+}

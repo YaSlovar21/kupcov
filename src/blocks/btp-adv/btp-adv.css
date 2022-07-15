@@ -1,0 +1,157 @@
+.btp-adv {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    margin: 80px auto;
+}
+
+@media screen and (max-width: 768px) {
+  .btp-adv {
+    margin: 20px auto 30px;
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  .btp-adv {
+    width: 95%;
+  }
+}
+
+.btp-adv__link {
+    text-decoration: none;
+    color: #e7451c;
+    line-height: 1.4;
+    font-size: 28px;
+    font-weight: 700;
+   
+}
+
+@media screen and (max-width:1024px) {
+    .btp-adv__link {
+        font-size:  24px;
+    }
+}
+
+@media screen and (max-width:768px) {
+  .btp-adv__link {
+      font-size:  14px;
+      font-weight: 800;
+  }
+}
+
+.btp-adv__feats {
+    position: relative;
+    flex: 0 1 840px;
+}
+
+@media screen and (max-width: 1440px) {
+  .btp-adv__feats {
+    flex: 0 1 680px;
+  }
+}
+
+
+.btp-adv__image {
+    max-width: 100%;
+    height: auto;
+}
+
+.btp-adv__plus {
+    position: absolute;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+}
+
+.btp-adv__plus:hover .btp-adv__feat {
+    transform: translateY(-50px);
+    opacity: 1;
+    visibility: visible;
+}
+
+.btp-adv__plus:hover::before {
+    color: #f2f2f2;
+}
+
+.btp-adv__plus::before {
+    content: '\E13C';
+    color: #FF5E3A;
+    font-size: 28px;
+    font-weight: 600;
+
+    transition: all .4s ease-out;
+    transform-origin: center;
+    cursor: pointer;
+    animation: fadeIn 4s linear;
+}
+
+@media screen and (max-width: 768px) {
+  .btp-adv__plus:before {
+    font-size: 14px;
+  }
+}
+
+.btp-adv__plus:nth-child(2) {
+    top: 50%;
+    right: 30%;
+}
+
+.btp-adv__plus:nth-child(3) {
+    top: 0%;
+    right: 0%;
+}
+.btp-adv__plus:nth-child(4) {
+    left: 10%;
+    bottom: 10%;
+}
+
+
+.btp-adv__feat {
+    position: absolute;
+    text-align: center;
+    margin: 0;
+    width: 200px;
+    color: #f2f2f2;
+   opacity: 0;
+   visibility: hidden;
+   animation: fadeInOut 1.2s linear;
+   animation-iteration-count: 1;
+   transition: all 0.4s linear;
+   background-color: #2f2f2fc4;
+   padding: 15px;
+}
+
+@media screen and (max-width: 768px) {
+  .btp-adv__feat {
+    font-size: 14px;
+    width: 150px;
+  }
+}
+
+.btp-adv__feat:nth-child(2) {
+    top: 50%;
+    right: 20%;
+}
+
+.btp-adv__feat:nth-child(3) {
+    top: 0%;
+    right: 0%;
+}
+.btp-adv__feat:nth-child(4) {
+    left: 0;
+    bottom: 0;
+}
+
+
+@keyframes fadeInOut {
+    from {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}

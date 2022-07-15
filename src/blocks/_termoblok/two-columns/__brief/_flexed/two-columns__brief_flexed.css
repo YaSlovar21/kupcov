@@ -1,0 +1,55 @@
+.two-columns__brief_flexed {
+  width: auto;
+  flex-basis: 30%;
+
+
+
+  flex-grow: 1;
+  font-weight: 600;
+  font-size: 22px;
+
+  margin-right: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .two-columns__brief_flexed {
+    font-size: 14px;
+  }
+}
+
+.two-columns__brief_column {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/*в том случае, если в брифе и заголовок и ссылка*/
+.two-columns__brief-title {
+  font-weight: 600;
+  font-size: 22px;
+  margin: 0;
+}
+
+.two-columns__brief-title_page_service {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 134.5%;
+}
+
+@media screen and (max-width: 768px) {
+  .two-columns__brief-title {
+    font-size: 14px;
+  }
+}
+
+.two-columns__brief-link{
+  color: #f2f2f2;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 768px) {
+  .two-columns__brief-link {
+    display: none;
+  }
+}

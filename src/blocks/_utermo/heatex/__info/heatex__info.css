@@ -1,0 +1,7 @@
+.heatex__info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  flex-basis: 761px;
+}

@@ -1,0 +1,7 @@
+.card__footer {
+  padding: var(--padding-inner);
+  border-top: 3px solid var(--card-container-bg-color);
+
+  display: flex;
+  justify-content: space-between;
+}

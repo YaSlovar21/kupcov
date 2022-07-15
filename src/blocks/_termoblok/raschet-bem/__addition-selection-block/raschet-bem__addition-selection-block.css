@@ -1,0 +1,21 @@
+.raschet-bem__addition-selection-block {
+  flex-basis: 187px;
+  align-items: stretch;
+  margin-right: 30px;
+}
+
+.raschet-bem__addition-selection-block:nth-of-type(2) {
+  flex-basis: 199px;
+  margin-right: 0px;
+}
+
+@media screen and (max-width: 768px) {
+  .raschet-bem__addition-selection-block {
+    flex-basis: 45%;
+    margin-right: 5px;
+  }
+  .raschet-bem__addition-selection-block:nth-of-type(2) {
+    flex-basis: 50%;
+  }
+}
+

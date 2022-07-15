@@ -1,0 +1,15 @@
+.raschet-bem__title {
+  color: #f2f2f2;
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 1.2;
+  margin: 20px 0 0 20px;
+  flex-basis: 74px;
+}
+
+@media screen and (max-width: 768px) {
+  .raschet-bem__title{
+    font-size: 18px;
+    margin: 10px ;
+  }
+}

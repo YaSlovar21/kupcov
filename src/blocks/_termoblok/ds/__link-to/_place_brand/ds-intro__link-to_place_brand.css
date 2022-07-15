@@ -1,0 +1,16 @@
+.ds-intro__link-to_place_brand {
+  display: none;
+  font-size: 10px;
+}
+
+
+@media screen and (max-width: 1024px) {
+  .ds-intro__link-to_place_brand {
+    background-color: #1f1f1f;
+    display: block;
+    flex-basis: 33%;
+    text-align: center;
+    padding: 5px;
+
+  }
+}

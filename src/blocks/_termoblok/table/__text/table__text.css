@@ -1,0 +1,14 @@
+.table__text {
+    line-height: 1.25;
+    font-size: var(--cell-description-font);
+    font-weight: normal;
+    margin: 20px 0 0;
+  }
+
+  .table__text_align_right {
+    text-align: right;
+  }
+
+  .table__text_hidden {
+    display: none;
+  }

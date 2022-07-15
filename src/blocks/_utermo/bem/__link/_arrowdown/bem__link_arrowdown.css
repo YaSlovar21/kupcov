@@ -1,0 +1,27 @@
+.bem__link_arrowdown {
+  transition: all .3s linear;
+}
+
+.bem__link_arrowdown  {
+  transition: all .3s linear;
+  display: flex;
+  align-items: center;
+}
+
+.bem__link_arrowdown::after {
+  content: '';
+  width: .7em;
+  height: .7em;
+  background-image: url(../../../../../images/svg-elems/i-submenu.svg);
+  background-size: contain;
+  margin-left: .3em;
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: transform .3s ease-in;
+
+}
+
+.bem__link_arrowdown:hover::after {
+  color: var(--theme-main-color);
+  transform: rotateX(180deg)
+}

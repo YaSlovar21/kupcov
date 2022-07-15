@@ -1,0 +1,12 @@
+.burton__info_page_lppto::before {
+  content: '';
+  position: absolute;
+  width: 150%;
+  height: 160px;
+  bottom: 0px;
+  left: -7%;
+  z-index: 0;
+  background-image: url(../../../../../images/svg-elems/burton_info.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+}

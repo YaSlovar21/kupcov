@@ -1,0 +1,5 @@
+.two-columns {
+  display: flex;
+  max-width: calc(100% - var(--aside-width)*2);
+  margin:  0 auto;
+}

@@ -1,0 +1,25 @@
+.blog-grid__title {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 1.36;
+  letter-spacing: -0.015em;
+
+  color: var(--theme-white-color);
+}
+
+.blog-grid__title_m {
+  font-size: 20px;
+}
+
+.blog-grid__title_l {
+
+}
+
+.blog-grid__title_xl {
+  font-size: 36px;
+}
+
+.blog-grid__title_black {
+  color: var(--bg-color);
+}

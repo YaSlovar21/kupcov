@@ -1,0 +1,20 @@
+.quote {
+  box-sizing: border-box;
+  border-left: 5px solid var(--theme-main-color);
+  padding-left: 40px;
+}
+
+.quote__author {
+  margin-bottom: 1em;
+  font-size: 16px;
+}
+
+.quote__text {
+  font-size: 32px;
+  margin: 30px 0;
+  max-width: 1000px;
+}
+
+.quote__arguments {
+  font-size: 24px;
+}

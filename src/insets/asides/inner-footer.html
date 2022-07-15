@@ -1,0 +1,203 @@
+<section class="upf">
+  <div class="upf__intro">
+    <h2 class="upf__title">Напишите нам!</h2>
+    <p class="upf__slogan">Инженер по расчёту и подбору теплообменного оборудования ответит на любые Ваши вопросы.</p>
+    <ul class="upf__contact upf__contact_tels">
+      <li>8 800 700-09-58</li>
+      <li>8 (905) 406-75-76</li>
+    </ul>
+    <ul class="upf__contact upf__contact_email">
+      <li>info<span class="span-brand-color">@info.ru</span></li>
+    </ul>
+  </div>
+  <div class="upf__form">
+    <form method="post" action="#" id="formFreePopup" name="formFreePopup" novalidate>
+      <!--R-->
+      <label class="form__field">
+        <!--<span class="form__label-title">Как к Вам можно обращаться?</span>-->
+        <input data-alias="Имя или название компании" placeholder="Как к Вам обращаться?" type="text" name="name-free" id="name-free-input" class="form__input" required minlength="1">
+        <span class="form__input-error name-free-input-error">123</span>
+      </label>
+      <label class="form__field">
+        <!--<span class="form__label-title">Контактный телефон</span>-->
+        <input data-alias="Телефон" placeholder="Телефон" type="text" name="tel-free" id="tel-free-input" class="form__input" required minlength="1">
+        <span class="form__input-error tel-free-input-error"></span>
+      </label>
+      <label class="form__field">
+        <!--<span class="form__label-title">Электронная почта</span>-->
+        <input data-alias="Почта" placeholder="Электронная почта" type="email" name="email-free" id="email-free-input" class="form__input" required>
+        <span class="form__input-error email-free-input-error"></span>
+      </label>
+      <div style="background: #1f1f1f; display: flex;flex-direction: column;">
+        <label class="form__field form__field_type_textarea">
+         <!--<span class="form__label-title">Опишите Вашу задачу</span>-->
+          <textarea data-alias="Текст заявки" placeholder="Опишите Вашу задачу" type="text" name="comment-free" id="comment-free-input"  class="form__input" required minlength="1"></textarea>
+          <span class="form__input-error comment-free-input-error"></span>
+        </label>
+        <button class="bem__button form__submit-button" type="submit">Отправить</button>
+      </div>
+    </form>
+  </div>
+</section>
+
+<footer class="ufooter">
+  <a class="bem__link bem__link_newwindow ufooter__action-link" href="#">Рассчитать теплообменник</a>
+  <a class="bem__link bem__link_newwindow ufooter__action-link" href="#">Рассчитать тепловой пункт</a>
+  <img src="../../images/svg-elems/i-author.svg" style="margin-left: auto;">
+</footer>
+
+<!--Всплывающее меню-->
+<div class="popup popup_closed popup_type_menu popup-menu">
+  <div class="popup__container popup__container_menu">
+    <button class="popup__button-close popup__button-close_menu"></button>
+    <nav class="popup__menu">
+      <a class="popup__navlink" href="/">Главная</a>
+      <div class="dropdown popup__navlink">
+        <input type="checkbox" class="dropdown__checkbox" id="menu-checkbox">
+        <label class="dropdown__label" for="menu-checkbox">Продукция</label>
+        <ul class="dropdown__list">
+          <li class="dropdown__list-item"><a class="popup__navlink popup__navlink_sub" href="/production.html">Продукция</a></li>
+          <li class="dropdown__list-item"><a class="popup__navlink popup__navlink_sub" href="/plastinchatye-teploobmenniki.html">Пластинчатые теплообменники</a></li>
+          <li class="dropdown__list-item"><a class="popup__navlink popup__navlink_sub" href="/pishchevye-teploobmenniki.html">Пищевые теплообменники</a></li>
+          <li class="dropdown__list-item"><a class="popup__navlink popup__navlink_sub" href="/blochnye-teplovye-punkty.html">Блочные тепловые пункты</a></li>
+        </ul>
+      </div>
+      <a class="popup__navlink" href="/service.html">Сервис</a>
+      <a class="popup__navlink" href="/blog-proizvodstva">Блог производителя</a>
+      <a class="popup__navlink" href="/about.html">О компании</a>
+      <a class="popup__navlink" href="/contacts.html">Контакты</a>
+    </nav>
+    <div class="popup__menu">
+      <a class="popup__navlink popup__navlink_dop" href="/equipment-selection">Рассчитать теплообменник</a>
+      <a class="popup__navlink popup__navlink_dop" href="/catalog">Каталог</a>
+      <!--<a class="popup__navlink popup__navlink_dop" href="/equipment-selection">Пример расчёта</a>-->
+    </div>
+  </div>
+</div>
+
+<div class="popup popup_closed">
+  <div class="popup__container">
+    <div class="raschet-bem__substantions" style="display: flex; justify-content: space-between;">
+      <div class="raschet-bem__subst-selection-block" style="display: flex; ">
+        <h3 class="raschet-bem__subst-title raschet-bem__subst-title_hot">Греющая сторона</h3>
+        <select data-alias="Греющая сторона" class="raschet-bem__input raschet-bem__select" id="sreda_gr" name="t_typesr">
+          <option selected value="Вода">вода</option>
+          <option value="Пар">пар</option>
+          <option value="Масло">масло</option>
+          <option value="гликоль">гликоль</option>
+          <option value="другое">другое</option>
+        </select>
+        <span class="raschet-bem__input-error sreda_gr-error"></span>
+      </div>
+      <div class="raschet-bem__subst-selection-block" style="display: flex; ">
+        <h3 class="raschet-bem__subst-title raschet-bem__subst-title_cold">Нагреваемая сторона</h3>
+        <select data-alias="Нагреваемая сторона" class="raschet-bem__input raschet-bem__select" id="sreda_nagr" name="t_typesr">
+          <option selected value="Вода">вода</option>
+          <option value="Пар">пар</option>
+          <option value="Масло">масло</option>
+          <option value="гликоль">гликоль</option>
+          <option value="другое">другое</option>
+        </select>
+        <span class="raschet-bem__input-error sreda_nagr-error"></span>
+      </div>
+    </div>
+    <div class="raschet-form__4xtemperatures">
+        <div class="raschet-form__sidetemperatures">
+          <label class="form__field">
+            <span class="form__label-title span-mobile-hidden">Температура среды на входе</span>
+            <span class="form__label-title span-mobile-show">t на входе</span>
+            <input data-alias="Температура греющей среды на входе" type="text" name="temperature_of_the_heating_in" id="temp-grin-input" class="form__input raschet-bem__input_type_flex" required minlength="1">
+            <span class="raschet-bem__input-error temp-grin-input-error"></span>
+          </label>
+          <label class="form__field">
+            <span class="form__label-title span-mobile-hidden">Температура среды на выходе</span>
+            <span class="form__label-title span-mobile-show">t на выходе</span>
+            <input data-alias="Температура греющей среды на выходе" type="text" name="temperature_of_the_heating_out" id="temp-grout-input" class="form__input raschet-bem__input_type_flex" required minlength="1">
+            <span class="raschet-bem__input-error temp-grout-input-error"></span>
+          </label>
+        </div>
+        <img class="raschet-bem__temperature-img" src="../../images/uto-online.png" alt="Рассчитываемый теплообменник">
+        <div class="raschet-form__sidetemperatures">
+          <label class="form__field">
+            <span class="form__label-title span-mobile-hidden">Температура среды на выходе</span>
+            <span class="form__label-title span-mobile-show">t на выходе</span>
+            <input data-alias="Температура нагреваемой среды на выходе" type="text" name="temperature_of_the_heated_out"  id="temp-nagrout-input" class="form__input raschet-bem__input_type_flex" required  minlength="1">
+            <span class="raschet-bem__input-error temp-nagrout-input-error"></span>
+          </label>
+          <label class="form__field">
+            <span class="form__label-title span-mobile-hidden">Температура среды на входе</span>
+            <span class="form__label-title span-mobile-show">t на входе</span>
+            <input data-alias="Температура нагреваемой среды на входе" type="text"  name="temperature_of_the_heated_in" id="temp-nagrin-input" class="form__input raschet-bem__input_type_flex" minlength="1" required>
+            <span class="raschet-bem__input-error temp-nagrin-input-error"></span>
+          </label>
+        </div>
+      </div>
+      <div class="raschet-form__dop-metrics">
+        <label class="form__field">
+          <span class="form__label-title span-mobile-hidden">Мощность</span>
+          <span class="form__label-title span-mobile-show">t на входе</span>
+          <input data-alias="Температура нагреваемой среды на входе" style="min-width: 270px; margin-right: 20px;" type="text"  name="temperature_of_the_heated_in" id="temp-nagrin-input" class="form__input raschet-bem__input_type_flex" minlength="1" required>
+          <span class="raschet-bem__input-error temp-nagrin-input-error"></span>
+        </label>
+        <label class="form__field">
+          <span class="form__label-title span-mobile-hidden">Расход по нагреваемой среде</span>
+          <span class="form__label-title span-mobile-show">t на входе</span>
+          <input data-alias="Температура нагреваемой среды на входе" style="min-width: 270px;" type="text"   name="temperature_of_the_heated_in" id="temp-nagrin-input" class="form__input raschet-bem__input_type_flex" minlength="1" required>
+          <span class="raschet-bem__input-error temp-nagrin-input-error"></span>
+        </label>
+      </div>
+      <div class="raschet-form__personal">
+        <div>
+          <label class="form__field">
+            <span class="form__label-title span-mobile-hidden">Как к Вам можно обращаться?</span>
+            <span class="form__label-title span-mobile-show">t на входе</span>
+            <input data-alias="Температура греющей среды на входе" type="text" name="temperature_of_the_heating_in" id="temp-grin-input" class="form__input raschet-bem__input_type_flex" required minlength="1">
+            <span class="raschet-bem__input-error temp-grin-input-error"></span>
+          </label>
+          <label class="form__field">
+            <span class="form__label-title span-mobile-hidden">Email, куда отправить расчёт</span>
+            <span class="form__label-title span-mobile-show">t на входе</span>
+            <input data-alias="Температура греющей среды на входе" type="text" name="temperature_of_the_heating_in" id="temp-grin-input" class="form__input raschet-bem__input_type_flex" required minlength="1">
+            <span class="raschet-bem__input-error temp-grin-input-error"></span>
+          </label>
+          <label class="form__field">
+            <span class="form__label-title span-mobile-hidden">Ваш телефон</span>
+            <span class="form__label-title span-mobile-show">t на входе</span>
+            <input data-alias="Температура греющей среды на входе" type="text" name="temperature_of_the_heating_in" id="temp-grin-input" class="form__input raschet-bem__input_type_flex" required minlength="1">
+            <span class="raschet-bem__input-error temp-grin-input-error"></span>
+          </label>
+        </div>
+        <div style="background: #1f1f1f; display: flex;flex-direction: column; margin-top: 30px; margin-left: 10px; flex-basis: 100%;">
+          <label class="form__field form__field_type_textarea">
+           <!--<span class="form__label-title">Опишите Вашу задачу</span>-->
+            <textarea data-alias="Текст заявки" placeholder="Опишите Вашу задачу" type="text" name="comment-free" id="comment-free-input"  class="form__input" style="flex-basis: 160px;" required minlength="1"></textarea>
+            <span class="form__input-error comment-free-input-error"></span>
+          </label>
+          <button class="bem__button form__submit-button" type="submit">Отправить</button>
+        </div>
+      </div>
+
+  </div>
+</div>
+
+
+<div class="popup">
+  <div class="popup__container">
+    <h2 class="section-title">Здравствуйте! Хотите, мы свяжемся с Вами за 28 секунд и всё обсудим?</h2>
+    <label class="form__field">
+      <span class="form__label-title span-mobile-hidden">Номер телефона</span>
+      <span class="form__label-title span-mobile-show">t на входе</span>
+      <input data-alias="Температура греющей среды на входе" placeholder="Ваш номер" type="text" name="temperature_of_the_heating_in" id="temp-grin-input" class="form__input raschet-bem__input_type_flex" required minlength="1">
+      <span class="raschet-bem__input-error temp-grin-input-error"></span>
+    </label>
+  </div>
+</div>
+
+
+<!--
+<div class="informer informer_maxi">
+  <a class="informer__link" href="/equipment-selection/">Расчет теплообменника</a>
+  <a class="informer__link" href="/catalog/">Каталог</a>
+  <a class="informer__link" href="/example.html">Пример расчёта</a>
+  <button class="informer__view-changer">Свернуть</div>
+</div>-->

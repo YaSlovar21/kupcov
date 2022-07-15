@@ -1,0 +1,16 @@
+.bem__list {
+  position: relative;
+  z-index: 2;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+
+  color: var(--theme-text-color);
+  line-height: 1.4;
+  font-size: var(--p-size);
+}
+
+
+
+
+

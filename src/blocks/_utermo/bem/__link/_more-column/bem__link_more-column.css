@@ -1,0 +1,17 @@
+.bem__link_more-column {
+  transition: all .3s linear;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 2.5em;
+}
+
+.bem__link_more-column::after {
+  content: ' Подробнее \2197';
+  transition: all .5s linear;
+}
+
+.bem__link_more-column:hover::after {
+  color: var(--theme-main-color);
+  opacity: .8;
+}

@@ -1,0 +1,28 @@
+.breadcrumbs {
+  display: flex;
+  max-width: 100%;
+  background-color: #323232;;
+  padding: 20px 0 20px 10px;
+  border-bottom: 2px solid var(--bg-darker-color);
+}
+
+.breadcrumbs__logo {
+  flex-shrink: 0;
+}
+
+.breadcrumbs__list-item {
+  font-size: 32px;
+  position: relative;
+  display: flex;
+  align-items: center;
+
+  color: var(--bg-color);
+  /*ссылка*/
+  text-decoration: none;
+}
+
+.breadcrumbs__list-item::before {
+  content: '/';
+  font-weight: 600;
+  margin: 0 5px;
+}

@@ -1,0 +1,31 @@
+.section-loading {
+  position: relative;
+
+}
+
+.section-loading::after {
+  position: absolute;
+  top: 0;
+  border-radius: 4px;
+  left: 0;
+  content: '';
+  width: 100%;
+  height: 100%;
+  z-index: 3;
+  background-color: #2f2f2f;
+  opacity: .7;
+  animation: opacity-loading .8s linear infinite ;
+}
+
+@keyframes opacity-loading {
+  0% {
+    opacity: .2;
+  }
+  50% {
+    opacity: .7;
+  }
+  100% {
+    opacity: .2;
+  }
+}
+

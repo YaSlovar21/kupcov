@@ -1,0 +1,15 @@
+.bem__link_arrowup {
+  transition: all .3s linear;
+  display: flex;
+  align-items: center;
+}
+
+.bem__link_arrowup::after {
+  content: ' \2197';
+  transition: all .5s linear;
+}
+
+.bem__link_arrowup:hover::after {
+  color: var(--theme-main-color);
+  opacity: .9;
+}

@@ -1,0 +1,25 @@
+.bpou__description {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 155.02%;
+  /* or 37px */
+
+  letter-spacing: 0.01em;
+  margin: 0 0 30px;
+
+  color: #EDEDED;
+}
+
+@media screen and (max-width:1024px) {
+  .bpou__description {
+      font-size: 18px;
+  }
+}
+
+@media screen and (max-width:768px) {
+  .bpou__description {
+    font-size: 14px;
+    letter-spacing: .05em;
+  }
+}

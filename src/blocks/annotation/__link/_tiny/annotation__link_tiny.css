@@ -1,0 +1,24 @@
+.annotation__link_tiny {
+  font-weight: 300;
+  font-size: 16px;
+}
+
+.annotation__link_tiny::before {
+  content: '↗';
+  font-weight: 500;
+  color: #E7441C;
+  padding: 0 3px 0 6px;
+  border-bottom: 2px solid #e7451c8a;
+  margin-right: 5px;
+  opacity: 0.7;
+  transition: transform,opacity .5s,.5s ease-in;
+  display: inline-flex;
+}
+
+.annotation__link_tiny:hover {
+  color: #f2f2f2;
+}
+.annotation__link_tiny:hover::before {
+  opacity: 1;
+  transform: translateY(-5px);
+}

@@ -1,0 +1,33 @@
+.upf__contact {
+  list-style-type: none;
+  padding-left: 2.9em;
+  position: relative;
+
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 36px;
+  margin-top: 2em;
+  color: var(--theme-white-color);
+}
+
+.upf__contact::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 2.4em;
+  height: 2.4em;
+
+  background-repeat: no-repeat;
+  background-position: center, center;
+}
+
+.upf__contact_tels::before {
+  background-image: url(../../../../images/svg-elems/i-phone.svg);
+}
+
+.upf__contact_email::before {
+  background-image: url(../../../../images/svg-elems/i-mail.svg);
+  background-position: top;
+}

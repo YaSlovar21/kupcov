@@ -1,0 +1,16 @@
+.flexburton__breadcrumbs {
+  /*margin-left: 64px;
+  margin-top: 20px;*/
+  padding: 15px 0;
+  position: relative;
+  font-size: 18px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+@media screen and (min-width: 1440px) {
+  .flexburton__breadcrumbs_outside{
+    max-width: calc(100% - 40px);
+    margin: 0 auto;
+  }
+}

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title><%= htmlWebpackPlugin.options.title %></title>
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link href="<%= canonicalURL %>/<%= htmlWebpackPlugin.options.filename %>"  rel="canonical" />
+
+</head>
+<body>
+  <%= require('html-loader!./inner-metrika.html').default %>
+    <div class="bg"></div>
+    <div class="page">
+      <header class="header">
+        <a href="/" class="header__logo">
+          <img class="header__logo-img" src="<%=require('./images/header-logo-1.svg')%>" alt="Лого Термоблок"/></a>
+        <div class="header__right">
+          <%= require('html-loader!./insets/asides/inner-header.html').default %>
+        </div>
+      </header>
+
+      <main class="content">
+
+
+        <section class="tmproduction">
+            <div class="tmproduction__intro">
+              <div class="flexburton__breadcrumbs tmproduction__breadcrumbs">
+                <a class="flexburton__breadcrumbs-link" href="/">Главная</a>
+                <a class=" flexburton__breadcrumbs-link flexburton__breadcrumbs-link_type_here" href="/<%= htmlWebpackPlugin.options.filename %>">Продукция</a>
+              </div>
+              <h1 class="tmproduction__heading"><span style="color: #E7441C;">Производство</span> теплообменного оборудования</h1>
+              <p class="tmproduction__description">Опыт производства теплообменного оборудования предприятия более 25 лет. Основной
+                продукцией компании являются разборные пластинчатые теплообменники. На базе них изготавливаются готовые теплообменные
+                установки. Производство теплообменных аппаратов 100% локализовано.</p>
+              <p class="tmproduction__description">Конструкторским бюро завода постоянно ведется разработка новых тепплообменных пластин и уплотнений. В 2019 году запущены пластины ДУ200 и ДУ250 в серийное производство. Пресс-формы и
+                остнастка проектируются и изготавливаются также на нашем предприятии.</p>
+            </div>
+            <a class="productcard" href="/plastinchatye-teploobmenniki.html">
+                <h3 class="productcard__heading">Пластинчатые теплообменники</h3>
+                <img class="productcard__image" src="<%=require('./images/main_mini/ti45_new.png')%>" alt="Пластинчатые теплообменники">
+            </a>
+            <a class="productcard"  href="/pishchevye-teploobmenniki.html">
+                <h3 class="productcard__heading">Пищевые теплообменники</h3>
+                <img class="productcard__image"   src="<%=require('./images/main_mini/many-section-grid.png')%>" alt="Пищевые теплообменники">
+            </a>
+            <a class="productcard"  href="/blochnye-teplovye-punkty.html">
+                <h3 class="productcard__heading">Блочные тепловые пункты</h3>
+                <img class="productcard__image"  src="<%=require('./images/main_mini/btp_now.png')%>" alt="Блочные тепловые пункты">
+            </a>
+            <a class="productcard"  href="#">
+                <h3 class="productcard__heading">Установки ПОУ</h3>
+                <img class="productcard__image"  src="<%=require('./images/main_mini/teplojit-pou.png')%>" alt="Пастеризационная охладительная установка">
+            </a>
+        </section>
+        <section class="wholecycle-section">
+        <div class="wholecycle-section__intro">
+          <h2 class="content__title wholecycle-section__title">Полный цикл производства пластинчатых теплообменников</h2>
+        </div>
+        <div class="wholecycle-grid wholecycle-section__grid">
+            <div class="pictitletext">
+              <figure class="highliter highliter_large highliter_top-left wow fadeIn" data-wow-delay=".9s"><div class="highliter__element highliter__element_stretched"></div></figure>
+              <figure class="highliter highliter_large highliter_bottom-right wow fadeIn" data-wow-delay=".9s"><div class="highliter__element highliter__element_stretched"></div></figure>
+              <div class="pictitletext__img-container wow fadeInUp">
+                <img src="<%=require('./images/wholecycle/1plast.png')%>" class="pictitletext__image" alt="Пластины и уплотнения теплообменника">
+              </div>
+              <div class="pictitletext__container wow fadeInUp">
+                <h3 class="pictitletext__heading">Разработка и производство
+                  пластин и уплотнений</h3>
+                <p class="pictitletext__descripion">Инженеры компании разрабатывают и осваивают новые виды пластин. В настоящее время запущена в производство пластина ДУ 200 мм.</p>
+              </div>
+            </div>
+            <div class="pictitletext" >
+              <figure class="highliter highliter_large highliter_top-left  wow fadeIn" data-wow-delay=".9s"><div class="highliter__element highliter__element_stretched"></div></figure>
+              <figure class="highliter highliter_large highliter_bottom-right  wow fadeIn" data-wow-delay=".9s"><div class="highliter__element highliter__element_stretched"></div></figure>
+              <div class="pictitletext__img-container wow fadeInUp" data-wow-delay=".3s">
+                <img src="<%=require('./images/wholecycle/2pressf.png')%>" class="pictitletext__image" alt="Производство оснастки">
+              </div>
+              <div class="pictitletext__container wow fadeInUp" data-wow-delay=".3s">
+                <h3 class="pictitletext__heading">Производство оснастки и пресс-форм</h3>
+                <p class="pictitletext__descripion">Пресс-формы для уплонений и пластин мы изготавливаем на своих производственных мощностях.</p>
+              </div>
+            </div>
+            <div class="pictitletext" data-wow-delay=".6s">
+              <figure class="highliter highliter_large highliter_top-left wow fadeIn" data-wow-delay=".9s"><div class="highliter__element highliter__element_stretched"></div></figure>
+              <figure class="highliter highliter_large highliter_bottom-right wow fadeIn" data-wow-delay=".9s"><div class="highliter__element highliter__element_stretched"></div></figure>
+              <div class="pictitletext__img-container wow fadeInUp" data-wow-delay=".6s">
+                <img src="<%=require('./images/wholecycle/3prog.png')%>" class="pictitletext__image" alt="Программа расчёта теплообменника">
+              </div>
+              <div class="pictitletext__container wow fadeInUp" data-wow-delay=".6s">
+                <h3 class="pictitletext__heading">Собственная программа расчёта теплообменников</h3>
+                <p class="pictitletext__descripion">Разработана и постоянно обновляется программа для расчёта теплообменников. Данное ПО используют как наши инженеры, так и специалисты по расчётам наших партнёров.</p>
+              </div>
+            </div>
+            <div class="pictitletext" data-wow-delay=".9s">
+              <figure class="highliter highliter_large highliter_top-left wow fadeIn" data-wow-delay=".9s"><div class="highliter__element highliter__element_stretched"></div></figure>
+              <figure class="highliter highliter_large highliter_bottom-right wow fadeIn" data-wow-delay=".9s"><div class="highliter__element highliter__element_stretched"></div></figure>
+              <div class="pictitletext__img-container wow fadeInUp" data-wow-delay=".9s">
+                <img src="<%=require('./images/wholecycle/4sborka.png')%>" class="pictitletext__image" alt="Сборка и испытание теплообменника">
+              </div>
+              <div class="pictitletext__container wow fadeInUp" data-wow-delay=".9s">
+                <h3 class="pictitletext__heading">Сборка и испытание пластин и теплообменников</h3>
+                <p class="pictitletext__descripion">Изготовленные пластины испытываются в пакетах под давлением. Также собранный теплообменник проходит испытание гидравлическим давлением.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="oblasti">
+        <!--<div class="oblasti__intro">-->
+          <h2 class="content__title oblasti__title"> Области применения пластинчатых теплообменников</h2>
+          <button class="button-bem oblasti__button">Проконсультироваться с инженером</button>
+        <!--</div>-->
+          <ul class="list list_text_medium oblasti__list">
+            <li class="list__item">нагрев теплоносителя в котлах системах отопления, горячего водоснабжения вентиляции и других технологических теплообменных процессах</li>
+            <li class="list__item">охлаждение трансформаторного, гидравлического и моторного масел</li>
+            <li class="list__item">теплоснабжение домов коттеджного типа</li>
+            <li class="list__item">горячее водоснабжение душевых сеток на производстве</li>
+            <li class="list__item">оборудование в системах напольного отопления</li>
+            <li class="list__item">теплоснабжение высотных домов</li>
+            <li class="list__item">теплоснабжение небольших районов</li>
+            <li class="list__item">в системах приточной вентиляции</li>
+            <li class="list__item">нагрев воды в плавательных бассейнах</li>
+            <li class="list__item">нагрев или охлаждение жидкостей в пищевой промышленности</li>
+            <li class="list__item">и других технологических теплообменных процессах</li>
+          </ul>
+      </section>
+      </main>
+
+
+      <%= require('html-loader!./insets/asides/inner-footer.html').default %>
+      <%= require('html-loader!./insets/popup-mini-form.html').default %>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,4 @@
+.mainpage-about {
+  max-width: calc(100% - var(--aside-width)*2);
+  margin: 84px auto;
+}

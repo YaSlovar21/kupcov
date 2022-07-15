@@ -1,0 +1,31 @@
+.servicetable {
+  font-size: 14px;
+  text-align: center;
+  width: 767px;
+
+}
+.servicetable td {
+  padding: 8px 8px;
+}
+
+.servicetable tr:first-child td:first-child {
+  background: #ff5e3a;
+  font-size: 12px;
+  letter-spacing: .05em;
+  font-weight: 600;
+  padding: 10px;
+}
+
+.servicetable tr td:first-child {
+  background: #353535;
+  font-size: 12px;
+}
+
+.servicetable tr:first-child {
+  /*background: #f04545;*/
+  background: #ff5e3a;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 10px;
+}
+

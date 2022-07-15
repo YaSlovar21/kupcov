@@ -1,0 +1,17 @@
+.khan__quote_page_heatex {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 1.4;
+
+    letter-spacing: -0.035em;
+
+    color: #F2F2F2;
+}
+
+@media screen and (max-width: 1024px) {
+    .khan__quote_page_heatex {
+        font-size: 16px;
+        /*max-width: 630px;*/
+    }
+}

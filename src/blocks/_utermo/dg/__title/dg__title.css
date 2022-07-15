@@ -1,0 +1,9 @@
+.dg__title {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 1.5;
+  letter-spacing: -0.015em;
+
+  color: var(--dynamic-grid-text-color);
+}

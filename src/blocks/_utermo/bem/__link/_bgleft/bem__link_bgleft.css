@@ -1,0 +1,14 @@
+.bem__link_bgleft {
+  padding: 20px 0;
+}
+
+.bem__link_bgleft::before {
+  content: '';
+  width: 200%;
+  height: 100%;
+  background-color: var(--bg-darker-color);
+  position: absolute;
+  top: 0;
+  z-index: -1;
+  right: 0;
+}

@@ -1,0 +1,10 @@
+.burton__title {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 64px;
+  line-height: 105.6%;
+  /* or 68px */
+  letter-spacing: 0.02em;
+
+  color: var(--theme-white-color);
+}

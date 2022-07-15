@@ -1,0 +1,11 @@
+.upf__slogan {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 36px;
+  letter-spacing: -0.015em;
+
+  color: var(--theme-white-color);
+
+  max-width: 670px;
+}

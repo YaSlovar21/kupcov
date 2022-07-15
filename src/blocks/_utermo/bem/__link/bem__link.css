@@ -1,0 +1,7 @@
+.bem__link {
+  color: var(--theme-text-color);
+  text-decoration: none;
+  position: relative;
+  z-index: 2;
+}
+

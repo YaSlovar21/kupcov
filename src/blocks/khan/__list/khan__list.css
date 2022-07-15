@@ -1,0 +1,16 @@
+.khan__list{
+  font-size: 24px;
+}
+
+@media screen and (max-width: 1440px) {
+  .khan__list {
+    font-size: 22px;
+    max-width: 720px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .khan__list {
+    max-width: 400px;
+  }
+}

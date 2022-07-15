@@ -1,0 +1,17 @@
+.blog-grid__more-button {
+  width: 100%;
+  border: 2px solid var(--bg-darker);
+  background: none;
+  outline: none;
+
+  background-color: var(--theme-gray-color);
+  padding: 20px;
+  text-align: center;
+
+
+
+  margin: 10px 0;
+
+  border: 2px solid var(--bg-darker-color);
+  box-sizing: border-box;
+}

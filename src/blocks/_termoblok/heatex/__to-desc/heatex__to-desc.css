@@ -1,0 +1,20 @@
+.heatex__to-desc {
+    font-size: 18px;
+    line-height: 1.4;
+    margin: 73px 0 0;
+
+    max-width: 721px;
+}
+
+@media screen and (max-width: 1024px) {
+    .heatex__to-desc {
+        font-size: 16px;
+        max-width: 630px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .heatex__to-desc {
+        font-size: 14px;
+    }
+}

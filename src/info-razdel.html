@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title><%= htmlWebpackPlugin.options.title %></title>
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link href="<%= canonicalURL %>/<%= htmlWebpackPlugin.options.filename %>"  rel="canonical" />
+</head>
+<body class="page">
+  <aside class="aside">
+    <%= require('html-loader!./insets/asides/in-aside.html').default %>
+  </aside>
+  <header class="header header_block">
+    <div class="breadcrumbs">
+      <a href="/" class="header__logo-link-container breadcrumbs__logo">
+        <img class="header__logo-img"  src="<%=require('./images/svg-elems/u-flogo.svg')%>" alt="Лого Ютермо">
+      </a>
+      <ul class="bem__list bem__list_line breadcrumbs__list">
+        <li class="breadcrumbs__list-item"><a class="bem__link" href="/blog-proizvodstva">Инфо</a></li>
+        <li class="breadcrumbs__list-item breadcrumbs__list-item_here"><a class="bem__link" href="/<%= htmlWebpackPlugin.options.filename %>"><%= htmlWebpackPlugin.options.heading %></a></li>
+      </ul>
+    </div>
+    <div class="header__nav-side">
+     <!-- <%= require('html-loader!./insets/asides/nav-page.html').default %>-->
+    </div>
+  </header>
+    <main class="content">
+      <section style="max-width: calc(100% - var(--aside-width)*2); margin: 50px auto; ">
+        <div class="quote">
+          <span class="span-color-gray quote__author">Руководитель компании - Спасский Владимир Васильевич:</span>
+          <p class="bem__paragraph quote__text">Для меня собственное производство – это огромный шаг вперед. Собрав команду профессионалов и
+            единомышленников, мы создали уникальный продукт со своей концепцией. Нашим клиентам мы предоставляем комплексное
+            решение от разработки технической документации до отгрузки на объект. Приведу некоторые преимущества для наших
+            клиентов при работе с нами:
+          </p>
+          <ul class="bem__list quote__arguments">
+            <li class="bem__list-item">Индивидуальный подход к подбору каждого БТП</li>
+            <li class="bem__list-item">Применение оборудования только проверенных производителей</li>
+            <li class="bem__list-item">Разработка тепломеханической части для проекта БТП</li>
+            <li class="bem__list-item">Маркировка всех проводов шкафа управления.</li>
+            <li class="bem__list-item">Контроль качества сварных швов</li>
+            <li class="bem__list-item">Применение нержавеющей стали в контуре ГВС</li>
+            <li class="bem__list-item">Четкое соблюдение сроков производства и отгрузки готового БТП на объект</li>
+          </ul>
+          <p class="bem__paragraph">Ниже мы собрали полезные материалы, касающиеся расчётов, производства, областей применения теплообменного оборудования.</p>
+        </div>
+      </section>
+
+      <section class="info-section">
+        <div class="info-section__aside">
+          <h1 class="info-section__title">Информационный раздел</h1>
+          <p class="info-section__subtitle">Здесь вы можете посмотреть более подробную информацию о производстве, изготавливаемой продукции, сферам применения теплоомбенного оборудования Ютермо и <span class="span-">объектах с нашим оборудованием</span>.</p>
+          <div>
+            <a class="bem__link bem__link_download info-section__link info-section__link_bg" href="#">Наши объекты</a>
+            <a class="bem__link bem__link_download info-section__link info-section__link_bg" style="margin-top:10px;" href="#">Теплообменники в жилично-коммунальном хозяйцстве</a>
+            <a class="bem__link bem__link_arrowup info-section__link" style="margin-top:10px;" href="#">Рассчитать теплообменник</a>
+          </div>
+        </div>
+        <div class="blog-grid info-section__grid">
+          <ul class="blog-grid__list">
+            <li class="blog-grid__list-item blog-grid__list-item_xl blog-grid__list-item_white">
+              <a class="blog-grid__link">
+                <h3 class="blog-grid__title blog-grid__title_xl blog-grid__title_black">Производство блочных тепловых узлов</h3>
+                <p class="blog-grid__description">Производство узлов ввода и учета, тепловых пунктов для систем отопления и горячего водоснабжение.</p>
+              </a>
+            </li>
+            <li class="blog-grid__list-item blog-grid__list-item_m">
+              <a class="blog-grid__link">
+                <h3 class="blog-grid__title blog-grid__title_m ">Автоматизированный машиностроительный комплекс аконит-урал (оэз алабуга)</h3>
+                <p class="blog-grid__description">Тепловой пункт мощностью 123 кВт.</p>
+              </a>
+            </li>
+            <li class="blog-grid__list-item blog-grid__list-item_m">
+              <a class="blog-grid__link">
+                <h3 class="blog-grid__title blog-grid__title_m">Автоматизированный машиностроительный комплекс аконит-урал (оэз алабуга)</h3>
+                <p class="blog-grid__description">Тепловой пункт мощностью 123 кВт.</p>
+              </a>
+            </li>
+            <li class="blog-grid__list-item blog-grid__list-item_m">
+              <a class="blog-grid__link">
+                <h3 class="blog-grid__title blog-grid__title_m">Автоматизированный машиностроительный комплекс аконит-урал (оэз алабуга)</h3>
+                <p class="blog-grid__description">Тепловой пункт мощностью 123 кВт.</p>
+              </a>
+            </li>
+            <li class="blog-grid__list-item blog-grid__list-item_l">
+              <a class="blog-grid__link">
+                <h3 class="blog-grid__title blog-grid__title_l">Теплообменники для ГВС</h3>
+                <p class="blog-grid__description">Производство узлов ввода и учета, тепловых пунктов для систем отопления и горячего водоснабжение.</p>
+              </a>
+            </li>
+          </ul>
+          <button class="blog-grid__more-button">Показать ещё</button>
+        </div>
+      </section>
+
+    </main>
+    <!--<section class="map">
+      <h2 class="map__heading">Партнеры по продажам и сервису по всей России</h2>
+      <div class="map__list-container">
+        <ul class="map__list">
+        </ul>
+        Сюда встанут карточки партнеров
+        <div class="map__popup">
+          <span class="map__popup-close">&lt;-- Назад</span>
+          <ul class="map__popup-container"></ul>
+        </div>
+      </div>-->
+      <div class="map__partner"></div>
+    </section>
+    <%= require('html-loader!./insets/asides/inner-footer.html').default %>
+  </div>
+  <!--Шаблон формы-->
+  <template class="form-big-template">
+    <%= require('html-loader!./insets/big-form-template.html').default %>
+  </template>
+  <!--Шаблон элемента партнера на карте-->
+  <template id="partner-item-template">
+    <li class="map__list-item" data-html="<b>ООО «Интерсервис»</b><br> Тел.: 8-914-130-30-30<br>">Чита</li>
+  </template>
+</body>
+</html>

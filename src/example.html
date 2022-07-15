@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title><%= htmlWebpackPlugin.options.title %></title>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <link href="<%= canonicalURL %>/<%= htmlWebpackPlugin.options.filename %>"  rel="canonical" />
+    <style>
+      .example {
+        /*display: grid;
+        grid-template-columns: repeat(4, 1fr);*/
+      }
+      .example__main-title {
+        font-size: 24px;
+        font-weight: 300;
+        margin: 10px auto 45px;
+        text-align: center;
+      }
+      .example__heading{
+        display: grid;
+        grid-auto-flow: column;
+        grid-template-rows: repeat(2, auto);
+        grid-template-columns: repeat(4, 1fr);
+        justify-items: center;
+      }
+      .example__title {
+        grid-column: 1/-1;
+      }
+      .example__title_place_heading {
+        grid-row: span 2;
+        grid-column: span 2;
+        justify-self: stretch;
+        align-self: end;
+      }
+      .example__subtitle {
+        justify-self: stretch;
+        align-self: center;
+        padding: 20px;
+        margin: 0;
+        background-color: tomato;
+      }
+      .example__list {
+        display: grid;
+        padding: 0;
+        margin: 0;
+      }
+      .example__list-item {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        justify-items: center;
+      }
+      .example__list_large .example__list-item {
+        grid-template-columns: repeat(2, 1fr) 2fr;
+      }
+    </style>
+  </head>
+  <body>
+    <%= require('html-loader!./inner-metrika.html').default %>
+    <div class="bg"></div>
+    <div class="page">
+      <header class="header">
+        <a href="/" class="header__logo"><img class="header__logo-img" src="<%=require('./images/header-logo-1.svg')%>" alt="Лого Термоблок"/></a>
+        <div class="header__right">
+          <%= require('html-loader!./insets/asides/inner-header.html').default %>
+        </div>
+      </header>
+
+      <main class="content" style="display:grid; font-size: 18px; color: rgb(241, 241, 241); max-width: 760px; margin: 0 auto; background-color: #2f2f2f5d;">
+        <div class="example">
+        <h1 class="example__main-title">Теплообменник пластинчатый разборный ТИ13-67</h1>
+        <div class="example__heading">
+          <h3 class="example__title example__title_place_heading">Среда</h2>
+          <h4>Греющий контур</h3>
+          <p>Вода</p>
+          <h4>Нагреваемый контур</h3>
+          <p>Вода</p>
+        </div>
+        <h3 class="example__title">Свойства теплоносителя</h3>
+        <ul class="example__list">
+          <li class="example__list-item">
+            <h4 class="example__subtitle">Динамическая Вязкость</h4>
+            <p>сР</p>
+            <p>0.506</p>
+            <p>0.721</p>
+          </li>
+          <li class="example__list-item">
+            <h4 class="example__subtitle">Теплоёмкость</h4>
+            <p>кДж / кг °К</p>
+            <p>4.173</p>
+            <p>4.180</p>
+          </li>
+        </ul>
+        <h3 class="example__title">Характеристики</h3>
+        <ul class="example__list example__list_large">
+          <li class="example__list-item">
+            <h4 class="example__subtitle">Тепловая мощность</h4>
+            <p>кВт</p>
+            <p>600</p>
+          </li>
+          <li class="example__list-item">
+            <h4 class="example__subtitle">Поверхность теплообмена</h4>
+            <p>м2</p>
+            <p>8.47</p>
+
+          </li>
+        </ul>
+      </div>
+
+      </main>
+
+  <%= require('html-loader!./insets/asides/inner-footer.html').default %>
+
+
+  </body>
+</html>

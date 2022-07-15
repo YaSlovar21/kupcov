@@ -1,0 +1,13 @@
+.khan_page_heatex {
+    padding: 0 0 50px;
+    margin-bottom: 100px; /*убрать*/
+    max-width: 1200px;
+    margin: 0 auto 100px;
+    position: relative;
+}
+
+@media screen and (max-width: 1300px) {
+  .khan_page_heatex {
+    max-width: calc(100% - 20px);
+  }
+}

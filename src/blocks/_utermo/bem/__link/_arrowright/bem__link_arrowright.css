@@ -1,0 +1,13 @@
+.bem__link_arrowright {
+  transition: all .3s linear;
+}
+
+.bem__link_arrowright::after {
+  content: ' \27F6';
+  transition: all .5s linear;
+}
+
+.bem__link_arrowright:hover::after {
+  color: var(--theme-main-color);
+  opacity: .9;
+}

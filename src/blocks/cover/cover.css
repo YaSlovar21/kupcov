@@ -1,0 +1,64 @@
+.cover {
+    position: relative;
+    margin: 92px auto 0;
+    max-width: 100%;
+    z-index: 1;
+    min-height: calc(0.45*(99vw));
+    background-size: cover;
+    background-image: url(../../images/place_new_1.jpg);
+    background-repeat: no-repeat;
+
+    display: flex;
+    align-items: stretch;
+    justify-content: stretch;
+ }
+
+
+/*
+.cover::after {
+    content: '';
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    width: 7vw;
+    height: 7vw;
+    background-image: url(../../images/logo_BSZ_svg.svg);
+    background-size: cover;
+    z-index: -1;
+}
+*/
+@media screen and (min-width:1184px) {
+    .cover {
+        max-width: 100%;
+        /*min-height: 513px;*/
+        min-height: 350px;
+    }
+ }
+
+ @media screen and (min-width:1024px) {
+    .cover {
+        margin-top: 92px;
+    }
+ }
+
+ @media screen and (min-width:768px) {
+    .cover {
+    margin-top: 88px;
+    }
+}
+
+@media screen and (max-width:420px) {
+    .cover {
+        margin-top: 64px;
+    }
+    .cover::after {
+        top: 20%;
+        left: 20px;
+        width: 50px;
+        height: 50px;
+    }
+}
+
+.cover_position_ds {
+    min-height: calc(0.30*(49vw));
+ }

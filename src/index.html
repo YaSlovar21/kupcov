@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title><%= htmlWebpackPlugin.options.title %></title>
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link href="<%= canonicalURL %>"  rel="canonical" />
+</head>
+<body>
+
+  <div class="page page_ti">
+  <main>
+    <header class="header">
+        <div class="header__up-menu">
+
+          <a href="/" class="header__logo-link-container">
+            <img class="header__logo-img"  src="<%=require('./images/ti/logo-ti-full.svg')%>" alt="Лого Ютермо">
+          </a>
+          <div class="header__contacts">
+            <a class="bem__link header__contact" href="mailto:info@tochka-izloma.ru">info@tochka-izloma.ru</a>
+            <a class="bem__link header__contact" href="tel:info@tochka-izloma.ru">+7 (3852) 36-51-77</a>
+          </div>
+        </div>
+        <nav class="nav header__nav">
+          <ul class="nav__menu-list bem__list bem__list_line">
+            <li class="nav__menu-list-item">
+              <a class="bem__link nav__link" href="#">Главная</a>
+            </li>
+            <li class="nav__menu-list-item">
+              <a class="bem__link nav__link" href="#">Каталог</a>
+            </li>
+            <li class="nav__menu-list-item">
+              <a class="bem__link nav__link" href="#">Партнерам</a>
+            </li>
+            <li class="nav__menu-list-item">
+              <a class="bem__link nav__link" href="#">Наши представители</a>
+            </li>
+            <li class="nav__menu-list-item">
+              <a class="bem__link nav__link" href="#">Контакты</a>
+            </li>
+          </ul>
+          <div class="nav__registration">
+            <button class="bem__button">Регистрация</button>
+            <button class="bem__button">Войти</button>
+          </div>
+        </nav>
+        <div class="burton">
+          <div class="burton__preamble">
+            <h1 class="header__title">Разборные пластинчатые теплообменники</h1>
+            <p class="burton__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sagittis vitae, et vestibulum fermentum pharetra ultrices.</p>
+            <a class="burton__action-link" href="#">Подробнее о компании</a>
+          </div>
+          <div class="burton__image-container">
+            <img class="burton__image" src="<%=require('./images/productiopn_ti_p.png')%>" alt="Разборные пластинчатые теплообменники Теплохит">
+            <figure style="position:absolute;top:0; left: 0;width: 100%; height: 100%;">
+              <figure style="position: relative; width:100%; height:100%">
+                <img src="<%=require('./images/ti/poster-blue.svg')%>" style="position:absolute;width: 100%; height: 100%;">
+                <img src="<%=require('./images/ti/poster-red.svg')%>" style="position:absolute;width: 100%; height: 100%;">
+              </figure>
+            </figure>
+          </div>
+        </div>
+    </header>
+    <section class="mainpage-about">
+      <h2 class="section-title">О компании</h2>
+      <ul class="mainpage-about__grid">
+        <li class="mainpage-about__grid-item">
+          <p class="bem__paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Bibendum dolor scelerisque justo ipsum turpis pellentesque quis vulputate neque. Lorem viverra et congue pharetra, a. Sem neque lectus mi ullamcorper morbi. Elementum mollis vulputate scelerisque massa, scelerisque eleifend dolor.</p>
+        </li>
+        <li class="mainpage-about__grid-item">
+          <ul class="bem__list bem__list_line">
+            <li class="mini-title-intro"><span class="mini-title-intro__span mini-title-intro__span_ti">15</span> лет опыта</li>
+            <li class="mini-title-intro mini-title-intro_wider"><span class="mini-title-intro__span mini-title-intro__span_ti">2000+</span> выполненных заказов</li>
+            <li class="mini-title-intro mini-title-intro_wider"><span class="mini-title-intro__span mini-title-intro__span_ti">200+</span> довольных заказчиков</li>
+          </ul>
+        </li>
+        <li class="mainpage-about__grid-item">
+          <h3 class="section-subtitle">Программа расчёта пластинчатых теплообменников</h3>
+          <p class="bem__paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Bibendum dolor scelerisque justo ipsum turpis pellentesque quis vulputate neque. Lorem viverra et</p>
+          <a class="bem__link bem__link_download-right" href="#">Скачать программу</a>
+        </li>
+        <li class="mainpage-about__grid-item">
+          <h3 class="section-subtitle">Регистрация в личном кабинете</h3>
+          <p class="bem__paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Bibendum dolor scelerisque justo ipsum turpis pellentesque quis vulputate neque. Lorem viverra et</p>
+          <a class="bem__link bem__link_arrowup" href="#">Зарегистрироваться</a>
+        </li>
+      </ul>
+    </section>
+    <section class="catalog">
+      <div class="catalog__content">
+        <form class="form-search">
+          <div class="form-search__line">
+              <input
+                  class="form-search__input"
+                  placeholder="Введите наименование для поиска"
+                  name="request"
+              >
+              <button class="form-search__button" type="submit">Поиск</button>
+          </div>
+          <span class="form-search__hint">Ничего не введено</span>
+          <div class="form-search__filter">
+              <input class="form-search__checkbox" id="filter" checked={isShortChecked} type="checkbox"/>
+              <button class="form-search__filterbutton" type="button" onClick={handleClick}>
+                  <div class="form-search__tumblr"></div>
+              </button>
+              <label class="form-search__label" for="filter">В наличии</label>
+          </div>
+
+      </form>
+      <div style="display:grid; grid-template-columns: repeat(3, 400px); padding: 40px 0; gap:20px;">
+        <% items.forEach(function(item) { %>
+          <div class="card">
+            <div class="card__header">
+              <h3 class="bem__title"><%-item.name%></h3>
+              <button class="bem__button">123</button>
+            </div>
+            <div class="card__image-container">
+              <img class="card__image" src="<%=require('./images/ti/plasttest.png')%>">
+            </div>
+            <div class="card__footer">
+              <h3 class="bem__title"><%-item.price%></h3>
+              <button class="bem__button">123</button>
+            </div>
+          </div>
+        <% }); %>
+
+      </div>
+    </section>
+  </div>
+
+    <section class="mainpage-btp">
+      <div class="mainpage-btp__content uwrapper">
+        <div class="mainpage-btp__desc">
+          <h2 class="section-title">Блочные тепловые пункты</h2>
+          <p class="bem__paragraph">Мы - производитель и изготавливаем тепловые пункты в заводских условиях с контролем
+            качества на каждом этапе.</p>
+          <h3 class="section-subtitle">Для Вас</h3>
+          <ul class="bem__list">
+            <li>Оперативный подбор БТП <span class="span-color-brand">(1-2 дня)</span> </li>
+            <li>Индивидуальный подход</li>
+            <li>Разработка технической документации</li>
+          </ul>
+          <h3 class="section-subtitle">P.S.</h3>
+          <ul class="bem__list">
+            <li>Доставим и разгрузим собственным транспортом</li>
+            <li>Водитель с отличным чувством юмора</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="mainpage-pto">
+      <div class="mainpage-pto__content uwrapper">
+        <div class="mainpage-pto__desc">
+          <h2 class="section-title mainpage-pto__title section-title_underline_right">Пластинчатые теплообменники</h2>
+          <ul class="bem__list" style="margin-top: 40px; max-width: 600px;">
+            <li class="bem__list-item">Собственное производство пластин и уплотнений.</li>
+            <li class="bem__list-item">Комплектация ответными фланцами.</li>
+            <li class="bem__list-item">Изготовление направляющих из нержавеющей стали.</li>
+            <li class="bem__list-item">100% выходной контроль качества.</li>
+            <li class="bem__list-item">Производство 3-5ти секционных теплообменников для процессов пастеризации на пищевых предприятиях.</li>
+            <li class="bem__list-item">Доставка до ближайшего к клиенту терминала транспортной компании включена в стоимость.</li>
+            <li class="bem__list-item">Собственная программа подбора.</li>
+            <li class="bem__list-item">Скорость подбора от 10 минут до 2 часов.</li>
+            <li class="bem__list-item">Покраска плит в оранжевый цвет для поднятия настроения.</li>
+          </ul>
+        </div>
+        <div class="mainpage-pto__image-container">
+          <img class="mainpage-pto__image" src="<%=require('./images/ti45_new.png')%>" alt="Теплообменники Ютермо">
+        </div>
+      </div>
+    </section>
+
+    <section class="mainpage-company" style="position: relative; min-height: 900px; background-color: var(--bg-darker-color);">
+      <div class="mainpage-company__content">
+        <div class="uwrapper" style="padding: 50px 0;">
+          <h2 class="section-title">О компании</h2>
+          <div style="max-width: 600px;">
+          <p class="bem__paragraph">Наша компания является производителем блочных тепловых пунктов под маркой Ютермо.</p>
+            <ul class="bem__list" style="margin-top: 40px;">
+              <li class="bem__list-item">Каждый блочный тепловой пункт подбирается индивидуально согласно данных, предоставленных проектировщиком или
+                заказчиком.</li>
+              <li class="bem__list-item">Разрабатывается принципиальная тепловая схема теплового пункта, подбирается оборудование, показывается размещение
+                блоков на плане помещения.</li>
+              <li class="bem__list-item">Конструкторами создаётся 3D модели блоков БТП, исходя из размеров помещения и дверных проёмов.</li>
+              <li class="bem__list-item">По этим моделям на производстве изготавливаются готовые блоки.</li>
+              <li class="bem__list-item">Каждый БТП комплектуется шкафами управления.</li>
+            </ul>
+          </div>
+        </div>
+        <img src="<%=require('./images/mainpage-about.png')%>">
+      </div>
+        <img src="<%=require('./images/svg-elems/mainpage-svg-section.svg')%>" style="position: absolute; top: 0; left: 0;">
+    </section>
+
+    <section class="mainpage-reference uwrapper" style="padding: 10%;">
+      <%=require('./insets/schemes/svg-schemes/russia-map.svg')%>
+    </section>
+
+  </main>
+
+  <!--FOOTER-->
+  <%= require('html-loader!./insets/asides/inner-footer.html').default %>
+
+  <!--Шаблон карточки проекта-->
+  <template id="project-template">
+    <div class="projects__item">
+      <img class="projects__image" alt="Здесь будет фото проекта" src="<%=require('./images/svg-elems/preloader.gif')%>">
+      <p class="projects__item-description">Котельная в квартале 34, г. Уфа, жилой район «Затон-Восточный»</p>
+    </div>
+  </template>
+
+  <!--Шаблон элемента партнера на карте-->
+  <template id="partner-item-template">
+    <li class="map__list-item" data-html="<b>ООО «Интерсервис»</b><br> Тел.: 8-914-130-30-30<br>">Чита</li>
+  </template>
+</body>
+</html>

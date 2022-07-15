@@ -1,0 +1,36 @@
+.nav__menu-list-item {
+  /*padding: 10px 0px 5px;*/
+  margin: 0;
+  text-align: center;
+  position: relative;
+  display: flex;
+}
+
+.nav__menu-list-item:after {
+  position: absolute;
+  content: '';
+  height: .8em;
+  bottom: 2px;
+  left: 0;
+  width: 90%;
+  background-color: var(--theme-main-color);
+  transition: width .3s ease-in, visibility .3s ease-in, opacity .3s linear, height .3s linear, bottom .3s linear;
+  visibility: visible;
+
+  opacity: 0.3;
+  z-index: 0;
+}
+
+.nav__menu-list-item:hover::after {
+  visibility: visible;
+  opacity: 0.6;
+  /*transition: visibility .0s ease-in;
+  transition-delay: 0;*/
+  /*Дает резкий отскок, в это состояние элемент не анимируется*/
+  /*height: 9px;*/
+  left: 0;
+  width: 100%;
+  bottom: 2px;
+
+  transform: scaleX(-20deg);
+}

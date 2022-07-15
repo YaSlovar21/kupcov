@@ -1,0 +1,9 @@
+.mainpage-about__grid {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  gap: 150px;
+
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}

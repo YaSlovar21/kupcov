@@ -1,0 +1,25 @@
+.raschet-bem__temperatures {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  max-width: calc(100% - 40px);
+  margin: 0 auto;
+  width: 100%;
+  flex-basis: 252px;
+
+  min-height: 100px;
+}
+
+@media screen and (max-width:768px) {
+  .raschet-bem__temperatures {
+    max-width: calc(100% - 20px);
+  }
+}
+/*
+@media screen and (max-height: 708px) {
+  .raschet-bem__temperatures {
+    flex-basis: 199px;
+    min-height: 0;
+  }
+}
+*/

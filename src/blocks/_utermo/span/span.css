@@ -1,0 +1,83 @@
+.span{
+    color: #c4c4c4ad;
+}
+
+.span-geo {
+  position: relative;
+  display: flex;
+  align-items: center;
+  color: #A4A4A4;
+  font-size: 14px;
+  font-weight: 500;
+
+  margin: 10px 0;
+}
+
+.span-geo::before {
+  content: '';
+
+  width: 1em;
+  height: 1em;
+  background-image: url(../../../images/svg-elems/i-geo-white.svg);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-right: 10px;
+}
+
+.span-color-gray {
+  color: var(--theme-gray-color);
+}
+
+.span-color-brand {
+  color: var(--theme-main-color);
+}
+
+.span-alt-color-brand {
+  color: var(--main-equivalent-color);
+}
+
+.span-400 {
+  font-weight: 400;
+}
+
+.span-500 {
+  font-weight: 500;
+}
+
+.span-600 {
+  font-weight: 600;
+}
+
+.span-700 {
+  font-weight: 700;
+}
+
+.span-800 {
+  font-weight: 800;
+}
+
+.span-uppercase {
+  text-transform: uppercase;
+}
+
+.span-no-wrap {
+  white-space: nowrap;
+}
+
+.span-spacing {
+  letter-spacing: 0.05em;
+}
+
+.span-mobile-show {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .span-mobile-hidden {
+    display: none;
+  }
+  .span-mobile-show {
+    display: block;
+  }
+}

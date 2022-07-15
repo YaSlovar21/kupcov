@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>
+    <%= htmlWebpackPlugin.options.title %>
+  </title>
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link href="<%= canonicalURL %>/<%= htmlWebpackPlugin.options.filename %>" rel="canonical" />
+</head>
+
+<body class="page">
+  <%= require('html-loader!./inner-metrika.html').default %>
+    <aside class="aside">
+      <%= require('html-loader!./insets/asides/in-aside.html').default %>
+    </aside>
+    <header class="header">
+      <a href="/" class="header__logo-link-container">
+        <img class="header__logo-img" src="<%=require('./images/svg-elems/u-flogo.svg')%>" alt="Лого Ютермо">
+      </a>
+      <div class="header__nav-side">
+        <%= require('html-loader!./insets/asides/nav-page.html').default %>
+      </div>
+    </header>
+    <main class="content">
+      <section class="burton">
+        <!--<div class="burton__content">
+          <div class="burton__image-container">
+            <img class="burton__image" src="<%=require('./images/ti45_new.png')%>" alt="Пластинчатый теплообменник">
+          </div>
+          <div class="burton__info">
+            <div class="burton__breadcrumbs">
+              <a class="burton__breadcrumbs-link" href="/">Главная</a>
+              <ul class="bem__list">
+                <li class="bem__list-item"><a class="burton__breadcrumbs-link" href="/production.html">Оборудование</a>
+                </li>
+                <li class="bem__list-item"><a
+                    class="burton__breadcrumbs-link burton__breadcrumbs-link_type_here">Блочные тепловые пункты</a>
+                </li>
+              </ul>
+            </div>
+            <h1
+              class="burton__title animated slow fadeInLeft section-title section-title_gray section-title_underline_right">
+              Блочные тепловые пункты</h1>
+            <p class="burton__subtitle">БТП <span class="span-700"><span class="span-color-brand">Ю</span><span class="span-color-gray ">ТЕРМО</span></span> - готовое решение с индивидуальным подходом
+              <a class="burton__link link-beauty" href="#">Подробнее &#8594;</a>
+            </p>
+          </div>
+        </div>-->
+        <img class="" src="<%=require('./images/fake-burton-btp.png')%>" alt="Пластинчатый теплообменник">
+      </section>
+
+      <section class="uwrapper" style="padding: 80px 0;">
+        <p class="bem__paragraph bem__paragraph_readable">Тепловой пункт — один из главных элементов системы централизованного теплоснабжения
+          зданий. Он представляет собой узлы подключения потребителей тепловой энергии к тепловым сетям и предназначен
+          для подготовки теплоносителя, регулирования его параметров перед подачей в местные системы, а также для учета
+          потребления тепла.</p>
+        <p class="bem__paragraph bem__paragraph_readable">Согласно СП 41-101-95 «Проектирование тепловых пунктов» п 2.19 оборудование тепловых
+          пунктов рекомендуется применять в блочном исполнении. Это значительно упрощает процесс проектирования,
+          комплектации и монтажа тепловых пунктов. Тепловые пункты изготавливаются в заводских условиях и поставляются
+          на объект строительства в виде готовых блоков — блочных тепловых пунктов (БТП)</p>
+      </section>
+
+      <section class="lp-btp-schemes">
+        <h2 class="section-title">Комплектация блочных тепловых пунктов</h2>
+        <p class="section-subtitle">Блочные тепловые пункты традиционного исполнения состоят из следующих компонентов:
+        </p>
+        <div class="dg">
+          <ul class="lp-btp-schemes__grid dg__list">
+            <li class="dg__list-item">
+              <h3 class="dg__title">Узел ввода и учета</h3>
+              <p class="dg__description">Производство узлов ввода и учета, тепловых пунктов для систем отопления и
+                горячего водоснабжение.</p>
+            </li>
+            <li class="dg__list-item">
+              <h3 class="dg__title">Узел отоления зависимая схема</h3>
+              <p class="dg__description">Производство узлов ввода и учета, тепловых пунктов для систем отопления и
+                горячего водоснабжение.</p>
+            </li>
+            <li class="dg__list-item">
+              <h3 class="dg__title">Узел отоления независимая схема</h3>
+              <p class="dg__description">Производство узлов ввода и учета, тепловых пунктов для систем отопления и
+                горячего водоснабжение.</p>
+            </li>
+            <li class="dg__list-item">
+              <h3 class="dg__title">Узел ввода и учета</h3>
+              <p class="dg__description">Производство узлов ввода и учета, тепловых пунктов для систем отопления и
+                горячего водоснабжение.</p>
+            </li>
+            <li class="dg__list-item">
+              <h3 class="dg__title">Узел ввода и учета</h3>
+              <p class="dg__description">Производство узлов ввода и учета, тепловых пунктов для систем отопления и
+                горячего водоснабжение.</p>
+            </li>
+            <li class="dg__list-item">
+              <h3 class="dg__title">Узел ввода и учета</h3>
+              <p class="dg__description">Производство узлов ввода и учета, тепловых пунктов для систем отопления и
+                горячего водоснабжение.</p>
+            </li>
+          </ul>
+          <div class="dg__popup dg__popup_opened">
+            <div class="dg__popup-content">
+              <div class="dg__popup-image-slider">
+                <img class="dg__popup-image" src="<%=require('./images/schemes_btp/3d/test-scheme3d.png')%>">
+              </div>
+              <div class="dg__popup-info">
+                <h4 class="dg__popup-info-title section-title section-title_underline_right">Узел ввода и учёта</h4>
+                <p class="dg__popup-info-text">
+                  Узел ввода и учёта используется в следующих целях:
+                <ul class="bem__list">
+                  <li class="bem__list-item">Ввод трубопроводов системы теплоснабжения в здание или сооружение;</li>
+                  <li class="bem__list-item">Очистка теплоносителя;</li>
+                  <li class="bem__list-item">Учёт поступающей тепловой энергии;</li>
+                  <li class="bem__list-item">Регулировка расхода в соответствии с заданным графиком температуры.</li>
+                </ul>
+                </p>
+                <ul class="dg__popup-links bem__list">
+                  <li><a class="dg__popup-link bem__link bem__link_download">Опросный лист на тепловой пункт</a></li>
+                  <li><a class="dg__popup-link bem__link bem__link_download">Каталог тепловых пунктов</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a class="bem__link bem__link_arrowup" href="/schemes-btp/vvoda.html">УВИУУТЭ</a>
+        <a class="bem__link bem__link_arrowup" href="/schemes-btp/so-nezav.html">СО независимая</a>
+        <a class="bem__link bem__link_arrowup" href="/schemes-btp/so-zav.html">СО зависимая</a>
+        <a class="bem__link bem__link_arrowup" href="/schemes-btp/gvs-odn.html">ГВС одноступенчатая</a>
+        <a class="bem__link bem__link_arrowup" href="/schemes-btp/gvs-two-step.html">ГВС двухступенчатая</a>
+        <a class="bem__link bem__link_arrowup" href="/schemes-btp/gvs-reserve.html">ГВС с резервными</a>
+
+      </section>
+
+      <section class="apps">
+        <h2 class="apps__heading section-title">Наши объекты</h2>
+        <div class="apps__desc-n-button uwrapper" style="overflow: hidden;">
+          <p class="section-subtitle">Мы изготавливаем тепловые пункты и поставляем их по всей России от Калининграда до
+            Камчатки, также в страны СНГ.</p>
+          <button class="apps__change-view-button bem__link bem__link_bgright">Смотреть подробнее</button>
+        </div>
+        <div class="apps__dynamic-section">
+          <!--Здесь рендерятся области применения-->
+          <div class="apps__card card">
+            <div class="card__image-container">
+              <img class="card__image" src="<%=require('./images/elabuga.png')%>">
+            </div>
+            <span class="span-geo">Республика Татарстан</span>
+            <div class="apps__desc-n-button">
+              <h3 class="card__title apps__object-title">Автоматизированный машиностроительный комплекс аконит-урал (оэз
+                алабуга)</h3>
+              <a class="bem__link bem__link_bgright bem__link_arrowup" href="/info/">Подробнее</a>
+            </div>
+          </div>
+          <div class="apps__card card">
+            <div class="card__image-container">
+              <img class="card__image" src="<%=require('./images/elabuga.png')%>">
+            </div>
+            <span class="span-geo">Республика Татарстан</span>
+            <div class="apps__desc-n-button">
+              <h3 class="card__title apps__object-title">Автоматизированный машиностроительный комплекс аконит-урал (оэз
+                алабуга)</h3>
+              <a class="bem__link bem__link_bgright bem__link_arrowup" href="/info/">Подробнее</a>
+            </div>
+          </div>
+          <div class="apps__card card">
+            <div class="card__image-container">
+              <img class="card__image" src="<%=require('./images/elabuga.png')%>">
+            </div>
+            <span class="span-geo">Республика Татарстан</span>
+            <div class="apps__desc-n-button">
+              <h3 class="card__title apps__object-title">Автоматизированный машиностроительный комплекс аконит-урал (оэз
+                алабуга)</h3>
+              <a class="bem__link bem__link_bgright bem__link_arrowup" href="/info/">Подробнее</a>
+            </div>
+          </div>
+        </div>
+        <button class="bem__button apps__more-button">Показать еще</button>
+      </section>
+
+      <section class="uwrapper btp-samples">
+        <h2 class="section-title">Примеры изготовленных тепловых пунктов</h2>
+        <ul class="btp-samples__list">
+          <li class="btp-samples__list-item">
+            <h3 class="bem__subtitle btp-samples__list-item-title">Узел горячего водоснабжения с контуром горячей воды из нержавеющей стали</h3>
+            <p class="bem__paragraph btp-samples__list-item-power">123 кВт</p>
+            <img class="btp-samples__img" src="<%=require('./images/btp-list-1.png')%>">
+            <img class="btp-samples__img" src="<%=require('./images/btp-list-1-1.png')%>">
+          </li>
+          <li class="btp-samples__list-item">
+            <h3 class="bem__subtitle btp-samples__list-item-title">Узел ввода и учета тепловой энергии</h3>
+            <p class="bem__paragraph btp-samples__list-item-power">123 кВт</p>
+            <p class="bem__paragraph btp-samples__list-item-du">ДУ250</p>
+            <img class="btp-samples__img" src="<%=require('./images/btp-list-2-2.png')%>">
+            <img class="btp-samples__img" src="<%=require('./images/btp-list-2-1.png')%>">
+            <a class="bem__link" href="/" style="padding: 20px 10px; background-color: var(--bg-darker-color);">Подробнее про узлы ввода и учета</a>
+          </li>
+          <li class="btp-samples__list-item">
+            <h3 class="bem__subtitle btp-samples__list-item-title">Узел горячего водоснабжения с контуром горячей воды из нержавеющей стали</h3>
+            <p class="bem__paragraph btp-samples__list-item-power">123 кВт</p>
+            <img class="btp-samples__img" src="<%=require('./images/btp-list-3.png')%>">
+          </li>
+        </ul>
+      </section>
+    </main>
+    <%= require('html-loader!./insets/asides/inner-footer.html').default %>
+    <%= require('html-loader!./insets/popup-mini-form.html').default %>
+
+</body>
+
+</html>

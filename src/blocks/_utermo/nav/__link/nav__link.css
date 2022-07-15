@@ -1,0 +1,12 @@
+.nav__link {
+  text-decoration: none;
+  outline: none;
+  transition: .5s linear;
+
+  position: relative;
+  margin: 0 auto;
+  padding: 10px 0;
+  color: var(--theme-white-color);
+  box-sizing: border-box;
+  z-index: 1;
+}

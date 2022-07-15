@@ -1,0 +1,13 @@
+.bem__link_more {
+  transition: all .3s linear;
+}
+
+.bem__link_more::after {
+  content: ' Подробнее \2197';
+  transition: all .5s linear;
+}
+
+.bem__link_more:hover::after {
+  color: var(--theme-main-color);
+  opacity: .8;
+}

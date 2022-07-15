@@ -1,0 +1,18 @@
+.bem__link_download-right {
+  transition: all .3s linear;
+  display: flex;
+  align-items: center;
+}
+
+.bem__link_download-right::after {
+  content: '';
+  width: 1em;
+  height: 1em;
+  background-image: url(../../../../../images/ti/svg-elems/i-download.svg);
+  background-size: contain;
+  margin-left: 9px;
+}
+
+.bem__link_download-right:hover::before {
+  color: var(--theme-main-color);
+}

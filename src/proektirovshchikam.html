@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title><%= htmlWebpackPlugin.options.title %></title>
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link href="<%= canonicalURL %>/<%= htmlWebpackPlugin.options.filename %>"  rel="canonical" />
+</head>
+<body class="page">
+  <aside class="aside">
+    <%= require('html-loader!./insets/asides/in-aside.html').default %>
+  </aside>
+  <header class="header header_block">
+    <div class="uwrapper" style="display: flex; align-items: flex-end; justify-content: space-between;">
+      <img class="header__logo-img" style="max-width: 250px;" src="<%=require('./images/svg-elems/u-logo-horiz.svg')%>" alt="Лого Ютермо">
+      <div class="header__nav-side">
+        <%= require('html-loader!./insets/asides/nav-page.html').default %>
+       </div>
+    </div>
+    <a href="/" class="header__logo-link-container breadcrumbs__logo">
+      <img class="header__logo-img"  src="<%=require('./images/svg-elems/u-flogo.svg')%>" alt="Лого Ютермо">
+    </a>
+    <div class="breadcrumbs">
+      <a href="/" class="header__logo-link-container breadcrumbs__logo">
+        <img class="header__logo-img"  src="<%=require('./images/svg-elems/u-flogo.svg')%>" alt="Лого Ютермо">
+      </a>
+      <ul class="bem__list bem__list_line breadcrumbs__list">
+        <li class="breadcrumbs__list-item breadcrumbs__list-item_here"><a class="bem__link" href="/<%= htmlWebpackPlugin.options.filename %>">Проектировщикам</a></li>
+      </ul>
+    </div>
+    <div class="header__nav-side">
+     <!-- <%= require('html-loader!./insets/asides/nav-page.html').default %>-->
+    </div>
+  </header>
+    <main class="content">
+      <section class="info-section">
+        <div class="info-section__aside info-section__aside_poster">
+          <h1 class="section-title" style="position: relative;">Проектировщикам</h1>
+          <p class="bem__paragraph" style="position: relative;">Для проектировщиков у нас есть специальное решение – мы разрабатываем полностью часть
+            ТМ проекта индивидуального теплового пункта на основе подбора БТП «Ютермо».</p>
+
+          <div>
+            <!--<a class="bem__link bem__link_download info-section__link info-section__link_bg" href="#">Скачать опросный лист</a>
+            <a class="bem__link bem__link_download info-section__link info-section__link_bg" style="margin-top:10px;" href="#">Скачать каталог</a>
+            <a class="bem__link bem__link_arrowup info-section__link" style="margin-top:10px;" href="#">Рассчитать теплообменник</a>-->
+          </div>
+        </div>
+        <article class="article info-section__article">
+             <h2 class="section-subtitle">Что мы выдаем проектировщикам?</h2>
+             <ul class="bem__list">
+              <li class="bem__list-item bem__list-item_flexed">
+                <a class="bem__link bem__link_more-column" href="#">Краткую пояснительную записку проекта ИТП</a>
+              </li>
+              <li class="bem__list-item bem__list-item_flexed">
+                <a class="bem__link bem__link_more-column" href="#">Принципиальную схему теплового пункта</a>
+              </li>
+              <li class="bem__list-item bem__list-item_flexed">
+                <a class="bem__link bem__link_more-column" href="#">Расстановка блоков на плане помещения и обвязка их трубопроводами</a>
+              </li>
+              <li class="bem__list-item bem__list-item_flexed">
+                <a class="bem__link bem__link_more-column" href="#">Спецификация оборудования, входящего в состав теплового пункта</a>
+              </li>
+              <li class="bem__list-item bem__list-item_flexed">
+                <a class="bem__link bem__link_more-column" href="#">Листы подбора теплообменников и насосов</a>
+              </li>
+             </ul>
+            <p class="quote bem__paragraph">Скорость подбора БТП с таким комплектом чертежей
+              <span class="span-color-brand">составляет 1-2 дня</span>. Если меняются исходные данные, то выдаем откорректированный
+              подбор БТП в течении 1 дня.
+            </p>
+
+        </article>
+      </section>
+      <section style="background-color: var(--bg-darker-color); padding: 40px 0">
+        <div class="uwrapper">
+          <p class="bem__paragraph">Подбор БТП «Ютермо» производится в соответствии с СП124.13330.2012 «Тепловые сети» и СП 41 101
+            95 «Проектирование тепловых пунктов». Каждый тепловой пункт подбирается индивидуально, согласно данным для подбора.
+            Данные для подбора можно предоставить в виде заполненного опросного листа, технического задания от заказчика или
+            стадии «П» проекта ИТП. Также данные можно предоставить, набрав наш номер телефона и продиктовать нашему сотруднику.
+            При подборе учитываются особые пожелания, например: изготовление БТП наружного применения (в контейнере); размещение в
+            ограниченном по площади помещении, используя нестандартное оборудование в блоках; изготовление БТП с использованием
+            трубопроводов только из нержавеющей стали и т.д.
+          </p>
+          <p class="bem__paragraph">Используя в проекте наше решение, проектировщики экономят время, затраченное на проект.
+            Освободившееся время они могут использовать с пользой для себя. Например, почитать книгу или обыграть коллегу в
+            настольный теннис.
+          </p>
+        </div>
+      </section>
+    </main>
+    <!--<section class="map">
+      <h2 class="map__heading">Партнеры по продажам и сервису по всей России</h2>
+      <div class="map__list-container">
+        <ul class="map__list">
+        </ul>
+        Сюда встанут карточки партнеров
+        <div class="map__popup">
+          <span class="map__popup-close">&lt;-- Назад</span>
+          <ul class="map__popup-container"></ul>
+        </div>
+      </div>-->
+      <div class="map__partner"></div>
+    </section>
+    <%= require('html-loader!./insets/asides/inner-footer.html').default %>
+  </div>
+  <!--Шаблон формы-->
+  <template class="form-big-template">
+    <%= require('html-loader!./insets/big-form-template.html').default %>
+  </template>
+  <!--Шаблон элемента партнера на карте-->
+  <template id="partner-item-template">
+    <li class="map__list-item" data-html="<b>ООО «Интерсервис»</b><br> Тел.: 8-914-130-30-30<br>">Чита</li>
+  </template>
+</body>
+</html>

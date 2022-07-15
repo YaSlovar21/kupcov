@@ -1,0 +1,95 @@
+.flexburton__square-pic {
+    position: absolute;
+    right: 111px;
+    top: 30px;
+    height: 700px;
+    width: 700px;
+    background-image: url(../../../images/Subtract.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  .flexburton__square-pic_page_btp {
+    background-image: url(../../../images/btp_burton_triangle_2.svg);
+    height: 600px;
+    width: 600px;
+    right: 190px;
+    top: 120px;
+    background-position: 0 0;
+    background-size: contain;
+    transform-origin: center center;
+  }
+
+  .flexburton__square-pic_page_pizh{
+    background-image: url(../../../images/rect_btp.svg);
+    height: 700px;
+    width: 700px;
+    right: 190px;
+    top: 30px;
+    background-position: 0 0;
+    background-size: contain;
+    transform-origin: center center;
+  }
+  
+  @media screen and (max-width: 1130px) {
+    .flexburton__square-pic {
+      width: 500px;
+      height: 500px;
+    }
+  }
+
+  
+@media screen and (max-width: 870px) {
+  .flexburton__square-pic {
+    width: 300px;
+    height: 300px;
+    top: 15px;
+  }
+}
+
+
+
+
+/******NEW EDITION***/
+.flexburton__square-pic1 {
+  position: absolute;
+  z-index: -1;
+  width: 110%;
+  height: auto;
+  bottom: 40px;
+  background-image: url(../../../images/Subtract.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.flexburton__square-pic1_page_btp {
+  background-image: url(../../../images/btp_burton_triangle_2.svg);
+  /*height: 600px;
+  width: 600px;*/
+  background-position: 0 0;
+  background-size: contain;
+  transform-origin: center center;
+}
+
+.flexburton__square-pic1_page_pizh{
+  background-image: url(../../../images/rect_btp.svg);
+  /*height: 700px;
+  width: 700px;*/
+  background-position: 0 0;
+  background-size: contain;
+  transform-origin: center center;
+}
+
+@media screen and (max-width: 1024px) {
+  .flexburton__square-pic1{
+      width: 60vw;
+      height: 60vw;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .flexburton__square-pic1{
+      width: 50vw;
+      height: 50vw;
+  }
+}

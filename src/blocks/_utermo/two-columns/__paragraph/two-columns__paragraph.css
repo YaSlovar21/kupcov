@@ -1,0 +1,10 @@
+.two-columns__paragraph{
+  color: var(--theme-white-color);
+  font-size: var(--p-size);
+  line-height: 1.4;
+  margin: 30px 0 0;
+}
+
+.two-columns__paragraph:first-of-type {
+  margin-top: 0;
+}

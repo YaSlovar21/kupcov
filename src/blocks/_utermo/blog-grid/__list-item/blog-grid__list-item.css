@@ -1,0 +1,22 @@
+.blog-grid__list-item {
+  background-color: var(--theme-dark-gray-color);
+  border: 2px solid var(--bg-darker-color);
+  box-sizing: border-box;
+  padding: 10px;
+}
+
+.blog-grid__list-item_m {
+  grid-column: span 1;
+}
+
+.blog-grid__list-item_l {
+  grid-column: span 2;
+}
+
+.blog-grid__list-item_xl {
+  grid-column: span 3;
+}
+
+.blog-grid__list-item_white {
+  background-color: var(--theme-white-color);
+}

@@ -1,0 +1,159 @@
+.animate {
+    min-height: 400px;
+    position: relative;
+}
+
+.animate__stanina13 {
+    position: relative;
+    z-index: 2;
+    transform: skew(3deg, 1deg) translateY(220px) scale(1.05);
+    animation: stanina13 .7s 1.2s ease both;
+}
+
+.animate__plita13 {
+    position: relative;
+    z-index: 0;
+    transform: skewY(7deg) skewX(3deg);
+    
+}
+
+.animate__packet13 {
+    position: relative;
+    z-index: 1;
+    transform: skewY(30deg);
+    width: 280px;
+    transition: all .5s linear;
+    animation: packet13 .5s 1.2s ease both;
+}
+
+@keyframes packet13
+{
+  0% {
+    transform:skewY(30deg)
+  }
+  to {transform:skewY(30deg) translateX(220px) translateY(-152px)}
+}
+
+
+@keyframes stanina13
+{
+  0% {
+    transform:skewY(30deg)
+  }
+  to {transform: skew(5deg, 1deg) translateY(90px) scale(1.05) translateX(460px);}
+}
+
+
+.animate__logo {
+    position: absolute;
+    top: 300px;
+    right: 200px;
+    z-index: 5;
+    animation: logo .5s 1.2s linear both;
+}
+
+@keyframes logo
+{
+  0% {
+        transform:translateZ(0) scale(0.001);
+  }
+  50% {
+    transform: scale(1.5) skewY(10deg) translate(-100px, 40px);
+    }
+  100% {
+    transform: scale(0.9) skewY(19deg) skewX(-5deg) translate(-650px, 240px);
+  }
+}
+
+
+@keyframes blue
+{
+  0% {
+    transform:skewY(-15deg) scaleY(1)
+  }
+  to {transform:skewY(-15deg) scaleY(15)}
+}
+
+@keyframes red
+{
+  0% {
+    transform:skewY(-15deg) scaleY(1)
+  }
+  to {transform:skewY(-15deg) scaleY(-15)}
+}
+
+.animate__elka {
+  position: absolute;
+  transform: skewY(-15deg);
+}
+
+.animate__elka_rotate {
+  transform: skewY(-15deg) rotate(180deg);
+}
+
+.animate__blue {
+  width: 60px;
+  height: 10px;
+  background-color: blue;
+  transform: skewY(-15deg);
+  position: absolute;
+  animation: blue 2s 1.2s linear both infinite;
+  transition: all 2s linear;
+  transform-origin: top;
+}
+
+.animate__red {
+  width: 60px;
+  height: 10px;
+  background-color: red;
+  transform: skewY(-15deg);
+  position: absolute;
+  animation: red 2s 1.2s linear both infinite;
+  transition: all 2s linear;
+  transform-origin: top;
+  
+}
+
+.animate__red::after {
+  top:0;
+  bottom:0;
+  left: 0;
+  right: 0;
+  background-color: green;
+}
+
+.animate__blue:nth-child(1) {
+  top: 70px;
+  left: 15px;
+
+}
+
+.animate__red:nth-child(3) {
+  bottom: 120px;
+  left: 70px;
+}
+
+.animate__blue:nth-child(5) {
+  top: 155px;
+  left: 120px;
+}
+
+.animate__red:nth-child(7) {
+  bottom: 30px;
+  left: 170px;
+}
+
+.animate__elka:nth-child(4) {
+  top: 50px;
+  left: 50px;
+}
+
+.animate__elka:nth-child(6) {
+  top: 100px;
+  left: 100px;
+}
+.animate__elka:nth-child(8) {
+  top: 150px;
+  left: 150px;
+}
+

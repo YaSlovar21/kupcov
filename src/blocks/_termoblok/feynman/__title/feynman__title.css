@@ -1,0 +1,34 @@
+.feynman__title {
+    text-align: center;
+    /*без указания ширины плывет верстка*/
+    width: 950px;
+    margin: 0 auto;
+    line-height: 1.15;
+    font-size: 62px;
+    font-weight: bold;
+    color: #c4c4c4;
+  }
+
+.feynman__title_size_50 {
+  width: 90%;
+  padding: 0 30px;
+  font-size: 48px;
+  margin-top: 200px;
+  color: #ffffff;
+  z-index: 3;
+}
+
+@media screen and (max-width:1024px) {
+  .feynman__title {
+    width: 90%;
+    font-size: 36px;
+  }
+}
+
+
+@media screen and (max-width: 420px) {
+  .feynman__title {
+    font-size: 28px;
+    width: 90%;
+  }
+}

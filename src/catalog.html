@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title><%= htmlWebpackPlugin.options.title %></title>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <link href="<%= canonicalURL %>/catalog/"  rel="canonical" />
+  </head>
+
+  <body>
+    <%= require('html-loader!./inner-metrika.html').default %>
+    <div class="bg"></div>
+    <div class="page">
+      <header class="header">
+        <a href="/" class="header__logo"><img class="header__logo-img" src="<%=require('./images/header-logo-1.svg')%>" alt="Лого Термоблок"/></a>
+        <div class="header__right">
+          <%= require('html-loader!./insets/asides/inner-header.html').default %>
+        </div>
+      </header>
+
+      <main class="content">
+        <div class="flexburton flexburton_size_m flexburton_test">
+          <div class="flexburton__left-side">
+            <div class="flexburton__breadcrumbs">
+                <a class="flexburton__breadcrumbs-link" href="/">Главная</a>
+                <a class="flexburton__breadcrumbs-link flexburton__breadcrumbs-link_type_here" href="/<%= htmlWebpackPlugin.options.filename %>">Каталог пластинчатых теплообменников</a>
+            </div>
+            <h1 class="flexburton__title flexburton__title_size_m">Каталог пластинчатых теплообменников</h1>
+            <p class="flexburton__subtitle flexburton__subtitle_size_m">Модельный ряд пластинчатых теплообменников <span class="span-no-wrap">торговой марки <img src="<%=require('./images/svg-teplohit.svg')%>" style="height: 1em;position: relative;top: 0.2em;" alt="Теплохит"> ™.</span> Пластины и уплотнения Вы можете посмотреть в разделе "Сервис" <a class="flexburton__link link-beauty" href="#">Комплектующие &#8594;</a></p>
+          </div>
+          <img  alt="Каталог пластинчатых теплообменников" src="<%= require('./images/catalog.png')%>">
+        </div>
+
+        <div class="catalog-grid">
+          <div class="catalog-grid__pdf-preview">
+            <img class="catalog-grid__preview-img" alt="Каталог пластинчатых теплообменников" src="<%= require('./images/termoblok_catalog.png')%>">
+            <a class="catalog-grid__preview-link" href="/docu/termoblok_catalog.pdf" download>Скачать каталог</a>
+          </div>
+        <!--<section style="max-width: 767px; margin: 0 auto; position: relative;">-->
+          <div style="width: 100%; flex-basis: 1490px; flex-shrink: 3;">
+          <section class="mainmodels mainmodels_page_catalog catalog-grid__ti" >
+          <div class="mainmodels__wrapper mainmodels__wrapper_page_catalog">
+            <h2 class="mainmodels__title mainmodels__title_page_catalog ">Теплообменники в классическом исполнении</h2>
+            <ul class="mainmodels__models models-ti timodels">
+              <li class="timodels__pto">
+                <a class="timodels__link" href="/catalog/ti-025.html">
+                  <h5 class="timodels__ptotitle">ТИ025</h5>
+                  <p class="timodels__ptodu">(ду 25, 32)(ду 40)</p>
+                </a>
+              </li>
+              <li class="timodels__pto">
+                <a class="timodels__link" href="/catalog/ti-077.html">
+                  <h5 class="timodels__ptotitle">ТИ077</h5>
+                  <p class="timodels__ptodu">(ду 25, 32)(ду 40)</p>
+                </a>
+              </li>
+              <li class="timodels__pto">
+                <a class="timodels__link" href="/catalog/ti-13.html">
+                  <h5 class="timodels__ptotitle">ТИ13</h5>
+                  <p class="timodels__ptodu">(ду 50, 65)</p>
+                </a>
+              </li>
+              <li class="timodels__pto">
+                <a class="timodels__link" href="/catalog/ti-16-5.html">
+                  <h5 class="timodels__ptotitle">ТИ16,5</h5>
+                  <p class="timodels__ptodu">(ду 80)</p>
+                </a>
+              </li>
+              <li class="timodels__pto">
+                <a class="timodels__link" href="/catalog/ti-18.html">
+                  <h5 class="timodels__ptotitle">ТИ18</h5>
+                  <p class="timodels__ptodu">(ду 50, 65)</p>
+                </a>
+              </li>
+              <li class="timodels__pto">
+                <a class="timodels__link" href="/catalog/ti-28.html">
+                  <h5 class="timodels__ptotitle">ТИ28</h5>
+                  <p class="timodels__ptodu">(ду 65)</p>
+                </a>
+              </li>
+              <li class="timodels__pto">
+                <a class="timodels__link" href="/catalog/ti-45.html">
+                  <h5 class="timodels__ptotitle">ТИ45</h5>
+                  <p class="timodels__ptodu">(ду 100, 125)</p>
+                </a>
+              </li>
+              <li class="timodels__pto">
+                <a class="timodels__link" href="/catalog/ti-52.html">
+                  <h5 class="timodels__ptotitle">ТИ52</h5>
+                  <p class="timodels__ptodu">(ду 150)</p>
+                </a>
+              </li>
+              <li class="timodels__pto">
+                <a class="timodels__link" href="/catalog/ti-65.html">
+                  <h5 class="timodels__ptotitle">ТИ65</h5>
+                  <p class="timodels__ptodu">(ду 50, 65)</p>
+                </a>
+              </li>
+              <li class="timodels__pto">
+                <a class="timodels__link" href="/catalog/ti-82.html">
+                  <h5 class="timodels__ptotitle">ТИ82</h5>
+                  <p class="timodels__ptodu">(ду 150)</p>
+                </a>
+              </li>
+              <li class="timodels__pto">
+                <a class="timodels__link" href="/catalog/ti-95.html">
+                  <h5 class="timodels__ptotitle">ТИ95</h5>
+                  <p class="timodels__ptodu">(ду 200, 250)</p>
+                </a>
+              </li>
+              <li class="timodels__pto">
+                <a class="timodels__link" href="/catalog/ti-116.html">
+                  <h5 class="timodels__ptotitle">ТИ116</h5>
+                  <p class="timodels__ptodu">(ду 200, 250)</p>
+                </a>
+              </li>
+            </ul>
+            <button class="mainmodels__raschet button-bem mainmodels__raschet_ti">Рассчитать теплообменник</button>
+
+          </div>
+
+        </section>
+        <section class="mainmodels mainmodels_page_catalog catalog-grid__food">
+          <div class="mainmodels__wrapper mainmodels__wrapper_page_catalog  mainmodels__wrapper_food">
+            <h2 class="mainmodels__title mainmodels__title_page_catalog ">Пищевые теплообменники</h2>
+            <ul class="mainmodels__models models-food timodels">
+              <li class="timodels__pto">
+                <a class="timodels__link" href="/catalog/p-025.html">
+                  <h5 class="timodels__ptotitle">П025</h5>
+                  <p class="timodels__ptodu">(ду 25, 32)(ду 40)</p>
+                </a>
+              </li>
+              <li class="timodels__pto">
+                <a class="timodels__link" href="/catalog/p-077.html">
+                  <h5 class="timodels__ptotitle">П077</h5>
+                  <p class="timodels__ptodu">(ду 25, 32)(ду 40)</p>
+                </a>
+              </li>
+              <li class="timodels__pto">
+                <a class="timodels__link" href="/catalog/p-13.html">
+                  <h5 class="timodels__ptotitle">П13</h5>
+                  <p class="timodels__ptodu">(ду 50, 65)</p>
+                </a>
+              </li>
+              <li class="timodels__pto">
+                <a class="timodels__link" href="/catalog/p-16-5.html">
+                  <h5 class="timodels__ptotitle">П16,5</h5>
+                  <p class="timodels__ptodu">(ду 80)</p>
+                </a>
+              </li>
+              <li class="timodels__pto">
+                <a class="timodels__link" href="/catalog/p-18.html">
+                  <h5 class="timodels__ptotitle">П18</h5>
+                  <p class="timodels__ptodu">(ду 50, 65)</p>
+                </a>
+              </li>
+              <li class="timodels__pto">
+                <a class="timodels__link" href="/catalog/p-28.html">
+                  <h5 class="timodels__ptotitle">П28</h5>
+                  <p class="timodels__ptodu">(ду 65)</p>
+                </a>
+              </li>
+              <li class="timodels__pto">
+                <a class="timodels__link" href="/catalog/p-45.html">
+                  <h5 class="timodels__ptotitle">П45</h5>
+                  <p class="timodels__ptodu">(ду 100, 125)</p>
+                </a>
+              </li>
+              <li class="timodels__pto">
+                <a class="timodels__link" href="/catalog/p-52.html">
+                  <h5 class="timodels__ptotitle">П52</h5>
+                  <p class="timodels__ptodu">(ду 150)</p>
+                </a>
+              </li>
+              <li class="timodels__pto">
+                <a class="timodels__link" href="/catalog/p-65.html">
+                  <h5 class="timodels__ptotitle">П65</h5>
+                  <p class="timodels__ptodu">(ду 50, 65)</p>
+                </a>
+              </li>
+              <li class="timodels__pto">
+                <a class="timodels__link" href="/catalog/p-82.html">
+                  <h5 class="timodels__ptotitle">П82</h5>
+                  <p class="timodels__ptodu">(ду 150)</p>
+                </a>
+              </li>
+            </ul>
+            <button class="mainmodels__raschet button-bem mainmodels__raschet_p">Рассчитать теплообменник</button>
+          </div>
+        </section>
+        </div>
+      </div>
+      </main>
+      <section class="map">
+        <h2 class="map__heading">Партнеры по продажам и сервису по всей России</h2>
+        <div class="map__list-container">
+          <ul class="map__list">
+          </ul>
+          <!--Сюда встанут карточки партнеров-->
+          <div class="map__popup">
+            <span class="map__popup-close">&lt;-- Назад</span>
+            <ul class="map__popup-container"></ul>
+          </div>
+        </div>
+        <div class="map__partner"></div>
+      </section>
+      <%= require('html-loader!./insets/asides/inner-footer.html').default %>
+      <%= require('html-loader!./insets/popup-big-form.html').default %>
+      <%= require('html-loader!./insets/popup-mini-form.html').default %>
+    </div>
+
+    <!--Шаблон элемента партнера на карте-->
+    <template id="partner-item-template">
+      <li class="map__list-item">Чита</li>
+    </template>
+  </body>
+</html>

@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title><%= htmlWebpackPlugin.options.title %></title>
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link href="<%= canonicalURL %>/<%= htmlWebpackPlugin.options.filename %>"  rel="canonical" />
+</head>
+
+<body>
+    <%= require('html-loader!./inner-metrika.html').default %>
+    <div class="bg"></div>
+    <div class="page">
+
+    <header class="header">
+      <a href="/" class="header__logo"><img class="header__logo-img" src="<%=require('./images/header-logo-1.svg')%>" alt="Лого Термоблок"/></a>
+      <div class="header__right">
+          <%= require('html-loader!./insets/asides/inner-header.html').default %>
+      </div>
+    </header>
+
+    <main class="content">
+      <div class="flexburton flexburton_test flexburton_static-bg">
+        <div class="flexburton__left-side">
+          <div class="flexburton__breadcrumbs">
+            <a class="flexburton__breadcrumbs-link" href="/">Главная</a>
+            <a class="flexburton__breadcrumbs-link" href="/production.html">Продукция</a>
+            <a class="flexburton__breadcrumbs-link flexburton__breadcrumbs-link_type_here" href="/<%= htmlWebpackPlugin.options.filename %>">Пищевые теплообменники</a>
+          </div>
+            <!--<img class="logo logo_place_header" src="images/logo-to-2_place_header.svg" alt="Профи">-->
+          <h1 class="flexburton__title animated slow fadeInLeft">Пищевые теплообменники</h1>
+          <p class="flexburton__subtitle">Изготовление поз заказ пищевых пластинчатых теплообменников<a class="flexburton__link link-beauty" href="#"> Подробнее &#8594;</a></p>
+        </div>
+
+        <div class="flexburton__right-side">
+          <img class="flexburton__main-image" src="<%=require('./images/many-section-grid.png')%>" alt="Пластинчатый теплообменник">
+
+          <!--<svg class="flexburton__svg flexburton__svg_page_pizh rotation" width="781" height="781" viewBox="0 0 781 781" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M30.3812 338.68L338.68 30.3812C367.188 1.87294 413.409 1.87293 441.917 30.3812L572.112 160.576L578.476 154.212L448.281 24.0172C416.258 -8.00574 364.339 -8.00575 332.316 24.0172L24.0172 332.316C-8.00574 364.339 -8.00575 416.258 24.0172 448.281L154.212 578.476L160.576 572.112L30.3812 441.917C1.87293 413.409 1.87293 367.188 30.3812 338.68Z" fill="#E7441C"/>
+            <path d="M188.311 599.848L181.947 606.211L332.316 756.58C364.339 788.603 416.258 788.603 448.281 756.58L756.58 448.281C788.603 416.258 788.603 364.339 756.58 332.316L606.211 181.947L599.848 188.311L750.216 338.68C778.724 367.188 778.724 413.409 750.216 441.917L441.917 750.216C413.409 778.724 367.188 778.724 338.68 750.216L188.311 599.848Z" fill="#E7441C"/>
+          </svg>-->
+
+        </div>
+      </div>
+
+      <section class="description">
+        <div class="two-columns" data-wow-offset="450" data-wow-mobile="false">
+          <h2 class="two-columns__brief two-columns__brief_flexed">Гарантии качества пластинчатых теплообменников</h2>
+          <div class="two-columns__main-text two-columns__main-text_flexed wow fadeInUp">
+            <p class="two-columns__paragraph">Отличительной особенностью пищевых пластинчатых теплообменников является рама в специальном исполнении: она изготовлена из нержавеющей стали, либо облицована нержавеющей сталью. Специальные присоединения по <span class="span-bold span_color_orange">DIN 11850</span> обеспечивают высокие гигиенические показатели пищевых теплообменников.</p>
+            <p class="two-columns__paragraph">Большой опыт работы в данном направлении позволяет нам предлагать инновационные решения по использованию теплообменников в различных технологических процессах пищевой промышленности. Теплообменное оборудование отвечает высоким требованиям пищевой отрасли. Наша компания предлагает выгодно купить пищевые теплообменники для пищевой промышленности.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="introgrid">
+        <div class="introgrid__wrapper">
+          <h2 class="introgrid__header">Области применения</h2>
+          <p class="introgrid__desc">С 1993 года реализованы поставики во все регионы России. Вы можете ознакомиться с примерами проектов.</p>
+          <div class="introgrid__button">
+            <a href="#" class="link-beauty button-bem wow pulse" data-wow-delay="1s" style="text-decoration: none; padding: 15px 0; color: white;width: 100%; text-align: center; background-color: #f2f2f22d">Запросить консультацию по пищевому теплообменнику</a>
+          </div>
+          <div class="introgrid__feat">
+            <ul class="table-grid table-grid_food">
+              <li class="wow fadeInUp" >
+                  <h3 class="table-grid__heading">Пластинчатые пастеризаторы</h3>
+                  <p  class="table-grid__description">Пастеризация пищевых жидкостей, теплообменники любой мощности</p>
+              </li>
+              <li class="wow fadeInUp" data-wow-delay=".2s">
+                  <h3  class="table-grid__heading">Пластинчатые охладители (ООЛ)</h3>
+                  <p class="table-grid__description">Охлаждение молока, сливок и других жидкостей в потоке, конденсация соковых паров</p>
+              </li>
+              <li class="wow fadeInUp" data-wow-delay=".4s">
+                  <h3  class="table-grid__heading">Теплообменники в масложировой отрасли</h3>
+                  <p class="table-grid__description">Охлаждение (кристаллизация) или нагрев масла/смеси масел</p>
+              </li>
+              <li class="wow fadeInUp" data-wow-delay="0.6s">
+                  <h3  class="table-grid__heading">Технические процессы теплообмена при производстве спиртов, сусла</h3>
+                  <p class="table-grid__description">Пастеризация и охлаждения сусла (возможно изготовление многоступенчатого теплообменника)</p>
+              </li>
+
+              <li class="table-grid__last-food">
+                  <h3 class="table-grid__heading">Исполнение теплообменника</h3>
+                  <p class="table-grid__description">
+                    <ul class="list">
+                      <li class="list__item list__item_font_18">Односекционные</li>
+                      <li  class="list__item list__item_font_18">Многосекционные</li>
+                      <li  class="list__item list__item_font_18">Готовое решение на базе теплообменников</li>
+                    </ul>
+                  </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <div class="food-types-container">
+        <div class="swiper-wrapper">
+          <div class="food-type swiper-slide">
+              <img src="<%=require('./images/3dSlider/food.png')%>" alt="Односекционное исполнение пластинчатого пищевого теплобменника" class="food-type__image" data-swiper-parallax-opacity="0.0" data-swiper-parallax-duration="1400">
+              <figure class="food-type__figure" data-swiper-parallax="400" data-swiper-parallax-duration="1200" data-swiper-parallax-opacity="0.0"></figure>
+              <div class="food-type__description" data-swiper-parallax="-400" data-swiper-parallax-duration="1200">
+                <h2 class="food-type__title">Односекционные теплообменники</h2>
+                <div class="food-type__main-text">
+                    <p class="food-type__paragraph">Пластинчатые пищевые теплообменники в односекционном исполнении предназначены для теплообмена двух сред. Могут изготавливаться с плитой, облицованной нержавеющей сталью, так и плитой, покрытой полимерной краской.</p>
+                    <p class="food-type__paragraph">Односекционные теплообменники зачастую используются в двухступенчатых системах, к примеру: теплообменник пар-вода + теплообменник вода-сусло.</p>
+                </div>
+              </div>
+          </div>
+          <div class="food-type swiper-slide">
+            <img src="<%=require('./images/food-many-sect.png')%>" alt="Многосекционное исполнение пластинчатого пищевого теплобоменника" class="food-type__image" data-swiper-parallax-opacity="0.0" data-swiper-parallax-duration="1400">
+            <figure class="food-type__figure" data-swiper-parallax="400" data-swiper-parallax-duration="1200" data-swiper-parallax-opacity="0.0"></figure>
+            <div class="food-type__description" data-swiper-parallax="-400" data-swiper-parallax-duration="1200">
+              <h2 class="food-type__title">Многосекционные теплообменники</h2>
+              <div class="food-type__main-text">
+                  <p class="food-type__paragraph">Пищевые многосекционные теплообменники рассчитываются индивидуально под требования заказчика. Допускается возможность использования сред как в греющей роли, так и в нагреваемой. Проектируются выходы под процессы сепарации, гомогенизации, пастеризации и другие. В секциях происходит нагревание или охлаждение среды под нужные температуры. </p>
+                  <p class="food-type__paragraph">Важной особенностью является регенерация тепла, качественно рассчитанный теплобменник не тратит впустую тепло сред, а сохраненную энергию можно использовать повторно. Это позволяет значительно сократить расходы на электроэнергию.</p>
+              </div>
+            </div>
+          </div>
+          <div class="food-type swiper-slide">
+            <img src="<%=require('./images/teplojit-pou.png')%>" alt="Готовое решение на базе пластинчатых теплообменников" class="food-type__image" data-swiper-parallax-opacity="0.0" data-swiper-parallax-duration="1400">
+            <figure class="food-type__figure" data-swiper-parallax="400" data-swiper-parallax-duration="1200" data-swiper-parallax-opacity="0.0"></figure>
+            <div class="food-type__description" data-swiper-parallax="-300" data-swiper-parallax-duration="1200">
+              <h2 class="food-type__title">Пастеризационно-охладительные установки</h2>
+              <div class="food-type__main-text">
+                  <p class="food-type__paragraph">Пищевые многосекционные теплообменники рассчитываются индивидуально под требования заказчика. Допускается возможность использования сред как в греющей роли, так и в нагреваемой. Проектируются выходы под процессы сепарации, гомогенизации, пастеризации и другие. В секциях происходит нагревание или охлаждение среды под нужные температуры. </p>
+                  <p class="food-type__paragraph">Важной особенностью является регенерация тепла, качественно рассчитанный теплобменник не тратит впустую тепло сред, а сохраненную энергию можно использовать повторно. Это позволяет значительно сократить расходы на электроэнергию.</p>
+              </div>
+            </div>
+        </div>
+      </div>
+
+      <div class="food-type__pagination-container">
+        <span class="food-type__bullet food-type__bullet_active">Односекционные</span>
+        <span class="food-type__bullet">Многосекционные</span>
+        <span class="food-type__bullet">Установки ПОУ</span>
+      </div>
+      <!-- If we need navigation buttons -->
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+    </div>
+
+    <section class="oakley oakley_gradient oakley_food" >
+      <div class="two-columns two-columns_food">
+        <div class="two-columns__brief two-columns__brief_flexed two-columns__brief_column">
+          <h2 class="two-columns__brief-title">Эффективность теплообменников пластинчаого типа</h2>
+          <a class="two-columns__brief-link link-beauty" href="/equipment-selection/">Рассчитать теплообменник ↗</a>
+        </div>
+        <div class="two-columns__main-text two-columns__main-text_flexed">
+          <p class="two-columns__paragraph">Пластинчатый теплообменник марки <img src="<%=require('./images/svg-teplohit.svg')%>" style="height: 1em;position: relative;top: 0.2em;" alt="Теплохит"> имеет высокую эффективность, что позволяет создавать теплообменники с коэффициентом регенерации тепла 92% и выше и вести <span class="span-bold span-bold_spacing" >температурную обработку в мягких режимах</span>, не допуская перегрева или переохлаждения продукта.</p>
+          <p class="two-columns__paragraph">В целях экономии можно использовать стандартную стальную раму, окрашенную полимерной краской. Большой опыт работы в данной области позволяет нам предлагать прогрессивные решения по применению пластинчатых пищевых теплообменников в технологических процессах различных отраслей пищевой промышленности.</p>
+        </div>
+      </div>
+    </section>
+
+    <section style="background-color: #2f2f2f00; padding: 40px 0;">
+      <div class="food-grid">
+        <h2 class="food-grid__heading">Примеры изготовленных пищевых теплообменников</h2>
+
+        <div class="food-grid__item food-grid__item_border_left">
+          <img class="food-grid__image food-grid__image_smaller" src="<%=require('./images/milk-5-section-htm.png')%>" alt="Многосекционный пластинчатый теплообменник для молока" data-x="10">
+        </div>
+        <div class="food-grid__item">
+          <img class="food-grid__image" src="<%=require('./images/pischevoii-teploobmennik-grid.png')%>" alt="Пищевой теплообменник в исполнении без облицовки" data-x="20">
+        </div>
+        <div class="food-grid__item">
+          <img class="food-grid__image food-grid__image_smaller" src="<%=require('./images/pivnoii_nerzh_grid.png')%>" alt="Пищевой пластинчатый теплообменник для пивоварни" data-x="30">
+        </div>
+        <div class="food-grid__item food-grid__item_border_left">
+          <img class="food-grid__image" src="<%=require('./images/teplojit-pou.png')%>" alt="Пастеризационная установка с двумя пластинчатыми теплообменниками" data-x="40">
+        </div>
+        <div class="food-grid__item">
+          <img class="food-grid__image"  src="<%=require('./images/many-section-grid.png')%>" alt="Многосекционный молочный теплообменник">
+        </div>
+
+        <p class="food-grid__comment">К каждому заказчику мы подходим индивидуально и имеем всю необходимую научно-техническую базу для подбора и изготовления эффективного решения.</p>
+        <p class="food-grid__description" id="fd1">Многосекционный теплообменник для молочного производства</p>
+        <p class="food-grid__description" id="fd2">Теплообменник покрытый полимерной краской</p>
+        <p class="food-grid__description " id="fd3">Теплообменник для пивного сусла</p>
+        <p class="food-grid__description" id="fd4">Пастеризационная установка</p>
+        <p class="food-grid__description" id="fd5">Многосекционный теплообменник для молочного производства</p>
+
+      </div>
+    </section>
+    <!--
+    <section class="feedback">
+      <h2 class="feedback__title">Отзывы заказчиков</h2>
+      <div class="feedback__container">
+          <div class="feedback__item wow fadeInUp">
+            <div class="feedback__logo"><img alt="Лого заказчика" src="<%=require('./images/Logo-Image-Default.png')%>" class="feedback__logo-image"></div>
+              <div class="feedback__content">
+                  <p class="feedback__text-title feedback__text-title_width_m">ООО “Гроспирон”, производитель мороженого</p>
+                  <p class="feedback__text">Специалисты компании ООО “Термоблок” проявили профессионализм в подборе, расчёте теплообменников, аналогов нет на рынке.</p>
+              </div>
+              <img alt="Отзыв по теплоообменнику для производства мороженого" src="<%=require('./images/feed_test.png')%>" class="feedback__document">
+          </div>
+          <div class="feedback__item wow fadeInUp" data-wow-delay=".2s">
+              <div class="feedback__logo"><img alt="Лого заказчика" src="<%=require('./images/Barnaulskij-pivovarennyj-zavod.png')%>" class="feedback__logo-image"></div>
+              <div class="feedback__content">
+                  <p class="feedback__text-title feedback__text-title_width_l">ООО “Барнаульский пивоваренный завод”</p>
+                  <p class="feedback__text">Специалисты компании ООО “Термоблок” проявили профессионализм в подборе, расчёте теплообменников, аналогов нет на рынке.</p>
+              </div>
+              <img alt="Отзыв по теплоообменникам для производства напитков" src="<%=require('./images/feed_test.png')%>" class="feedback__document">
+          </div>
+      </div>
+    </section>-->
+    </main>
+
+    <!--Форма модального окна с картинкой-->
+    <div class="popup popup_darked popup-viewport">
+      <div class="popup__container">
+          <button class="popup__button-close link-beauty" type="button"></button>
+          <div class="popup__image-view popup__image-view_food">
+              <img class="popup__image popup__image_food" alt="картинка под загрузку" src="<%=require('./images/svg-elems/preloader.gif')%>">
+              <p class="popup__image-description popup__image-description_food"></p>
+          </div>
+      </div>
+    </div>
+    <!--FOOTER-->
+    <%= require('html-loader!./insets/asides/inner-footer.html').default %>
+    <%= require('html-loader!./insets/popup-mini-form.html').default %>
+  </div><!--page-->
+  </body>
+</html>

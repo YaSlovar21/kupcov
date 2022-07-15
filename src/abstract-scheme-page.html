@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title><%= htmlWebpackPlugin.options.title %></title>
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link href="<%= canonicalURL %>/<%= htmlWebpackPlugin.options.filename %>"  rel="canonical" />
+</head>
+<body class="page">
+  <aside class="aside">
+    <%= require('html-loader!./insets/asides/in-aside.html').default %>
+  </aside>
+  <header class="header">
+    <a href="/" class="header__logo-link-container">
+      <img class="header__logo-img"  src="<%=require('./images/svg-elems/u-flogo.svg')%>" alt="Лого Ютермо">
+    </a>
+    <div class="header__nav-side">
+      <%= require('html-loader!./insets/asides/nav-page.html').default %>
+    </div>
+  </header>
+  <main class="content">
+    <h1 class="section-title section-title_page_scheme"><%= htmlWebpackPlugin.options.heading %></h1>
+    <div class="svg-with-table">
+      <figure class="svg-with-table__scheme-svg">
+       <%=require('./insets/schemes/svg-schemes/'+ nameId+ '.svg')%>
+      </figure>
+      <div class="svg-with-table__tbl-spec">
+        <%= require('html-loader!./insets/schemes/tables-schemes/'+ nameId+ '.html').default %>
+      </div>
+    </div>
+    <div class="scheme-download-docs uwrapper">
+      <h2 class="bem__subtitle" style="margin-bottom: 20px;">Скачать документы</h2>
+      <a class="bem__link bem__link_download">Опросный лист на тепловой пункт</a>
+      <a class="bem__link bem__link_download">Каталог тепловых пунктов</a>
+    </div>
+    <%= require('html-loader!./insets/schemes/desc-schemes/'+ nameId+ '.html').default %>
+
+</main>
+<!--FOOTER-->
+<%= require('html-loader!./insets/asides/inner-footer.html').default %>
+
+<!--Форма расчёта теплообменника  -->
+<!--Удалено-->
+<%= require('html-loader!./insets/popup-big-form.html').default %>
+<%= require('html-loader!./insets/popup-mini-form.html').default %>
+
+<!--Шаблон элемента партнера на карте-->
+<template id="partner-item-template">
+  <li class="map__list-item" data-html="<b>ООО «Интерсервис»</b><br> Тел.: 8-914-130-30-30<br>">Чита</li>
+</template>
+<!--Шаблон карточки проекта-->
+<template id="project-template">
+  <div class="projects__item" >
+    <img  class="projects__image" alt="Здесь будет фото проекта с теплообменником"  src="<%=require('./images/svg-elems/preloader.gif')%>">
+    <p class="projects__item-description">Кондитерский комбинат «Кубань», г. Тимашевск, Краснодарский край</p>
+  </div>
+</template>
+<!--Шаблон карточки проекта в горизонтальном виде-->
+<template id="project-horizontal-template">
+  <div class="projects__item projects__item_horizontal">
+    <img class="projects__image projects__image_horizontal" src="<%=require('./images/ufa_zaton.png')%>">
+    <div class="column-description">
+      <h3 class="projects__item-description column-description__title">Котельная в квартале 34, г. Уфа, жилой район «Затон-Восточный»</h3>
+      <ul class="bem__list column-description__list">
+        <li>Темлообменник: <span class="span_color_orange span-bold projects__to-model">ТИ52-87</span></li>
+        <li>Мощность: <span class="span-bold projects__to-q">5,6 Гкал/час</span></li>
+        <li>Назначение: <span class="span-bold projects__to-naznach">ГВС</span></li>
+      </ul>
+      <a class="column-description__link link-beauty" href="#">Подробнее &#8594; </a>
+    </div>
+  </div>
+</template>
+
+<!--Форма модального окна с картинкой-->
+<div class="popup popup_darked popup-viewport">
+  <div class="popup__container popup__container_type_image">
+      <button class="popup__button-close link-beauty" type="button"></button>
+      <div class="popup__image-view">
+          <img class="popup__image" alt="картинка под загрузку" src="<%=require('./images/svg-elems/preloader.gif')%>">
+          <p class="popup__image-description"></p>
+      </div>
+  </div>
+</div>
+
+<!--Модальное окно с теплообменником-->
+<div class="popup popup_darked popup-to">
+  <div class="popup__container popup__container_type_heatex">
+      <button class="popup__button-close popup__button-close_type_heatex link-beauty" type="button"></button>
+      <figure class="highliter highliter_top-left"><div class="highliter__element highliter__element_stretched"></div></figure>
+      <figure class="highliter highliter_bottom-right"><div class="highliter__element highliter__element_stretched"></div></figure>
+      <figure class="highliter highliter_top-right"><div class="highliter__element highliter__element_stretched"></div></figure>
+      <figure class="highliter highliter_bottom-left"><div class="highliter__element highliter__element_stretched"></div></figure>
+      <!--div class="heatex popup__to-info" style="max-width: 100%;">-->
+      <div class="popup__to-img-container">
+
+      </div>
+      <div class="popup__desc-container">
+        <div>
+          <span class="span span_comment popup__span">Теплообменник</span>
+          <h3 class="popup__to-name">ТИ 077</h3>
+        </div>
+        <p class="popup__to-desc popup__to-desc_theme_dark">rehgoreqwghorqeghh</p>
+        <a class="popup__to-baseurl link-beauty" href="">Нужен именно этот теплообменник --></a>
+        <!--<h4 class="heatex__models-heading heatex__models-heading_theme_dark">Скачать 3D модели</h4>
+        <a class="popup__to-3dlink heatex__to-3dlink" href="">Перейти -></a>-->
+      </div>
+      <!--</div>-->
+  </div>
+</div>
+</body>
+</html>

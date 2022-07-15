@@ -1,0 +1,38 @@
+.two-columns__paragraph {
+    margin: 30px 0 0;
+    line-height: 1.4;
+    font-size: 24px;
+    font-weight: normal;
+  }
+
+  .two-columns__paragraph_page_main {
+    font-size: 18px;
+  }
+  .two-columns__paragraph:first-of-type {
+    margin-top: 0;
+  }
+
+  @media screen and (max-width: 1440px) {
+    .two-columns__paragraph {
+      font-size: 22px;
+    }
+  }
+
+  @media screen and (max-width: 1024px) {
+    .two-columns__paragraph {
+      font-size: 14px;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    .two-columns__paragraph {
+      font-size: 14px;
+      line-height: 1.5;
+      letter-spacing: 0.05em;
+    }
+  }
+  @media screen and (max-width: 450px) {
+    .two-columns__paragraph {
+      font-size: 14px;
+    }
+  }

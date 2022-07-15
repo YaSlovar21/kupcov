@@ -1,0 +1,41 @@
+@import url(../styles/normalize.css);
+@import url(../blocks/root/root.css);
+
+@import url(../vendor/fonts/fonts.css);
+/*Спаны*/
+@import url(../blocks/span/span.css);
+
+@import url(../blocks/nav/nav.css);
+
+
+@import url(../blocks/flexburton/flexburton.css);
+
+@import url(../blocks/flexburton/__breadcrumbs/flexburton__breadcrumbs.css);
+@import url(../blocks/flexburton/__breadcrumbs-link/flexburton__breadcrumbs-link.css);
+
+@import url(../blocks/flexburton/__title/flexburton__title.css);
+@import url(../blocks/flexburton/__title/_size_m/flexburton__title_size_m.css);
+
+@import url(../blocks/flexburton/__subtitle/flexburton__subtitle.css);
+@import url(../blocks/flexburton/__subtitle/_size_m/flexburton__subtitle_size_m.css);
+@import url(../blocks/flexburton/__link/flexburton__link.css);
+
+@import url(../blocks/header/header.css);
+@import url(../blocks/header/__title/header__title.css);
+@import url(../blocks/header/__link/header__link.css);
+@import url(../blocks/header/__lang-link/header__lang-link.css);
+@import url(../blocks/header/__lang-link/_underlined/header__lang-link_underlined.css);
+@import url(../blocks/header/__lang-column/header__lang-column.css);
+@import url(../blocks/header/__contacts/header__contacts.css);
+
+
+@import url(../blocks/sections/catalog-grid/catalog-grid.css);
+
+@import url(../blocks/mainmodels/mainmodels.css);
+@import url(../blocks/timodels/timodels.css);
+
+@import url(../blocks/raschet-bem/raschet-bem.css);
+
+@import url(../blocks/footer/footer.css);
+
+@import url(../blocks/link-beauty/link-beauty.css);

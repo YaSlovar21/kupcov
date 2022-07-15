@@ -1,0 +1,83 @@
+@import url(../styles/normalize.css);
+@import url(../blocks/root/root.css);
+
+@import url(../vendor/fonts/fonts.css);
+/*Спаны*/
+@import url(../blocks/span/span.css);
+
+@import url(../blocks/list/list.css);
+
+@import url(../blocks/animatecss/_base.css);
+@import url(../blocks/animatecss/_vars.css);
+@import url(../blocks/animatecss/fading_entrances/fadeInRight.css);
+@import url(../blocks/animatecss/fading_entrances/fadeInLeft.css);
+@import url(../blocks/animatecss/fading_entrances/fadeInUp.css);
+@import url(../blocks/animatecss/attention_seekers/pulse.css);
+
+@import url(../blocks/flexburton/flexburton.css);
+@import url(../blocks/flexburton/__link/flexburton__link.css);
+@import url(../blocks/flexburton/__main-illustration/flexburton__main-illustration.css);
+@import url(../blocks/flexburton/__square-pic/flexburton__square-pic.css);
+@import url(../blocks/flexburton/__subtitle/flexburton__subtitle.css);
+@import url(../blocks/flexburton/__title/flexburton__title.css);
+@import url(../blocks/flexburton/__breadcrumbs/flexburton__breadcrumbs.css);
+@import url(../blocks/flexburton/__breadcrumbs-link/flexburton__breadcrumbs-link.css);
+
+
+
+@import url(../blocks/description/description.css);
+@import url(../blocks/two-columns/two-columns.css);
+@import url(../blocks/two-columns/__brief/two-columns__brief.css);
+@import url(../blocks/two-columns/__main-text/two-columns__main-text.css);
+@import url(../blocks/two-columns/__paragraph/two-columns__paragraph.css);
+@import url(../blocks/two-columns/__span-accent/two-columns__span-accent.css);
+@import url(../blocks/two-columns/__image/two-columns__image.css);
+
+@import url(../blocks/two-columns/__brief/_flexed/two-columns__brief_flexed.css);
+@import url(../blocks/two-columns/__main-text/_flexed/two-columns__main-text_flexed.css);
+
+@import url(../blocks/section-title/section-title.css);
+@import url(../blocks/section-title/_theme/section-title_theme_dark.css);
+
+@import url(../blocks/section-subtitle/section-subtitle.css);
+@import url(../blocks/section-subtitle/_theme/section-subtitle_theme_dark.css);
+
+@import url(../blocks/link-beauty/link-beauty.css);
+@import url(../blocks/rotation/rotation.css);
+
+
+@import url(../blocks/stickaround/stickaround.css);
+
+@import url(../blocks/nav/nav.css);
+
+@import url(../blocks/header/header.css);
+@import url(../blocks/header/__title/header__title.css);
+@import url(../blocks/header/__link/header__link.css);
+@import url(../blocks/header/__lang-link/header__lang-link.css);
+@import url(../blocks/header/__lang-link/_underlined/header__lang-link_underlined.css);
+@import url(../blocks/header/__lang-column/header__lang-column.css);
+@import url(../blocks/header/__contacts/header__contacts.css);
+
+
+
+@import url(../blocks/flexburton/__breadcrumbs/flexburton__breadcrumbs.css);
+@import url(../blocks/flexburton/__breadcrumbs-link/flexburton__breadcrumbs-link.css);
+
+
+@import url(../blocks/table/__heading/table__heading.css);
+@import url(../blocks/table/__heading/_theme/table__heading_theme_dark.css);
+@import url(../blocks/table/__text/table__text.css);
+@import url(../blocks/table/__text/_theme/table__text_theme_dark.css);
+@import url(../blocks/table/__cell/table__cell.css);
+@import url(../blocks/oakley/oakley.css);
+/*ГридГибрид*/
+@import url(../blocks/introgrid/introgrid.css);
+@import url(../blocks/table-grid/table-grid.css);
+
+/*ПИЩЕВОЙ ГРИД*/
+
+@import url(../blocks/food-grid/food-grid.css);
+@import url(../blocks/food-type/food-type.css);
+@import url(../blocks/feedback/feedback.css);
+
+@import url(../blocks/footer/footer.css);

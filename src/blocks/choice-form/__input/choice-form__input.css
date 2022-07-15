@@ -1,0 +1,10 @@
+.choice-form__input {
+  position: absolute;
+  opacity: 0;
+  /*cursor: pointer;*/
+}
+
+
+.choice-form__input:checked + .choice-form__heading {
+  color: #f2f2f2;
+}

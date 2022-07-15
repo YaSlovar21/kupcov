@@ -1,0 +1,1 @@
+import './ti.css';

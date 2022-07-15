@@ -1,0 +1,15 @@
+.burton__action-link {
+  text-decoration: none;
+
+  padding: 12px 35px;
+  box-sizing: border-box;
+  border: 1px solid var(--theme-text-color);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  /* identical to box height */
+
+
+  color: var(--theme-text-color);
+}

@@ -1,0 +1,65 @@
+@import url(../styles/normalize.css);
+@import url(../blocks/root/root.css);
+
+@import url(../vendor/fonts/fonts.css);
+/*Спаны*/
+@import url(../blocks/span/span.css);
+
+@import url(../blocks/animatecss/_base.css);
+@import url(../blocks/animatecss/_vars.css);
+@import url(../blocks/animatecss/fading_entrances/fadeInRight.css);
+@import url(../blocks/animatecss/fading_entrances/fadeInUp.css);
+
+@import url(../blocks/nav/nav.css);
+@import url(../blocks/flexburton/__breadcrumbs/flexburton__breadcrumbs.css);
+@import url(../blocks/flexburton/__breadcrumbs-link/flexburton__breadcrumbs-link.css);
+
+@import url(../blocks/header/header.css);
+@import url(../blocks/header/__title/header__title.css);
+@import url(../blocks/header/__link/header__link.css);
+@import url(../blocks/header/__lang-link/header__lang-link.css);
+@import url(../blocks/header/__lang-link/_underlined/header__lang-link_underlined.css);
+@import url(../blocks/header/__lang-column/header__lang-column.css);
+@import url(../blocks/header/__contacts/header__contacts.css);
+
+
+
+@import url(../blocks/sections/inforaschet/inforaschet.css);
+/*@import url(../blocks/newformbig/newformbig.css);*/
+@import url(../blocks/raschet-bem/raschet-bem.css);
+
+@import url(../blocks/bem/__list/bem__list.css);
+@import url(../blocks/bem/__list-heading/bem__list-heading.css);
+@import url(../blocks/bem/__list-item/bem__list-item.css);
+
+@import url(../blocks/bem/__list/_page_main/bem__list_page_main.css);
+
+
+/*ИНФОРМАЦИОННЫЙ РАЗДЕЛ*/
+@import url(../blocks/image-and-text/image-and-text.css);
+@import url(../blocks/info/info.css);
+
+@import url(../blocks/info/__heading/info__heading.css);
+@import url(../blocks/info/__hashtag/info__hashtag.css);
+@import url(../blocks/info/__aside/info__aside.css);
+@import url(../blocks/info/__aside-image/info__aside-image.css);
+@import url(../blocks/info/__aside-button/info__aside-button.css);
+
+@import url(../blocks/info/__article-container/info__article-container.css);
+@import url(../blocks/info/__parallax-bg/info__parallax-bg.css);
+
+@import url(../blocks/info/__list/info__list.css);
+@import url(../blocks/info/__list-item/info__list-item.css);
+
+@import url(../blocks/info/__paragraph-title/info__paragraph-title.css);
+@import url(../blocks/info/__paragraph-title/_sub/info__paragraph-title_sub.css);
+
+@import url(../blocks/info/__link-in-text/info__link-in-text.css);
+@import url(../blocks/info/__link-in-text/_button/info__link-in-text_button.css);
+@import url(../blocks/info/__paragraph/info__paragraph.css);
+@import url(../blocks/info/__paragraph/_sale/info__paragraph_sale.css);
+@import url(../blocks/info/__paragraph/_intro/info__paragraph_intro.css);
+
+@import url(../blocks/info/__quote/info__quote.css);
+
+@import url(../blocks/footer/footer.css);

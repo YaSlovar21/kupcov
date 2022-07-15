@@ -1,0 +1,41 @@
+.viewdoc-section {
+  display: flex;
+  margin-bottom: 50px;
+}
+
+.viewdoc-section__description {
+  flex-basis: 567px;
+  /*display: flex;
+  flex-direction: column;
+  justify-content: space-between;*/
+}
+
+.viewdoc-section__title {
+  font-style: normal;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 1.35;
+  letter-spacing: 0.03em;
+
+  color: #878787;
+  margin: 0 0 4em;
+}
+
+.viewdoc-section__intro {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 35px;
+  letter-spacing: 0.03em;
+
+  color: var(--theme-white-color);
+}
+
+.viewdoc-section__link {
+  margin-top: 6em;
+  font-size: 20px;
+}
+
+.viewdoc-section__viewdoc {
+
+}

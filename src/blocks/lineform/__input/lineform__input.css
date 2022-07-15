@@ -1,0 +1,29 @@
+.lineform__input {
+    border: none;
+    border-bottom: 2px solid #e7451c77;
+
+    color: #fff;
+    font-size: 16px;
+    line-height: 1.1;
+    min-height: 27px;
+    background: none;
+
+    outline: none;
+}
+
+.lineform__input:nth-of-type(n + 2) {
+    margin-left: 20px;
+}
+
+.lineform__input:focus {
+    border-bottom: 2px solid #e7451cd0;
+}
+
+@media screen and (max-width: 768px) {
+  .lineform__input {
+
+  }
+  .lineform__input:nth-of-type(n + 2) {
+    margin-left: 0px;
+}
+}

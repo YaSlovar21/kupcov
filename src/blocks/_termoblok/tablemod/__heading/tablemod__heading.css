@@ -1,0 +1,16 @@
+.tablemod__heading {
+    line-height: 1.15;
+    font-size: var(--cell-heading-font);
+    font-weight: bold;
+    margin: 0 0 0 30px;
+    position: relative;
+  }
+
+  @media screen and (max-width:375px) {
+    .tablemod__heading {
+      font-size: 14px;
+      font-weight: 500;
+      margin-bottom: 10px;
+    }
+  }
+

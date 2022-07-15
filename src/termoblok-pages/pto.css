@@ -1,0 +1,98 @@
+@import url(../blocks/section-title/section-title.css);
+@import url(../blocks/section-title/_theme/section-title_theme_dark.css);
+
+@import url(../blocks/section-subtitle/section-subtitle.css);
+@import url(../blocks/section-subtitle/_theme/section-subtitle_theme_dark.css);
+
+@import url(../blocks/link-beauty/link-beauty.css);
+@import url(../blocks/rotation/rotation.css);
+
+@import url(../blocks/animatecss/_base.css);
+@import url(../blocks/animatecss/_vars.css);
+@import url(../blocks/animatecss/fading_entrances/fadeInRight.css);
+@import url(../blocks/animatecss/fading_entrances/fadeInUp.css);
+@import url(../blocks/animatecss/fading_entrances/fadeInLeft.css);
+@import url(../blocks/animatecss/attention_seekers/pulse.css);
+
+@import url(../blocks/stickaround/stickaround.css);
+
+@import url(../blocks/nav/nav.css);
+@import url(../blocks/up-footer/up-footer.css);
+
+@import url(../blocks/header/header.css);
+@import url(../blocks/header/__title/header__title.css);
+@import url(../blocks/header/__link/header__link.css);
+@import url(../blocks/header/__lang-link/header__lang-link.css);
+@import url(../blocks/header/__lang-link/_underlined/header__lang-link_underlined.css);
+@import url(../blocks/header/__lang-column/header__lang-column.css);
+@import url(../blocks/header/__contacts/header__contacts.css);
+
+
+@import url(../blocks/list/list.css);
+
+@import url(../blocks/flexburton/flexburton.css);
+@import url(../blocks/flexburton/__link/flexburton__link.css);
+@import url(../blocks/flexburton/__main-illustration/flexburton__main-illustration.css);
+@import url(../blocks/flexburton/__square-pic/flexburton__square-pic.css);
+@import url(../blocks/flexburton/__subtitle/flexburton__subtitle.css);
+@import url(../blocks/flexburton/__title/flexburton__title.css);
+@import url(../blocks/flexburton/__breadcrumbs/flexburton__breadcrumbs.css);
+@import url(../blocks/flexburton/__breadcrumbs-link/flexburton__breadcrumbs-link.css);
+
+
+
+@import url(../blocks/description/description.css);
+@import url(../blocks/two-columns/two-columns.css);
+@import url(../blocks/two-columns/__brief/two-columns__brief.css);
+@import url(../blocks/two-columns/__main-text/two-columns__main-text.css);
+@import url(../blocks/two-columns/__paragraph/two-columns__paragraph.css);
+@import url(../blocks/two-columns/__span-accent/two-columns__span-accent.css);
+@import url(../blocks/two-columns/__image/two-columns__image.css);
+
+@import url(../blocks/techniques/techniques.css);
+
+/*ПРЕИМУЩЕСТВА В ВИДЕ СЛАЙДЕРА СБОРКИ*/
+@import url(../blocks/slider-sborka/slider-sborka.css);
+
+/*Гвс-отопление-индивидуально*/
+@import url(../blocks/types/types.css);
+/*Пластина пластинчатого теплообменника ГРИД*/
+@import url(../blocks/projects/projects.css);
+@import url(../blocks/plates/plates.css);
+@import url(../blocks/plastdetail/plastdetail.css);
+@import url(../blocks/highliter/highliter.css);
+
+
+@import url(../blocks/khan/khan.css);
+
+@import url(../blocks/table/table.css);
+@import url(../blocks/kaufman/kaufman.css);
+
+@import url(../blocks/princip/princip.css);
+@import url(../blocks/po/po.css);
+@import url(../blocks/oakley/oakley.css);
+@import url(../blocks/footer/footer.css);
+
+
+@import url(../blocks/heatex/__models-heading/heatex__models-heading.css);
+@import url(../blocks/heatex/__models-heading/_theme_dark/heatex__models-heading_theme_dark.css);
+
+@import url(../blocks/heatex/__to-3dlink/heatex__to-3dlink.css);
+
+@import url(../blocks/bem/__list/bem__list.css);
+@import url(../blocks/bem/__list/_page_pto/bem__list_page_pto.css);
+@import url(../blocks/bem/__list-heading/bem__list-heading.css);
+@import url(../blocks/bem/__list-item/bem__list-item.css);
+
+
+
+@import url(../blocks/column-description/column-description.css);
+
+
+@import url(../blocks/popup/__to-info/popup__to-info.css); /*контейнер для ТО + описание со ссылками справа*/
+@import url(../blocks/popup/__to-img/popup__to-img.css);
+@import url(../blocks/popup/__desc-container/popup__desc-container.css);
+@import url(../blocks/popup/__to-name/popup__to-name.css);
+@import url(../blocks/popup/__to-desc/popup__to-desc.css);
+@import url(../blocks/popup/__to-3dlink/popup__to-3dlink.css);
+@import url(../blocks/popup/__to-baseurl/popup__to-baseurl.css);

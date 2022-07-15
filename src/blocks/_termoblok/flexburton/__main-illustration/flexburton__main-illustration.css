@@ -1,0 +1,38 @@
+.flexburton__main-illustration {
+    position: absolute;
+    bottom: 0px;
+    right: 100px;
+    height: 608px;
+    width: 765px;
+    object-position: 0 0;
+    object-fit: contain;
+   /* transform: translateX(0px);*/
+  }
+
+
+@media screen and (max-width:1024px) {
+  .flexburton__main-illustration {
+    right: 0;
+    width: 45%;
+    height: auto;
+    bottom: 20%;
+  }
+}
+
+
+.flexburton__main-illustration_prod {
+  height: 500px;
+  width: 500px;
+  bottom: 0px;
+  right: 250px;
+}
+
+
+@media screen and (max-width: 420px) {
+  .flexburton__main-illustration{
+ 
+  right: -10%;
+  top: 50%;
+
+  }
+}

@@ -1,0 +1,16 @@
+.header__nav-side {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: stretch;
+  width: 80%;
+}
+
+@media screen and (max-width:1024px) {
+  .header__nav-side {
+      justify-content: center;
+      align-items: center;
+      flex-direction: row-reverse;
+      margin-left: 15px;
+  }
+}

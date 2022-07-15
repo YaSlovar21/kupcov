@@ -1,0 +1,109 @@
+.form-search {
+
+}
+
+
+
+.form-search__line {
+  padding: 10px 10px 10px 25px;
+  border: 1.5px solid rgba(170, 170, 170, 0.2);
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.form-search__line_active {
+  border: 1.5px solid #3ddc8593;
+}
+
+.form-search__input {
+  background: none;
+  border: none;
+  outline: none;
+  color: #8b8b8b;
+  font-size: 18px;
+  width: 100%;
+
+  box-sizing: border-box;
+}
+
+.form-search__button {
+  color: #ffffff;
+  background: transparent;
+  border: none;
+  outline: none;
+  background-color: #4285F4;
+  padding: 17px 20px;
+  border-radius: 5px;
+
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.form-search__filter {
+  display: flex;
+  align-items: center;
+  margin-top: 26px;
+}
+
+.form-search__checkbox {
+  display: none;
+}
+
+.form-search__filterbutton {
+  border: none;
+  outline: none;
+  background-color: #4285F4;
+  width: 38px;
+  height: 20px;
+  border-radius: 20px;
+  margin-right: 14px;
+  display: flex;
+  /*justify-content: flex-start;*/
+
+  align-items: center;
+
+  cursor: pointer;
+  transition: background-color 0.2s linear;
+}
+
+.form-search__filterbutton_active {
+  background-color: #3DDC84;
+}
+
+.form-search__tumblr {
+  width: 8px;
+  height: 8px;
+  background-color: #ffffff;
+  border-radius: 4px;
+  position: relative;
+  left: 0;
+  transition: all 0.3s linear;
+}
+
+.form-search__filterbutton_active .form-search__tumblr {
+  left: 18px;
+}
+
+.form-search__label {
+  font-size: 13px;
+  font-weight: normal;
+  color: #ffffff;
+}
+
+.form-search__hint {
+  color: #3DDC84;
+  font-size: 10px;
+  font-weight: 500;
+  margin: 10px 0 0;
+  display: block;
+}
+
+@media screen and (max-width: 768px) {
+  .form-search__line {
+      padding: 6px 6px 6px 12px;
+  }
+  .form-search__button {
+      padding: 13px 18px;
+  }
+}

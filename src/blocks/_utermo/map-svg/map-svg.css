@@ -1,0 +1,30 @@
+.map-svg {
+
+}
+
+
+
+.map-svg__utermo {
+  fill: var(--theme-main-color);
+  transition: all .5s linear;
+}
+
+.map-svg__utermo:hover {
+  opacity: .9;
+  stroke: #c4c4c4;
+  stroke-width: 1px;
+
+
+}
+
+.map-svg__termoblok {
+  fill: var(--main-equivalent-color);
+
+  transition: all .5s linear;
+}
+
+.map-svg__termoblok:hover {
+  opacity: .9;
+  stroke: #c4c4c4;
+  stroke-width: 2px;
+}

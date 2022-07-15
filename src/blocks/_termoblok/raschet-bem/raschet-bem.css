@@ -1,0 +1,69 @@
+@import url(./__title/raschet-bem__title.css);
+@import url(./__title/_subtitle/raschet-bem__title_subtitle.css); /*  Когда форма вся открыта */
+/*   <!--Среды вход/выход-->  */
+
+@import url(./__substantions/raschet-bem__substantions.css);
+@import url(./__subst-title/raschet-bem__subst-title.css);
+
+@import url(./__subst-selection-block/raschet-bem__subst-selection-block.css);
+
+/* <!--Температурные графики (темп - изображения - темп)--> */
+@import url(./__temperatures/raschet-bem__temperatures.css);
+@import url(./__temperature-set/raschet-bem__temperature-set.css);
+@import url(./__temperature-img/raschet-bem__temperature-img.css);
+
+
+
+/* <!--Дополнительные параметры (мощность, расход по нагреваемой среде)--> */
+@import url(./__parameters/raschet-bem__parameters.css);
+@import url(./__comment/raschet-bem__comment.css);
+@import url(./__addition-selection-block/raschet-bem__addition-selection-block.css);
+
+/* блоки формы */
+@import url(./__field/raschet-bem__field.css);
+@import url(./__field/_type_textarea/raschet-bem__field_type_textarea.css);
+@import url(./__field/_type_block/raschet-bem__field_type_block.css);
+
+@import url(./__label-title/raschet-bem__label-title.css);
+@import url(./__input/raschet-bem__input.css);
+@import url(./__input-error/raschet-bem__input-error.css);
+
+
+@import url(./__select/raschet-bem__select.css);
+
+@import url(./__contact-field/raschet-bem__contact-field.css);
+@import url(./__submit-button/raschet-bem__submit-button.css);
+
+.raschet-bem {
+  padding: 0px;
+  background-color: #2f2f2f;
+  width: 100%;
+
+  box-sizing: border-box;
+  border-radius: 2px;
+}
+
+.raschet-bem_flexed {
+  max-height: 100vh;
+}
+
+
+.raschet-bem_bg_none {
+  background-color: transparent;
+}
+
+.raschet-bem option {
+  color: black;
+}
+
+.raschet-bem_theme_white .raschet-bem__select {
+  color: black;
+}
+
+.raschet-bem_theme_white .raschet-bem__label-title {
+  color: black;
+}
+
+.raschet-bem_theme_white .raschet-bem__input {
+  color: black;
+}

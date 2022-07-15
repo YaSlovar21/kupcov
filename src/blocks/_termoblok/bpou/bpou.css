@@ -1,0 +1,76 @@
+@import url(./__intro/bpou__intro.css);
+@import url(./__heading/bpou__heading.css);
+@import url(./__description/bpou__description.css);
+
+.bpou {
+  display: flex;
+  max-width: 1600px;
+  margin: 0 auto;
+  justify-content: space-between;
+
+  position: relative;
+  margin-bottom: 100px; /*временно*/
+  margin-top: 140px;
+  /*padding-bottom: 20px; временно*/
+}
+
+.bpou__wrapper {
+
+}
+
+.bpou::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 55%;
+    height: 2px;
+    background-color: rgba(255, 108, 50, 0.774);
+}
+/*
+.bpou::after {
+    content: '';
+    position: absolute;
+    bottom: 0%;
+    left: 0;
+    width: 60%;
+    height: 2px;
+    background-color: rgba(255, 108, 50, 0.42);
+}*/
+@media screen and (max-width: 1640px) {
+  .bpou {
+    max-width: calc(100% - 40px);
+  }/*
+  .bpou::after {
+    left: -20px;
+  }
+  .bpou::before {
+    right: -20px;
+  }*/
+}
+
+@media screen and (max-width: 768px) {
+  .bpou {
+    flex-direction: column-reverse;
+    max-height: 600px;
+  }
+}
+
+.bpou__image-container {
+    flex: 0 1 670px;
+    display: flex;
+    min-height: 400px;
+}
+
+.bpou__info {
+    flex: 0 1 560px;
+}
+
+.bpou__image {
+    max-width: 100%;
+    height: auto;
+    position: relative;
+    bottom: 10%;
+    object-fit: contain;
+    object-position: right;
+}

@@ -1,0 +1,33 @@
+.actions__button {
+  border: none;
+  background: none;
+  outline: none;
+
+  padding: 10px;
+  margin-right: 20px;
+
+  font-size: 14px;
+  font-weight: 500;
+  color: #f2f2f2;
+  background-color: #262628;
+  border: 1px solid #4f4742;
+  cursor: pointer;
+
+  flex-basis: 33%;
+  transition: all .4s ease-out;
+}
+
+.actions__button:hover {
+  background-color: #1f1f1f;
+  color: var(--main-equivalent-color);
+}
+
+.actions__button:last-of-type {
+  margin-right: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .actions__button {
+    margin-right: 0;
+  }
+}

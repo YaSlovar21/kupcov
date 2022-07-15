@@ -1,0 +1,158 @@
+.message {
+  max-width: 320px;
+  flex-grow: 0;
+  display: flex;
+  align-items: flex-end;
+  position: relative;
+  margin: 20px 0;
+}
+
+.message__text {
+  background-color: #282829;
+  border-radius: 10px 10px 10px 0;
+  background: #282829;
+  box-sizing: border-box;
+  padding: 10px 15px;
+  position: relative;
+  margin-bottom: 10px;
+  line-height: 1.4;
+  color: #f2f2f2;
+  /*transition: .3s;*/
+}
+
+.message__text_is-active {
+  background: #ff5e3a;
+  color: white;
+}
+
+.message__avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 15px;
+  flex-shrink: 0;
+}
+
+.message__paragraph {
+  user-select: none;
+  pointer-events: none;
+}
+
+@media screen and (max-width: 1440px) {
+  .message__paragraph {
+    font-size: 14px;
+  }
+}
+
+.message__paragraph:first-child {
+  margin-top: 0;
+}
+
+.message__paragraph:last-child {
+  margin-bottom: 0;
+}
+
+.message__text::before,
+.message__text::after {
+  content: "";
+  position: absolute;
+  height: 20px;
+  bottom: 0;
+  transition: .3s;
+}
+
+.message__text::before {
+  z-index: 0;
+  left: -7px;
+  width: 20px;
+  background: #282829;
+  border-bottom-right-radius: 15px;
+}
+
+.message__text::after {
+  left: -10px;
+  width: 10px;
+ background: #2f2f2f;
+  border-bottom-right-radius: 10px;
+  z-index: 1;
+}
+
+.message__text_is-active::before {
+  background: #ff5e3a;
+}
+
+.message_type_user .message__text::after {
+  left: auto;
+  right: -10px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 10px;
+}
+
+.message_type_user .message__text::before {
+  left: auto;
+  right: -7px;
+  bottom: 0px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 15px;
+}
+
+.message_type_user .message__avatar {
+  margin: 0 0 0 10px;
+}
+
+.message_type_user {
+  margin-left: auto;
+}
+
+.message_type_user .message__text {
+  margin-left: auto;
+  border-radius: 10px 10px 0 10px;
+}
+
+.message__button {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  bottom: -21px;
+  left: 5px;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-size: 15px;
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: opacity 0.3s;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.message__button_type_edit {
+  background-image: url('https://www.pngfind.com/pngs/m/70-704184_png-file-svg-pencil-edit-icon-png-transparent.png');
+
+}
+.message__button_type_like {
+  background-image: url('https://www.pngfind.com/pngs/m/52-526635_heart-icon-black-heart-icon-png-transparent-png.png');
+}
+
+.message__button:hover {
+  opacity: 0.4;
+}
+
+.message__button:focus {
+  outline: none;
+}
+
+.message__text:hover .message__button {
+  opacity: 0.7;
+  visibility: visible;
+}
+
+.message__button.message__button_is-active {
+  opacity: 1!important;
+  visibility: visible;
+}
+
+.message_is-active .message__text {
+  box-shadow: -1px 2px 4px rgba(0,0,0,.25), 1px 1px 3px rgba(0,0,0,.1);
+}

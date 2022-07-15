@@ -1,0 +1,40 @@
+.withexamples {
+  display: flex;
+  justify-content: space-between;
+  margin: 40px 0 0;
+}
+
+.withexamples__models {
+  flex-basis: 49%;
+}
+
+.withexamples__title {
+  margin-bottom: 30px;
+}
+
+.withexamples__title_search {
+  color: var(--theme-gray-color);
+  margin-bottom: 0;
+  padding-left: 30px;
+  box-sizing: border-box;
+}
+
+.withexamles__raschets-search {
+  flex-basis: 51%;
+
+  padding-left: 10px;
+  display: flex;
+  flex-direction: column;
+
+  /*background-color: #1a1a1a;*/
+}
+
+.withexamples__form {
+  display: flex;
+  /*margin-top: 50px;*/
+  flex-direction: column;
+  flex-basis: 100%;/*КОСТЫЛЬ!!!*/
+  padding: 30px;/*КОСТЫЛЬ!!!*/
+  box-sizing: border-box;/*КОСТЫЛЬ!!!*/
+  background-color: #1a1a1a;
+}

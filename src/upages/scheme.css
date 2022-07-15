@@ -1,0 +1,80 @@
+@import url(../styles/normalize.css);
+@import url(../blocks/root/root.css);
+@import url(../vendor/fonts/fonts.css);
+
+/*Спаны*/
+@import url(../blocks/utermo/span/span.css);
+
+@import url(../blocks/utermo/bem/bem.css);
+@import url(../blocks/utermo/bem/__button/bem__button.css);
+@import url(../blocks/utermo/bem/__link/bem__link.css);
+@import url(../blocks/utermo/bem/__link/_newwindow/bem__link_newwindow.css);
+@import url(../blocks/utermo/bem/__link/_arrowup/bem__link_arrowup.css);
+@import url(../blocks/utermo/bem/__link/_bgleft/bem__link_bgleft.css);
+@import url(../blocks/utermo/bem/__link/_download/bem__link_download.css);
+@import url(../blocks/utermo/bem/__link/_arrowdown/bem__link_arrowdown.css);
+@import url(../blocks/utermo/bem/__link/_bgright/bem__link_bgright.css);
+
+@import url(../blocks/utermo/bem/__list/bem__list.css);
+@import url(../blocks/utermo/bem/__list-item/bem__list-item.css);
+
+@import url(../blocks/utermo/bem/__paragraph/bem__paragraph.css);
+@import url(../blocks/utermo/bem/__title/bem__title.css);
+@import url(../blocks/utermo/bem/__title/_color_darker/bem__title_color_darker.css);
+@import url(../blocks/utermo/bem/__title/_color_brand/bem__title_color_brand.css);
+
+@import url(../blocks/utermo/bem/__subtitle/bem__subtitle.css);
+
+
+@import url(../blocks/utermo/section-title/section-title.css);
+@import url(../blocks/utermo/section-title/_white/section-title_white.css);
+@import url(../blocks/utermo/section-title/_gray/section-title_gray.css);
+
+@import url(../blocks/utermo/section-title/_page_scheme/section-title_page_scheme.css);
+
+@import url(../blocks/utermo/section-subtitle/section-subtitle.css);
+
+@import url(../blocks/utermo/header/header.css);
+@import url(../blocks/utermo/header/__logo-link-container/header__logo-link-container.css);
+@import url(../blocks/utermo/header/__logo-img/header__logo-img.css);
+@import url(../blocks/utermo/header/__nav-side/header__nav-side.css);
+
+@import url(../blocks/utermo/nav/nav.css);
+@import url(../blocks/utermo/nav/__menu-list/nav__menu-list.css);
+@import url(../blocks/utermo/nav/__menu-list-item/nav__menu-list-item.css);
+@import url(../blocks/utermo/nav/__link/nav__link.css);
+
+@import url(../blocks/utermo/aside/aside.css);
+
+
+/**/
+@import url(../blocks/utermo/svg-with-table/svg-with-table.css);
+@import url(../blocks/utermo/html-table/html-table.css);
+
+@import url(../blocks/utermo/uwrapper/uwrapper.css);
+@import url(../blocks/utermo/scheme-description/scheme-description.css);
+@import url(../blocks/utermo/scheme-description/__heading/scheme-description__heading.css);
+@import url(../blocks/utermo/scheme-description/__subtitle/scheme-description__subtitle.css);
+@import url(../blocks/utermo/scheme-description/__paragraph/scheme-description__paragraph.css);
+/**/
+
+
+
+@import url(../blocks/utermo/upf/upf.css);
+@import url(../blocks/utermo/upf/__title/upf__title.css);
+@import url(../blocks/utermo/upf/__slogan/upf__slogan.css);
+@import url(../blocks/utermo/upf/__contact/upf__contact.css);
+@import url(../blocks/utermo/upf/__form/upf__form.css);
+
+@import url(../blocks/utermo/form/form.css);
+@import url(../blocks/utermo/form/__input/form__input.css);
+@import url(../blocks/utermo/form/__input-error/form__input-error.css);
+@import url(../blocks/utermo/form/__field/form__field.css);
+@import url(../blocks/utermo/form/__submit-button/form__submit-button.css);
+
+
+@import url(../blocks/utermo/ufooter/ufooter.css);
+@import url(../blocks/utermo/ufooter/__action-link/ufooter__action-link.css);
+
+
+

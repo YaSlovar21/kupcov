@@ -1,0 +1,18 @@
+.two-columns__main-text {
+    width: 80%;
+    /*min-width: 784px;*/
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: #f1f1f1;
+  }
+
+  .two-columns__main-text_page_service {
+    width: 75%;
+  }
+
+  @media screen and (max-width: 769px) {
+    .two-columns__main-text {
+      width: 100%;
+    }
+  }

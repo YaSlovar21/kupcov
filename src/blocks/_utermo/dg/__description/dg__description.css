@@ -1,0 +1,9 @@
+.dg__description {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 22px;
+  letter-spacing: 0.01em;
+
+  color: var(--dynamic-grid-text-color);
+}

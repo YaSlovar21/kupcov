@@ -1,0 +1,14 @@
+.lineform__input-error {
+  position: absolute;
+  bottom: -22px;
+  left: 0;
+  font-size: 12px;
+  font-weight: 500;
+  color: #e7451c;
+}
+
+@media screen and (max-width: 768px) {
+  .lineform__input-error {
+    bottom: -15px;
+  }
+}

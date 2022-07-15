@@ -1,0 +1,69 @@
+.oakley {
+    position: relative;
+  }
+
+.oakley_food {
+  bottom: 24px;
+  padding-top: 90px;
+}
+
+@media screen and (max-width: 768px) {
+  .oakley_food {
+    padding: 0;
+    bottom: 0;
+  }
+}
+
+.oakley_gradient::after {
+      position: absolute;
+      content: '';
+      height: 2px;
+      width: 10%;
+      background: linear-gradient(90.05deg, rgba(196, 196, 196, 0) 0.03%, #74686591 71.01%,  #74686591 99.5%);
+      /*background-color: rgba(0, 0, 0, 0.527);*/
+      top:0;
+      left: 0;
+}
+
+.oakley_gradient::before {
+      position: absolute;
+      content: '';
+      height: 2px;
+      width: calc(10% + 20px);
+      background: linear-gradient(90.05deg,  #74686591 0.03%, #74686591 71.01%, rgba(196, 196, 196, 0) 99.51%);
+      /*background-color: rgba(0, 0, 0, 0.527);*/
+      top:0;
+      right: 0;
+    }
+.oakley_food::before {
+  width: 10%;
+}
+@media screen and (max-width: 1440px) {
+  .oakley_gradient::after, .oakley_gradient::before {
+    width: calc(2.5% + 20px);
+  }
+  .oakley_food::before, .oakley_food::after {
+    width: 2.5%;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .oakley_gradient::after, .oakley_gradient::before {
+    width: 2.5%;
+  }
+  .oakley_gradient_types::before {
+    width: calc(2.5% + 20px);
+  }
+}
+
+@media screen and (max-width:768px) {
+  .oakley_gradient::before {
+    width: 25%;
+  }
+  .oakley_gradient::after {
+    width: 2%;
+  }
+  .oakley_gradient_types::before {
+    width: 2%;
+  }
+}

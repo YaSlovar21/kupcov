@@ -1,0 +1,11 @@
+.popup_darked {
+    background-color: rgba(0,0,0, .9);
+}
+
+.popup_lighted {
+    background-color: rgba(228, 228, 228, .9);
+}
+
+.popup_lighted .popup__button-close {
+    color: rgb(39, 39, 39);
+}

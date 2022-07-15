@@ -1,0 +1,106 @@
+/* Список + изменяющаяся картинка при наведении на элементы списка */
+
+:root {
+  --listimage-font-size: 24px;
+}
+
+.listimage {
+  display: block;
+}
+
+.listimage__title {
+  font-weight: 800;
+  font-size: var(--listimage-font-size);
+  line-height: 140%;
+  max-width: 681px;
+  margin: 70px 0 0;
+  padding-left: 25px;
+  position: relative;
+  /* or 34px */
+
+  text-align: justify;
+  letter-spacing: 0.02em;
+
+  color: #FFFFFF;
+  z-index: 2;
+}
+
+
+
+.listimage__list {
+  margin: 75px 0;
+  padding: 0 0 0 25px;
+  list-style-type: none;
+  position: relative;
+}
+
+.listimage__list::before {
+  content: '';
+  position: absolute;
+  width: 51%;
+  height: 12px;
+  top: -87px;
+  left: 0;
+  background-color: #E7441C  ;
+  z-index: 0;
+}
+
+.listimage__list-item {
+  font-weight: bold;
+  font-size: var(--listimage-font-size);;
+  line-height: 140%;
+  /* identical to box height, or 34px */
+
+  text-align: justify;
+  letter-spacing: 0.02em;
+
+  color: #E7461A;
+  margin-bottom: 10px;
+  cursor: pointer;
+  transition: opacity .4s linear;
+}
+
+.listimage__list-item_active{
+  opacity: 0.4;
+}
+
+.listimage__list-item:last-of-type {
+  margin-bottom: 0;
+}
+
+.listimage__image {
+  margin: 0px auto;
+  max-width: 508px;
+  max-height: 338.67px;
+  object-fit: cover;
+  object-position: center;
+  max-width: 100%;
+  transition: all .6s linear;
+}
+
+@media screen and (max-width: 1024px) {
+  :root {
+    --listimage-font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .listimage__list {
+    padding: 0;
+    max-width: calc(100% - 10px);
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .listimage__title {
+    margin: 70px auto 0;
+    max-width: 320px;
+    padding-left: 0;
+  }
+  .listimage__list {
+    max-width: 320px;
+    padding: 0;
+  }
+}

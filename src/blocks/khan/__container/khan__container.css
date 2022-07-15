@@ -1,0 +1,11 @@
+.khan__container {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+
+@media screen and (max-width: 1440px) {
+  .khan__container {
+    width: 95%;
+  }
+}

@@ -1,0 +1,13 @@
+.lineform__line {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: baseline;
+}
+
+@media screen and (max-width: 768px) {
+  .lineform__line {
+    flex-direction: column;
+    align-items: stretch;
+  }
+}

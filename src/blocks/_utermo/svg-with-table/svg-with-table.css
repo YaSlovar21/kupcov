@@ -1,0 +1,36 @@
+.svg-with-table {
+  display: flex;
+  max-width: calc(100% - var(--aside-width)*2);
+
+  margin: 50px auto 20px;
+}
+
+.svg-with-table__scheme-svg {
+  flex-basis: 70%;
+  margin: 0;
+}
+
+.svg-with-table__scheme-svg svg {
+  padding: 1%;
+  box-sizing: border-box;
+  max-width: 100%;
+  position: sticky;
+  top: 0;
+
+  font-size: 14px;
+  color: var(--theme-white-color);
+}
+
+.svg-with-table__scheme-svg path {
+  transition: all .3s ease-in-out;
+}
+
+.svg-with-table__scheme-svg path:hover {
+  opacity: .4;
+}
+
+.svg-with-table__tbl-spec {
+  flex-basis: 30%;
+  background-color: var(--theme-dark-gray-color)
+  ;
+}
