@@ -1,0 +1,4 @@
+.nav__registration-link_enter {
+  color: var(--theme-white-color);
+  background-color: #006BAF;
+}

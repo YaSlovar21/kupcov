@@ -5,7 +5,7 @@
   line-height: 34px;
   letter-spacing: -0.015em;
 
-  color: var(--theme-white-color);
+  color: var(--theme-text-color);
   max-width: 1162px;
   margin: 0;
 }

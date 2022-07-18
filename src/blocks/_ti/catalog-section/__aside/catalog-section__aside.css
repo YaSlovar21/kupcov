@@ -1,0 +1,10 @@
+.catalog-section__aside {
+  min-width:  510px;
+  padding-left: var(--aside-width);
+  box-sizing: border-box;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-bottom: 60px;
+}

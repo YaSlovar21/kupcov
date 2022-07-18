@@ -1,4 +1,8 @@
 .burton__image-container {
   position: relative;
   flex-basis: 960px;
+  display: flex;
+  align-self: stretch;
+  justify-content: center;
+  align-items: center;
 }

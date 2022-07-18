@@ -1,0 +1,18 @@
+.frequently__heading {
+  font-size: 36px;
+  color: var(--theme-text-color);
+  font-weight: 500;
+}
+
+@media screen and (max-width: 1300px) {
+  .frequently__heading {
+    margin-left: 10px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .frequently__heading {
+    font-size: 22px;
+    font-weight: 700;
+  }
+}

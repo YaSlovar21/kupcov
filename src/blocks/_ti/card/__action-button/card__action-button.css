@@ -1,0 +1,36 @@
+.card__action-button {
+  border: none;
+  outline: none;
+  background: none;
+  cursor: pointer;
+
+  background-color: var(--card-container-bg-light-color);
+
+  padding: 8px;
+  border-radius: 8px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.card__action-button_config::after {
+  content: '';
+  width: 17px;
+  height: 17px;
+  background-image: url(../../../../images/ti/svg-elems/conf-button.svg);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.card__action-button_add-to-cart::after {
+  content: '';
+  width: 17px;
+  height: 17px;
+  background-image: url(../../../../images/ti/svg-elems/add-to-cart.svg);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}

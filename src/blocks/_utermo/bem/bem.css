@@ -1,15 +1,15 @@
 :root {
   --bem-padding-buttons: 20px;
 
-  --theme-white-color: #e8e8e8;
+  --theme-white-color: #f0f0f0;
   --theme-text-color: #272727;
   --theme-light-gray-color: #cdcdcd;
   --theme-blue-color: #1940C1;
   --theme-red-color: #EF0504;
-
+  --theme-main-color: #EF0504;
 
   --theme-ut-color: #ec2c02;
-  
+
 /*
   --theme-lightgray-color: #cbcbcb;
   --theme-gray-color: #a7a7a7;
@@ -23,6 +23,7 @@
   --bg-color: #1f1f1f;
   --bg-darker-color: #1a1a1a;
 */
+  --section-title-size: 36px;
   --h2-size: 32px;
   --h3-size: 20px;
   /*--p-size-comment: 20px;*/

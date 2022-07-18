@@ -8,6 +8,7 @@
   padding: 40px 0;
   flex-basis: 1300px;
   padding-left: var(--aside-width);
+  padding: 40px var(--aside-width);
   background-color: var(--theme-light-gray-color);
   box-sizing: border-box;
 }

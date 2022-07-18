@@ -1,0 +1,14 @@
+.section-title {
+  margin: 0;
+  max-width: 722px;
+
+  font-style: normal;
+  font-weight: 800;
+  font-size: var(--section-title-size);
+  line-height: 1.5;
+  letter-spacing: -0.015em;
+
+  color: var(--theme-main-color);
+}
+
+

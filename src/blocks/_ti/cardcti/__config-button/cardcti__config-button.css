@@ -1,0 +1,14 @@
+.cardcti__config-button {
+  border: none;
+  outline: none;
+  background: none;
+  cursor: pointer;
+  
+  background-color: #363636;
+  padding: 8px;
+  border-radius: 8px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

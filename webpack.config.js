@@ -57,12 +57,12 @@ module.exports = {
         ],
       },
       {
-          test: /\.svg$/,
-          loader: 'svg-inline-loader',
-          include: [path.resolve(__dirname, "./src/insets/schemes/svg-schemes/")],
-          options: {
-            name: 'itCanBeWhatever/[name].[ext]' // It does not have to follow same path or file name than files in 'src'
-          },
+        test: /\.svg$/,
+        loader: "svg-inline-loader",
+        include: [path.resolve(__dirname, "./src/insets/schemes/svg-schemes/")],
+        options: {
+          name: "itCanBeWhatever/[name].[ext]", // It does not have to follow same path or file name than files in 'src'
+        },
       },
       {
         // загрузка документов в documents/
@@ -106,34 +106,55 @@ module.exports = {
         canonicalURL,
         items: [
           {
-            name: 'ТИ025',
-            price: '425 руб'
+            name: "Пластина ТИ025",
+            price: "425 руб",
           },
           {
-            name: 'ТИ077',
-            price: '525 руб'
+            name: "ТИ077",
+            price: "525 руб",
           },
           {
-            name: 'ТИ13',
-            price: '724 руб'
+            name: "ТИ13",
+            price: "724 руб",
+            type: "plita",
           },
           {
-            name: 'ТИ18',
-            price: '425 руб'
+            name: "ТИ18",
+            price: "425 руб",
           },
           {
-            name: 'ТИ28',
-            price: '525 руб'
+            name: "ТИ28",
+            price: "525 руб",
           },
           {
-            name: 'ТИ45',
-            price: '724 руб'
+            name: "ТИ45",
+            price: "724 руб",
           },
         ],
+        categories: [
+          {
+            name: "Пластина",
+          },
+          {
+            name: "Уплотнение",
+          },
+          {
+            name: "Стяжка/Балка",
+          },
+          { name: "Втулка" },
+          { name: "Штуцер резьбовой" },
+          { name: "Вставка резиновая" },
+          { name: "Опора" },
+          { name: "Станина" },
+          { name: "Плита нажимная", isChecked: true, },
+          { name: "Шпилька" },
+          { name: "Фланец" },
+        ],
       },
+
       title: "Песочница проектов",
-      
-      meta: {  keywords: "", description: ``, },
+
+      meta: { keywords: "", description: `` },
       template: "./src/index.html", // путь к файлу index.html
       chunks: ["index"],
     }),

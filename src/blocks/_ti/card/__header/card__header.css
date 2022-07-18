@@ -1,7 +1,10 @@
 .card__header {
+  margin: 0;
+
   padding: var(--padding-inner);
   border-bottom: 3px solid var(--card-container-bg-color);
 
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }

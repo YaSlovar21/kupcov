@@ -24,7 +24,7 @@
           </div>
         </div>
         <nav class="nav header__nav">
-          <ul class="nav__menu-list bem__list bem__list_line">
+          <ul class="nav__menu-list">
             <li class="nav__menu-list-item">
               <a class="bem__link nav__link" href="#">Главная</a>
             </li>
@@ -42,14 +42,14 @@
             </li>
           </ul>
           <div class="nav__registration">
-            <button class="bem__button">Регистрация</button>
-            <button class="bem__button">Войти</button>
+            <button class="nav__registration-link">Регистрация</button>
+            <button class="nav__registration-link nav__registration-link_enter">Войти</button>
           </div>
         </nav>
-        <div class="burton">
+        <div class="burton header__burton">
           <div class="burton__preamble">
             <h1 class="header__title">Разборные пластинчатые теплообменники</h1>
-            <p class="burton__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sagittis vitae, et vestibulum fermentum pharetra ultrices.</p>
+            <p class="burton__description">Разборные пластинчатые теплообменники, уникальность нашей продукции подтверждена патентами, ее качество гарантируют лучшие материалы и технологии производства</p>
             <a class="burton__action-link" href="#">Подробнее о компании</a>
           </div>
           <div class="burton__image-container">
@@ -64,32 +64,45 @@
         </div>
     </header>
     <section class="mainpage-about">
-      <h2 class="section-title">О компании</h2>
+      <h2 class="section-title section-title_ti">О компании</h2>
       <ul class="mainpage-about__grid">
         <li class="mainpage-about__grid-item">
-          <p class="bem__paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Bibendum dolor scelerisque justo ipsum turpis pellentesque quis vulputate neque. Lorem viverra et congue pharetra, a. Sem neque lectus mi ullamcorper morbi. Elementum mollis vulputate scelerisque massa, scelerisque eleifend dolor.</p>
+          <p class="bem__paragraph">На сегодняшний день компания владеет полным циклом производства всей линейки комплектующих для
+            разборных пластинчатых теплообменников. Внедрение ресурсосберегающих технологий производства позволило сократить цикл
+            изготовления комплектующих, что значительно снизило стоимость готового изделия.
+            На сегодняшний день компания «Точка излома» предлагает полный ассортимент комплектующих для разборных пластинчатых
+            теплообменников. Компания располагает собственным производством, конструкторским бюро, научные разработки защищены
+            законом об интеллектуальной собственности.</p>
         </li>
         <li class="mainpage-about__grid-item">
-          <ul class="bem__list bem__list_line">
+          <ul class="bem__list bem__list_line" style="max-width: 700px; justify-content: space-between;">
             <li class="mini-title-intro"><span class="mini-title-intro__span mini-title-intro__span_ti">15</span> лет опыта</li>
             <li class="mini-title-intro mini-title-intro_wider"><span class="mini-title-intro__span mini-title-intro__span_ti">2000+</span> выполненных заказов</li>
             <li class="mini-title-intro mini-title-intro_wider"><span class="mini-title-intro__span mini-title-intro__span_ti">200+</span> довольных заказчиков</li>
           </ul>
         </li>
-        <li class="mainpage-about__grid-item">
+        <li class="mainpage-about__grid-item" style="max-width: 700px;">
           <h3 class="section-subtitle">Программа расчёта пластинчатых теплообменников</h3>
-          <p class="bem__paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Bibendum dolor scelerisque justo ipsum turpis pellentesque quis vulputate neque. Lorem viverra et</p>
-          <a class="bem__link bem__link_download-right" href="#">Скачать программу</a>
+          <p class="bem__paragraph" style="margin:20px 0 25px;">Разработанная нами программа предназначена для расчета и подбора пластинчатого теплообменника. Для расчета нужно внести все необходимые данные по температурам, давлению и мощности.</p>
+          <a class="bem__link bem__link_download-right  mainpage-about__action-link" href="#">Скачать программу</a>
         </li>
-        <li class="mainpage-about__grid-item">
+        <li class="mainpage-about__grid-item" style="max-width: 700px;">
           <h3 class="section-subtitle">Регистрация в личном кабинете</h3>
-          <p class="bem__paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Bibendum dolor scelerisque justo ipsum turpis pellentesque quis vulputate neque. Lorem viverra et</p>
-          <a class="bem__link bem__link_arrowup" href="#">Зарегистрироваться</a>
+          <p class="bem__paragraph" style="margin:20px 0 25px;">Партнеры компании имеют всестороннюю консультационную поддержку, обеспечиваются конструкторской и технической документацией. Производственные мощности компании «Точка излома» позволяют удовлетворить заказ любого объема, а служба логистики доставить его в максимально короткий срок на склад компании-партнера, при этом затраты на логистику компания берет на себя. Разработана эффективная и прозрачная система скидок, кроме того, надежным партнерам предлагается кредитование при заказе продукции.</p>
+          <a class="bem__link mainpage-about__action-link" href="#">Зарегистрироваться в кабинете партнёра &#8594;</a>
         </li>
       </ul>
     </section>
-    <section class="catalog">
-      <div class="catalog__content">
+    <section class="catalog-section">
+      <div class="catalog-section__aside">
+        <h2 class="section-title section-title_white">Каталог</h2>
+        <div>
+          <p class="bem__paragraph bem__paragraph_invert-theme catalog-section__intro" style="margin-bottom: 30px;">Покупайте удобно.</p>
+          <p class="bem__paragraph bem__paragraph_invert-theme catalog-section__intro">Вы можете собрать заказ прямо на сайте.</p>
+        </div>
+        <a class="bem__link catalog-section__action-link" href="#">Перейти в магазин &#8594;</a>
+      </div>
+      <div class="catalog-section__content">
         <form class="form-search">
           <div class="form-search__line">
               <input
@@ -111,31 +124,58 @@
       </form>
       <div style="display:grid; grid-template-columns: repeat(3, 400px); padding: 40px 0; gap:20px;">
         <% items.forEach(function(item) { %>
-          <div class="card">
+          <div class="card card_cti">
             <div class="card__header">
-              <h3 class="bem__title"><%-item.name%></h3>
-              <button class="bem__button">123</button>
+              <h3 class="bem__title card__title_cti"><%-item.name%></h3>
+              <button class="card__action-button card__action-button_config"></button>
             </div>
-            <div class="card__image-container">
-              <img class="card__image" src="<%=require('./images/ti/plasttest.png')%>">
+            <div class="card__image-container" style="box-sizing: border-box; padding: 10px;">
+              <img class="card__image" src="<%= (item.type === 'plita') ? require('./images/ti/stanina13.png') : require('./images/ti/plasttest.png')%>">
             </div>
             <div class="card__footer">
-              <h3 class="bem__title"><%-item.price%></h3>
-              <button class="bem__button">123</button>
+              <span class="bem__title card__price"><%-item.price%></span>
+              <button class="card__action-button card__action-button_add-to-cart"></button>
             </div>
           </div>
         <% }); %>
       </div>
+      </div>
+    </section>
+    <section class="mainpage-about" >
+      <h2 class="section-title section-title_ti">Собрать теплообменник</h2>
+      <p class="bem__paragraph" style="max-width: 700px; margin: 20px 0 25px;">Вы также можете собрать теплообменник используя конструктор теплообменника.</p>
+      <a class="bem__link mainpage-about__action-link" href="#">Перейти в конструктор телпообменника &#8594;</a>
     </section>
     <section class="askmore">
       <div class="askmore__content">
-        <h2 class="section-title">Мне только спросить</h2>
-
+        <h2 class="section-title section-title_ti">Мне только спросить</h2>
+        <ul class="frequently__questions">
+          <li class="frequently__item">
+            <h3 class="frequently__question">Наши сертификаты</h3>
+            <p class="frequently__answer">Площадь теплообмена может служить параметром расчёта по некоторым методикам. Однако
+              для того, чтобы подобрать оптимальный теплообменный аппарат, мы не используем данную характеристику и опираемся
+              на температурные графики, мощность и потери давления. Тем самым алгоритм подбора выдает компоновку каналов
+              опираясь на математическую модель нашей пластины.</p>
+          </li>
+          <li class="frequently__item">
+            <h3 class="frequently__question">Патенты</h3>
+            <p class="frequently__answer">Для расчёта пластинчатого теплообменника при стандартных потерях давления необходимо
+              5 значений: температурные графики (температуры греющей и нагреваемой сред на входе и выходе из теплообменника).
+              А также мощность (тепловая нагрузка) или расход по нагреваемой среде. Форма заявки онлайн для расчёта доступна
+              по ссылке <a style="text-decoration: none; color: #747474;" href="/equipment-selection/">подбор теплообменника
+                онлайн</a></p>
+          </li>
+          <li class="frequently__item">
+            <h3 class="frequently__question">Информация для дилеров</h3>
+            <p class="frequently__answer">Производство пластин, уплотнений и сборка теплообменника ТИ45 локализовано в ООО
+              "Термоблок" - дочернем предприятии Барнаульского станкостроительного завода.</p>
+          </li>
+        </ul>
       </div>
       <div class="askmore__form-container">
         <form class="askmore__form" method="post" action="#" id="formFreePopup" name="formFreePopup" novalidate>
           <!--R-->
-          <h3 class="section-title">Остались вопросы?</h3>
+          <h3 class="section-title section-title_gray">Остались вопросы?</h3>
           <p class="bem__title" style="margin-bottom: 20px;">Напишите нам!</p>
           <label class="form__field" style="margin-bottom: 10px;">
             <span class="form__label-title">Как к Вам можно обращаться?</span>
@@ -161,6 +201,26 @@
         </form>
       </div>
     </section>
+    <section class="catalog-section catalog-section_type_unit">
+      <div class="catalog-section__aside">
+        <span class="span-block" style="padding: 5px 5px 5px 20px; background-color: blue; color: #f2f2f2;">Позиции</span>
+        <ul class="bem__list catalog-section__units-navlist">
+          <% categories.forEach(function(item) { %>
+            <li class="catalog-section__units-navlist-item <%= item.isChecked ? 'catalog-section__units-navlist-item_checked' : ''%>"><%-item.name%></h3>
+          <% }); %>
+        </ul>
+        <a class="bem__link catalog-section__action-link" href="#">Перейти в магазин &#8594;</a>
+      </div>
+      <div class="catalog-section__content catalog-section__content_type_unit unit">
+        <div class="unit__img-container">
+          <img class="unit__image" src="<%=require('./images/ti/stanina13.png')%>">
+        </div>
+        <div class="unit__form-containter">
+          <h2 class="unit__title">Плита нажимная ТИ13</h2>
+        </div>
+      </div>
+    </section>
+
   </div>
 
 

@@ -1,0 +1,8 @@
+.catalog-section__action-link {
+  font-style: normal;
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 35px;
+
+  color: var(--theme-white-color);
+}

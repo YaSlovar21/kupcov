@@ -1,0 +1,21 @@
+.unit {
+  display: flex;
+}
+
+.unit__img-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-basis: 400px;
+  background-color: #c4c4c4;
+  position: relative;
+}
+
+.unit__image {
+  top: 0;
+  position: sticky;
+}
+
+.unit__form-container {
+  flex-basis: 100%;
+}

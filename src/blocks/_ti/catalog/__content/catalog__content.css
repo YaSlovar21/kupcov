@@ -1,4 +1,0 @@
-.catalog__content {
-  max-width: calc(100% - var(--aside-width)*2);
-  margin: 0 auto;
-}

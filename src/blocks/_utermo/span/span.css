@@ -13,6 +13,10 @@
   margin: 10px 0;
 }
 
+.span-block {
+  display: block;
+}
+
 .span-geo::before {
   content: '';
 

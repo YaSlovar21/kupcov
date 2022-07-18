@@ -1,3 +1,7 @@
 .nav__menu-list {
-  padding: 20px 0;
+  padding: 24px 0;
+  display: flex;
+
+  margin: 0;
+  color: var(--theme-blue-color);
 }

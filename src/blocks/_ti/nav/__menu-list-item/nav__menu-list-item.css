@@ -1,7 +1,9 @@
 .nav__menu-list-item {
-  margin-right: 10px;
+  margin-right: 30px;
 }
-
+.nav__menu-list-item:first-child{
+  list-style-type: none;
+}
 .nav__menu-list-item:last-child {
   margin-right: 0;
 }
