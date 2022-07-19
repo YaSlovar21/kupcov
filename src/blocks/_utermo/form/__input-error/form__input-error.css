@@ -12,3 +12,10 @@
 .form__input-error_visible {
   opacity: 1;
 }
+
+.form__input-error_dis_block {
+  margin-top: 6px;
+  position: relative;
+  top: 0;
+  left: 0;
+}

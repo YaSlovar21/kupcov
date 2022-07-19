@@ -10,3 +10,15 @@
   padding: 25px 22px;
   background-color: #1f1f1f;
 }
+
+.form__input_type_textarea {
+  flex-basis: 200px;
+}
+
+.form__input_fti {
+  background: none;
+  font-size: 18px;
+  box-sizing: border-box;
+  border: 1px solid #323232;
+  border-radius: 4px;
+}

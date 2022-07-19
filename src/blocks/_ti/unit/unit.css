@@ -1,21 +1,38 @@
 .unit {
   display: flex;
+  align-items: flex-start;
+
 }
 
 .unit__img-container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  flex-basis: 400px;
+  flex-basis: 49%;
+  padding: 15vh 0;
   background-color: #c4c4c4;
-  position: relative;
+  position: sticky;
+
+  top: 0;
+
+  box-shadow: 2px 2px 0px 0px #939393;
+  border-radius: 4px;
 }
 
 .unit__image {
-  top: 0;
-  position: sticky;
+
 }
 
 .unit__form-container {
-  flex-basis: 100%;
+  flex-basis: 49%;
+}
+
+
+.unit__form {
+  max-width: calc(100% - 20px);
+  margin: 40px auto;
+}
+
+.unit__count-button {
+
 }

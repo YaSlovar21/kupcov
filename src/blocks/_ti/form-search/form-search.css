@@ -93,6 +93,7 @@
 
 .form-search__hint {
   color: #3DDC84;
+  color: var(--theme-red-color);
   font-size: 10px;
   font-weight: 500;
   margin: 10px 0 0;

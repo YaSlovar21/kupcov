@@ -1,0 +1,46 @@
+.ds {
+  display: flex;
+}
+
+.ds__10 {
+  flex-basis: 10%;
+}
+.ds__20 {
+  flex-basis: 20%;
+}
+.ds__25 {
+  flex-basis: 25%;
+}
+.ds__30 {
+  flex-basis: 30%;
+}
+.ds__33 {
+  flex-basis: 33%;
+}
+.ds__50 {
+  flex-basis: 50%;
+}
+.ds__60 {
+  flex-basis: 60%;
+}
+.ds__67 {
+  flex-basis: 67%;
+}
+.ds__70 {
+  flex-basis: 70%;
+}
+.ds__75 {
+  flex-basis: 75%;
+}
+.ds__80 {
+  flex-basis: 80%;
+}
+.ds__90 {
+  flex-basis: 90%;
+}
+
+
+
+.ds__second-column {
+  flex-basis: 50%;
+}

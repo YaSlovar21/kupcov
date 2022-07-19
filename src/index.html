@@ -55,9 +55,9 @@
           <div class="burton__image-container">
             <img class="burton__image" src="<%=require('./images/productiopn_ti_p.png')%>" alt="Разборные пластинчатые теплообменники Теплохит">
             <figure style="position:absolute;top:0; left: 0;width: 100%; height: 100%;">
-              <figure style="position: relative; width:100%; height:100%">
-                <img src="<%=require('./images/ti/poster-blue.svg')%>" style="position:absolute;width: 100%; height: 100%;">
+              <figure style="position: relative; width:100%; height:100%; overflow: hidden;">
                 <img src="<%=require('./images/ti/poster-red.svg')%>" style="position:absolute;width: 100%; height: 100%;">
+                <img src="<%=require('./images/ti/poster-blue.svg')%>" style="position:absolute;width: 100%; height: 100%;">
               </figure>
             </figure>
           </div>
@@ -149,15 +149,15 @@
     <section class="askmore">
       <div class="askmore__content">
         <h2 class="section-title section-title_ti">Мне только спросить</h2>
-        <ul class="frequently__questions">
-          <li class="frequently__item">
+        <ul class="frequently__questions-list">
+          <li class="frequently__questions-list-item">
             <h3 class="frequently__question">Наши сертификаты</h3>
             <p class="frequently__answer">Площадь теплообмена может служить параметром расчёта по некоторым методикам. Однако
               для того, чтобы подобрать оптимальный теплообменный аппарат, мы не используем данную характеристику и опираемся
               на температурные графики, мощность и потери давления. Тем самым алгоритм подбора выдает компоновку каналов
               опираясь на математическую модель нашей пластины.</p>
           </li>
-          <li class="frequently__item">
+          <li class="frequently__questions-list-item">
             <h3 class="frequently__question">Патенты</h3>
             <p class="frequently__answer">Для расчёта пластинчатого теплообменника при стандартных потерях давления необходимо
               5 значений: температурные графики (температуры греющей и нагреваемой сред на входе и выходе из теплообменника).
@@ -165,10 +165,9 @@
               по ссылке <a style="text-decoration: none; color: #747474;" href="/equipment-selection/">подбор теплообменника
                 онлайн</a></p>
           </li>
-          <li class="frequently__item">
+          <li class="frequently__questions-list-item frequently__questions-list-item_active">
             <h3 class="frequently__question">Информация для дилеров</h3>
-            <p class="frequently__answer">Производство пластин, уплотнений и сборка теплообменника ТИ45 локализовано в ООО
-              "Термоблок" - дочернем предприятии Барнаульского станкостроительного завода.</p>
+            <p class="frequently__answer">Разработана эффективная и прозрачная система скидок, кроме того, надежным партнерам предлагается кредитование при заказе продукции.</p>
           </li>
         </ul>
       </div>
@@ -176,34 +175,34 @@
         <form class="askmore__form" method="post" action="#" id="formFreePopup" name="formFreePopup" novalidate>
           <!--R-->
           <h3 class="section-title section-title_gray">Остались вопросы?</h3>
-          <p class="bem__title" style="margin-bottom: 20px;">Напишите нам!</p>
-          <label class="form__field" style="margin-bottom: 10px;">
+          <p class="bem__title" style=" max-width:150px; text-align: center; margin-bottom: 20px; padding: 5px; background-color: var(--theme-red-color); color: white;">Напишите нам!</p>
+          <label class="form__field form__field_fti">
             <span class="form__label-title">Как к Вам можно обращаться?</span>
-            <input data-alias="Имя или название компании" placeholder="Как к Вам обращаться?" type="text" name="name-free" id="name-free-input" class="form__input" required minlength="1">
-            <span class="form__input-error name-free-input-error">Тест ошибки</span>
+            <input data-alias="Имя или название компании" placeholder="Как к Вам обращаться?" type="text" name="name-free" id="name-free-input" class="form__input form__input_fti" required minlength="1">
+            <span class="form__input-error form__input-error_dis_block name-free-input-error"></span>
           </label>
-          <label class="form__field" style="margin-bottom: 10px;">
+          <label class="form__field form__field_fti">
             <span class="form__label-title">Контактный телефон</span>
-            <input data-alias="Телефон" placeholder="Телефон" type="text" name="tel-free" id="tel-free-input" class="form__input" required minlength="1">
-            <span class="form__input-error tel-free-input-error"></span>
+            <input data-alias="Телефон" placeholder="Телефон" type="text" name="tel-free" id="tel-free-input" class="form__input form__input_fti" required minlength="1">
+            <span class="form__input-error form__input-error_dis_block tel-free-input-error form__input-error_visible">Вы пропустили это поле (тест ошибки)</span>
           </label>
-          <label class="form__field" style="margin-bottom: 10px;">
+          <label class="form__field form__field_fti">
             <span class="form__label-title">Электронная почта</span>
-            <input data-alias="Почта" placeholder="Электронная почта" type="email" name="email-free" id="email-free-input" class="form__input" required>
-            <span class="form__input-error email-free-input-error"></span>
+            <input data-alias="Почта" placeholder="Электронная почта" type="email" name="email-free" id="email-free-input" class="form__input form__input_fti" required>
+            <span class="form__input-error form__input-error_dis_block email-free-input-error"></span>
           </label>
-          <label class="form__field form__field_type_textarea" style="margin-bottom: 10px;">
+          <label class="form__field form__field_type_textarea">
             <span class="form__label-title">Опишите Вашу задачу</span>
-            <textarea data-alias="Текст заявки" placeholder="Опишите Вашу задачу" type="text" name="comment-free" id="comment-free-input"  class="form__input" required minlength="1"></textarea>
-            <span class="form__input-error comment-free-input-error"></span>
+            <textarea data-alias="Текст заявки" placeholder="Опишите Вашу задачу" type="text" name="comment-free" id="comment-free-input"  class="form__input form__input_type_textarea form__input_fti" required minlength="1"></textarea>
+            <span class="form__input-error form__input-error_dis_block comment-free-input-error"></span>
           </label>
-          <button class="bem__button form__submit-button" type="submit">Отправить</button>
+          <button class="bem__button form__submit-button form__submit-button_fti" type="submit">Отправить</button>
         </form>
       </div>
     </section>
     <section class="catalog-section catalog-section_type_unit">
       <div class="catalog-section__aside">
-        <span class="span-block" style="padding: 5px 5px 5px 20px; background-color: blue; color: #f2f2f2;">Позиции</span>
+        <p class="bem__title" style=" max-width:150px; text-align: center; margin-bottom: 20px; padding: 5px; background-color: var(--theme-blue-color); color: white;">Позиции</p>
         <ul class="bem__list catalog-section__units-navlist">
           <% categories.forEach(function(item) { %>
             <li class="catalog-section__units-navlist-item <%= item.isChecked ? 'catalog-section__units-navlist-item_checked' : ''%>"><%-item.name%></h3>
@@ -215,19 +214,73 @@
         <div class="unit__img-container">
           <img class="unit__image" src="<%=require('./images/ti/stanina13.png')%>">
         </div>
-        <div class="unit__form-containter">
-          <h2 class="unit__title">Плита нажимная ТИ13</h2>
+        <div class="unit__form-container">
+          <form class="unit__form" method="post" action="#" id="" name="" novalidate>
+            <!--R
+            <h3 class="section-title section-title_gray">Остались вопросы?</h3>
+            <p class="bem__title" style=" max-width:150px; text-align: center; margin-bottom: 20px; padding: 5px; background-color: var(--theme-red-color); color: white;">Напишите нам!</p>-->
+            <label class="form__field form__field_fti">
+              <span class="form__label-title">Теплообменный аппарат</span>
+              <select data-alias="Теплообменниый аппарат" class="form__input form__input_fti form__input_type_select" id="" name="">
+                <option selected value="ТИ025">ТИ025</option>
+                <option value="ТИ077">ТИ077</option>
+                <option value="ТИ13">ТИ13</option>
+              </select>
+              <span class="form__input-error name-free-input-error">Тест ошибки</span>
+            </label>
+            <label class="form__field form__field_fti">
+              <span class="form__label-title">Тип плиты</span>
+              <select data-alias="Тип плиты" class="form__input form__input_fti form__input_type_select" id="" name="">
+                <option selected value="1234">1234</option>
+                <option value="1000">1000</option>
+              </select>
+              <span class="form__input-error name-free-input-error">Тест ошибки</span>
+            </label>
+            <label class="form__field form__field_fti">
+              <span class="form__label-title">Толщина плиты</span>
+              <select data-alias="Теплообменниый аппарат" class="form__input form__input_fti form__input_type_select" id="" name="">
+                <option selected value="ТИ025">200</option>
+                <option value="ТИ077">300</option>
+              </select>
+              <span class="form__input-error name-free-input-error">Тест ошибки</span>
+            </label>
+          </form>
+
+
+
         </div>
       </div>
     </section>
-
-  </div>
-
-
-    <section class="mainpage-reference uwrapper" style="padding: 10%;">
-      <%=require('./insets/schemes/svg-schemes/russia-map.svg')%>
+    <section class="ds" style="padding: 100px 0; ">
+      <div class="ds__30" style="padding-left: var(--aside-width);">
+        <h2 class="bem__title">ООО «Точка излома»</h2>
+        <h3 class="bem__title" style="margin-top: 40px;">Телефон</h3>
+        <a href="tel:Тел./факс: (3852) 77-26-38" class="bem__link">+7 (3852) 77-26-38</a>
+        <h3 class="bem__title"  style="margin-top: 40px;">Почтовый и юридический адрес:</h3>
+        <p class="bem__paragraph"  style="max-width: 300px;">
+          Российская Федерация, 656012,
+          г. Барнаул, ул. Ткацкая, 75а,
+        </p>
+        <h3 class="bem__title" style="margin-top: 40px;">Платежные реквизиты:</h3>
+        <ul class="bem__list">
+          <li>ИНН 2224111222</li>
+          <li>КПП 222401001</li>
+          <li>ОГРН 1072224002256</li>
+          <li style="max-width: 300px;">р/с 40702810302140134813 в
+          Алтайское отделение №8644
+          ПАО СБЕРБАНК г. Барнаул,</li>
+          <li>БИК 040173604</li>
+          <li>к/с 30101810200000000604</li>
+          <li><span class="span-block">Директор:</span>Захарьящев Дмитрий Валерьевич</li>
+        </ul>
+      </div>
+      <div class="ds__70" style="display: flex;
+      align-items: center;
+      justify-content: center;padding: 20px var(--aside-width) 20px 20px; background-color: var(--theme-light-gray-color); border-bottom-left-radius: 8px; border-top-left-radius: 8px;box-shadow: -2px 2px 0px 0px #939393;">
+        <%=require('./insets/schemes/svg-schemes/russia-map.svg')%>
+      </div>
     </section>
-
+  </div>
   </main>
 
   <!--FOOTER-->

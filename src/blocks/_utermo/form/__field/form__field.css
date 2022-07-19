@@ -6,3 +6,7 @@
   justify-content: space-between;
   /*margin-bottom: 30px;*/
 }
+
+.form__field_fti {
+  margin-bottom: 10px;
+}
