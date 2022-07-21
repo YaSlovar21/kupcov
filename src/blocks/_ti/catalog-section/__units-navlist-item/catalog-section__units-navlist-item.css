@@ -1,4 +1,22 @@
 .catalog-section__units-navlist-item {
   padding: 23px 20px;
   border-bottom: 2px solid #c4c4c4;
+
+  transition: all .2s ease-in;
+  cursor: pointer;
+  position: relative;
+}
+.catalog-section__units-navlist-item:hover {
+  background-color: #f3f3f3;
+}
+
+.catalog-section__units-navlist-item_checked {
+  background-color: #f3f3f3;
+  box-sizing: border-box;
+  border-bottom: none;
+  box-shadow: 2px 2px 0 0 #939393;
+
+  z-index: 2;
+  /*border-bottom: 2px solid #2f2f2f;
+  color: #2f2f2f;*/
 }

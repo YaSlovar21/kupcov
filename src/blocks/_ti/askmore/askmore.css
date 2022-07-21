@@ -9,7 +9,7 @@
   flex-basis: 1300px;
   padding-left: var(--aside-width);
   padding: 40px var(--aside-width);
-  background-color: var(--theme-light-gray-color);
+  background-color: var(--mainpage-ti-gray-color);
   box-sizing: border-box;
 
   border-bottom-right-radius: 4px;

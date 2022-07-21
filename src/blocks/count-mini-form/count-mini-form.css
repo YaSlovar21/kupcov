@@ -1,0 +1,69 @@
+:root {
+  --count-form-padding-x: 10px;
+  --count-form-border-radius: 4px;
+}
+
+.count-mini-form {
+  display: flex;
+}
+
+.count-mini-form__crease-button {
+  border: none;
+  background: none;
+  outline: none;
+
+  background-color: var(--theme-white-color);
+  padding: var(--count-form-padding-x);
+
+  font-size: 24px;
+  border-radius: var(--count-form-border-radius);
+  transition: all .2s ease-in;
+}
+
+.count-mini-form__crease-button:hover {
+  background-color: #c4c4c4;
+}
+
+.count-mini-form__crease-button_decrease {
+  margin-right: var(--count-form-padding-x);
+}
+
+.count-mini-form__crease-button_decrease::after {
+  content: '\002B';
+}
+
+.count-mini-form__crease-button_increase {
+  margin-left: var(--count-form-padding-x);
+}
+
+.count-mini-form__crease-button_increase::after {
+  content: '\2212';
+}
+
+.count-mini-form__value-input {
+  border: none;
+  outline: none;
+  background: none;
+  border-radius: var(--count-form-border-radius);
+
+  padding: var(--count-form-padding-x);
+  flex-basis: 30px;
+  width: 100%;
+  text-align: center;
+  display: flex;
+
+  background-color: #c4c4c4;
+  transition: all .2s ease-in;
+}
+
+.count-mini-form__value-input:active {
+  background-color: var(--theme-gray-color);
+}
+
+.count-mini-form__value-input:focus {
+  background-color: #535353;
+}
+
+.count-mini-form__value-input:hover {
+  box-shadow: 2px 2px 2px 0 #e7e7e7;
+}

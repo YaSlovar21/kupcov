@@ -1,5 +1,6 @@
 .bem__link {
   color: var(--theme-text-color);
+  font-size: var(--p-size);
   text-decoration: none;
   position: relative;
   z-index: 2;

@@ -2,4 +2,5 @@
   border-radius: 6px;
   overflow: hidden;
   box-shadow: 2px 3px 1px 0px #1f1f1f;
+  background-color: var(--mainpage-ti-gray-color);
 }

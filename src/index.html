@@ -175,24 +175,24 @@
         <form class="askmore__form" method="post" action="#" id="formFreePopup" name="formFreePopup" novalidate>
           <!--R-->
           <h3 class="section-title section-title_gray">Остались вопросы?</h3>
-          <p class="bem__title" style=" max-width:150px; text-align: center; margin-bottom: 20px; padding: 5px; background-color: var(--theme-red-color); color: white;">Напишите нам!</p>
+          <p class="bem__paragraph" style=" max-width:150px; text-align: center; margin-bottom: 20px; padding: 5px; background-color: var(--theme-red-color); color: white;">Напишите нам!</p>
           <label class="form__field form__field_fti">
-            <span class="form__label-title">Как к Вам можно обращаться?</span>
+            <!--<span class="form__label-title">Как к Вам можно обращаться?</span>-->
             <input data-alias="Имя или название компании" placeholder="Как к Вам обращаться?" type="text" name="name-free" id="name-free-input" class="form__input form__input_fti" required minlength="1">
             <span class="form__input-error form__input-error_dis_block name-free-input-error"></span>
           </label>
           <label class="form__field form__field_fti">
-            <span class="form__label-title">Контактный телефон</span>
+             <!--<span class="form__label-title">Контактный телефон</span>-->
             <input data-alias="Телефон" placeholder="Телефон" type="text" name="tel-free" id="tel-free-input" class="form__input form__input_fti" required minlength="1">
             <span class="form__input-error form__input-error_dis_block tel-free-input-error form__input-error_visible">Вы пропустили это поле (тест ошибки)</span>
           </label>
           <label class="form__field form__field_fti">
-            <span class="form__label-title">Электронная почта</span>
+             <!--<span class="form__label-title">Электронная почта</span>-->
             <input data-alias="Почта" placeholder="Электронная почта" type="email" name="email-free" id="email-free-input" class="form__input form__input_fti" required>
             <span class="form__input-error form__input-error_dis_block email-free-input-error"></span>
           </label>
           <label class="form__field form__field_type_textarea">
-            <span class="form__label-title">Опишите Вашу задачу</span>
+             <!--<span class="form__label-title">Опишите Вашу задачу</span>-->
             <textarea data-alias="Текст заявки" placeholder="Опишите Вашу задачу" type="text" name="comment-free" id="comment-free-input"  class="form__input form__input_type_textarea form__input_fti" required minlength="1"></textarea>
             <span class="form__input-error form__input-error_dis_block comment-free-input-error"></span>
           </label>
@@ -200,21 +200,35 @@
         </form>
       </div>
     </section>
+
+    <section class="promo">
+      <h2 class="promo__title">Страница каталога • Один из вариантов отображения</h2>
+      <h3 class="promo__subtitle"></h3>
+      <ul class="promo__accent-list">
+        <li class="promo__accent-list-item">
+          <h4 class="promo__accent-list-heading">Асинхронное изменение элементов</h4>
+          <p class="promo__accent-list-paragraph">При изменении параметров в форме изменится: артикул, цена, картинка. В корзину будет добавлен актуальный товар.</p>
+        </li>
+      </ul>
+    </section>
+
     <section class="catalog-section catalog-section_type_unit">
       <div class="catalog-section__aside">
-        <p class="bem__title" style=" max-width:150px; text-align: center; margin-bottom: 20px; padding: 5px; background-color: var(--theme-blue-color); color: white;">Позиции</p>
+        <p class="bem__paragraph" style=" max-width:150px; text-align: center; margin-bottom: 20px; padding: 5px; background-color: var(--theme-blue-color); color: white;">Позиции</p>
         <ul class="bem__list catalog-section__units-navlist">
           <% categories.forEach(function(item) { %>
             <li class="catalog-section__units-navlist-item <%= item.isChecked ? 'catalog-section__units-navlist-item_checked' : ''%>"><%-item.name%></h3>
           <% }); %>
         </ul>
-        <a class="bem__link catalog-section__action-link" href="#">Перейти в магазин &#8594;</a>
+
       </div>
       <div class="catalog-section__content catalog-section__content_type_unit unit">
         <div class="unit__img-container">
           <img class="unit__image" src="<%=require('./images/ti/stanina13.png')%>">
         </div>
         <div class="unit__form-container">
+          <span class="span-block unit__up-title unit__up-title_articul">222043202</span>
+          <h1 class="unit__title">Плита нажимная теплообменника ТИ025 тип 1234 (200мм)</h1>
           <form class="unit__form" method="post" action="#" id="" name="" novalidate>
             <!--R
             <h3 class="section-title section-title_gray">Остались вопросы?</h3>
@@ -244,6 +258,16 @@
               </select>
               <span class="form__input-error name-free-input-error">Тест ошибки</span>
             </label>
+            <p class="unit__price">2860 ₽ / шт.</p>
+            <button class="unit__buy-button">В корзину</button>
+            <div style="display: flex; align-items:center; margin: 10px 0;">
+              <button class="unit__buy-button unit__buy-button_active"">В корзинe</button>
+              <div class="count-mini-form" style="margin-left: 15px;">
+                <button type="button" class="count-mini-form__crease-button count-mini-form__crease-button_decrease"></button>
+                <input class="count-mini-form__value-input" value="1">
+                <button type="button" class="count-mini-form__crease-button count-mini-form__crease-button_increase"></button>
+              </div>
+            </div>
           </form>
 
 
@@ -251,6 +275,18 @@
         </div>
       </div>
     </section>
+
+    <section class="promo">
+      <h2 class="promo__title">Страница контакты • На что стоит обратить внимание?</h2>
+      <h3 class="promo__subtitle"></h3>
+      <ul class="promo__accent-list">
+        <li class="promo__accent-list-item">
+          <h4 class="promo__accent-list-heading">Векторная интерактивная карта</h4>
+          <p class="promo__accent-list-paragraph">Можно использовать как карту представителей, при клике на регион можно реализовать всплывающее окно с информацией о партнерах в данном регионе.</p>
+        </li>
+      </ul>
+    </section>
+
     <section class="ds" style="padding: 100px 0; ">
       <div class="ds__30" style="padding-left: var(--aside-width);">
         <h2 class="bem__title">ООО «Точка излома»</h2>
@@ -276,16 +312,33 @@
       </div>
       <div class="ds__70" style="display: flex;
       align-items: center;
-      justify-content: center;padding: 20px var(--aside-width) 20px 20px; background-color: var(--theme-light-gray-color); border-bottom-left-radius: 8px; border-top-left-radius: 8px;box-shadow: -2px 2px 0px 0px #939393;">
-        <%=require('./insets/schemes/svg-schemes/russia-map.svg')%>
+      justify-content: center;padding: 20px var(--aside-width) 20px 20px; background-color: #f7f7f7; border-bottom-left-radius: 8px; border-top-left-radius: 8px;box-shadow: -2px 2px 0px 0px #d6d6d6;">
+        <style>
+          path {
+            transition: all .4s ease-in;
+          }
+          path:hover {
+            opacity: .1;
+          }
+        </style>
+        <%=require('./insets/schemes/svg-schemes/russia-map-ti.svg')%>
       </div>
     </section>
-  </div>
+
   </main>
 
   <!--FOOTER-->
-  <%= require('html-loader!./insets/asides/inner-footer.html').default %>
+  <section class="promo" style="margin-bottom: 0;">
+    <ul class="promo__accent-list">
+      <!--<li class="promo__accent-list-item">
+        <h4 class="promo__accent-list-heading promo__accent-list-heading_white">Асинхронное изменение элементов</h4>
+        <p class="promo__accent-list-paragraph">При изменении параметров в форме изменится: артикул, цена, картинка. В корзину будет добавлен актуальный товар.</p>
+      </li>-->
+      <li class="promo__accent-list-item">© 2022 Точка Излома  </li>
+    </ul>
 
+  </section>
+</div>
   <!--Шаблон карточки проекта-->
   <template id="project-template">
     <div class="projects__item">

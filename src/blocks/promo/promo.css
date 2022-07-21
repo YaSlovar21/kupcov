@@ -1,0 +1,27 @@
+.promo {
+  background-color: var(--theme-blue-color);
+  color: var(--theme-white-color);
+  padding: 20px var(--aside-width);
+  margin: 40px 0;
+}
+
+
+.promo__accent-list {
+  padding: 0;
+  list-style-type: none;
+}
+
+.promo__accent-list-heading {
+  margin: 0;
+  color: var(--theme-red-color);
+  font-size: 24px;
+}
+.promo__accent-list-heading_white {
+  color: var(--theme-white-color);
+}
+
+.promo__accent-list-paragraph {
+  max-width: 700px;
+  line-height: 1.5;
+  margin: 10px 0;
+}

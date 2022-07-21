@@ -2,6 +2,8 @@
 @import url(../blocks/_root/root.css);
 @import url(../vendor/fonts/fonts.css);
 
+@import url(../blocks/promo/promo.css);
+
 /*Спаны подтягиваем с Ютермо*/
 @import url(../blocks/_utermo/span/span.css);
 
@@ -102,6 +104,8 @@
 @import url(../blocks/_ti/unit/unit.css);
 
 @import url(../blocks/_ti/ds/ds.css);
+
+@import url(../blocks/count-mini-form/count-mini-form.css);
 
 /**/
 @import url(../blocks/_ti/askmore/askmore.css);

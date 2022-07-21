@@ -4,6 +4,7 @@
   --theme-white-color: #f0f0f0;
   --theme-text-color: #272727;
   --theme-light-gray-color: #cdcdcd;
+  --theme-gray-color: #363636;
   --theme-blue-color: #1940C1;
   --theme-red-color: #EF0504;
   --theme-main-color: #EF0504;
@@ -25,11 +26,13 @@
 */
   --section-title-size: 36px;
   --h2-size: 32px;
-  --h3-size: 20px;
+  --h3-size: 24px;
   /*--p-size-comment: 20px;*/
   --p-size: 20px;
   --dynamic-grid-text-color: #1f1f1f;
   --dynamic-grid-bg-color: #696969;
 
   --card-bg-color: #cdcdcd;
+
+ --mainpage-ti-gray-color: #e5e5e5;
 }

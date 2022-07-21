@@ -1,4 +1,4 @@
 .header {
   background-color: #CDCDCD;
-
+  background-color: var(--mainpage-ti-gray-color);
 }

@@ -10,11 +10,9 @@
   align-items: center;
   flex-basis: 49%;
   padding: 15vh 0;
-  background-color: #c4c4c4;
+  background-color: #f7f7f7;
   position: sticky;
-
   top: 0;
-
   box-shadow: 2px 2px 0px 0px #939393;
   border-radius: 4px;
 }
@@ -25,11 +23,79 @@
 
 .unit__form-container {
   flex-basis: 49%;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.unit__title {
+  margin: 0;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 142%;
+  max-width: 600px;
+  color: var(--theme-text-color);
+}
+
+.unit__up-title {
+  font-size: 12px;
+  line-height: 1.1;
+  color: var(--theme-gray-color);
+  margin-bottom: 10px;
+}
+
+.unit__up-title_articul {
+
+}
+
+.unit__up-title_articul::before {
+  content: 'Артикул:';
 }
 
 
+.unit__buy-button {
+  background: none;
+  outline: none;
+  width: 240px;
+  padding: 13px 0;
+  border: 2px solid var(--theme-blue-color);
+
+  background-color: var(--theme-blue-color);
+
+  box-sizing: border-box;
+  color: var(--theme-white-color);
+  text-align: center;
+  display: flex;
+  justify-content: center;
+
+  border-radius: 4px;
+}
+
+.unit__buy-button_active {
+  color: var(--theme-text-color);
+  background-color: transparent;
+}
+
+.unit__buy-button_active::before {
+  content: '';
+  width: 1em;
+  height: 1em;
+  margin-right: 1em;
+  background-image: url(../../../images/ti/svg-elems/i-galochka.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.unit__price {
+  margin: 20px 0;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 1.2;
+}
+
 .unit__form {
-  max-width: calc(100% - 20px);
   margin: 40px auto;
 }
 
