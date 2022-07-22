@@ -1,0 +1,70 @@
+:root {
+  --bem-padding-buttons: 20px;
+
+  --brand-color: #ec2c02;
+  --brand-color-web: #EF0504;
+
+  --theme-white-color: #f0f0f0;
+  --theme-text-color: #f2f2f2;
+
+  --theme-gray-color: #363636;
+  --theme-blue-color: #1940C1;
+
+  --theme-light-gray-color: #cdcdcd;
+  --theme-gray-color: #363636;
+  --theme-blue-color: #1940C1;
+  --theme-red-color: #EF0504;
+  --theme-main-color: #EF0504;
+
+  --theme-ut-color: #ec2c02;
+/*
+  --theme-lightgray-color: #cbcbcb;
+  --theme-gray-color: #a7a7a7;
+  --theme-dark-gray-color: #323232;
+  --main-equivalent-color: #E7441C;
+*/
+
+  --aside-width: 100px;
+
+/*
+  --bg-color: #1f1f1f;
+  --bg-darker-color: #1a1a1a;
+*/
+  --burton-title-fontsize: 64px;
+  --section-title-size: 36px;
+
+  --bem-title-fontsize: 32px;
+  --bem-subtitle-fontsize: 24px;
+  --bem-p-fontsize: 20px;
+  --bem-butt-fontsize: 20px;
+
+
+  --dynamic-grid-text-color: #1f1f1f;
+  --dynamic-grid-bg-color: #696969;
+
+  --card-bg-color: #cdcdcd;
+
+ --mainpage-ti-gray-color: #e5e5e5;
+}
+
+
+.page {
+    /*min-width: 1100px;*/
+    /* мы ещё не умеем делать мобильную версию сайта, */
+    /* поэтому выше установлена минимальная ширина страницы
+    max-width: 100%;*/
+    /* выше установили ограничение по максимальной ширине
+
+    margin: 0 auto;*/
+    /* выше для экранов больше 1600px отцентрировали весь контент */
+    font-family: 'Jost', Arial, sans-serif;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    background-color: #1f1f1f;
+    font-family: 'Manrope', Arial, sans-serif;
+}
+
+

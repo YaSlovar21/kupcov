@@ -1,0 +1,19 @@
+@import url(../styles/normalize.css);
+
+@import url(../vendor/fonts/fonts.css);
+@import url(../vendor/fonts/fonts_utermo.css);
+@import url(../blocks/promo/promo.css);
+
+/*Спаны подтягиваем с Ютермо*/
+@import url(../blocks/_utermo/span/span.css);
+
+
+@import url(../blocks/_utermo/bem/bem.css);
+
+
+@import url(../blocks/_ti/section-title/section-title.css);
+@import url(../blocks/_ti/section-title/_white/section-title_white.css);
+@import url(../blocks/_ti/section-title/_gray/section-title_gray.css);
+@import url(../blocks/_ti/section-title/_ti/section-title_ti.css);
+
+@import url(../blocks/_utermo/section-subtitle/section-subtitle.css);

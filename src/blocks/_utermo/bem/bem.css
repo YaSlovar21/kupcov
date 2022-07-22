@@ -1,38 +1,29 @@
-:root {
-  --bem-padding-buttons: 20px;
+@import url(./__button/bem__button.css);
 
-  --theme-white-color: #f0f0f0;
-  --theme-text-color: #272727;
-  --theme-light-gray-color: #cdcdcd;
-  --theme-gray-color: #363636;
-  --theme-blue-color: #1940C1;
-  --theme-red-color: #EF0504;
-  --theme-main-color: #EF0504;
+/*--LINKS ALL TYPES*/
+@import url(./__link/bem__link.css);
+@import url(./__link/_newwindow/bem__link_newwindow.css);
+@import url(./__link/_arrowup/bem__link_arrowup.css);
+@import url(./__link/_bgleft/bem__link_bgleft.css);
+@import url(./__link/_download/bem__link_download.css);
+@import url(./__link/_download-right/bem__link_download-right.css);
+@import url(./__link/_arrowdown/bem__link_arrowdown.css);
+@import url(./__link/_bgright/bem__link_bgright.css);
 
-  --theme-ut-color: #ec2c02;
+@import url(./__list/bem__list.css);
+@import url(./__list/_line/bem__list_line.css);
+@import url(./__list-item/bem__list-item.css);
 
-/*
-  --theme-lightgray-color: #cbcbcb;
-  --theme-gray-color: #a7a7a7;
-  --theme-dark-gray-color: #323232;
+@import url(./__paragraph/bem__paragraph.css);
+@import url(./__paragraph/_invert-theme/bem__paragraph_invert-theme.css);
 
-  --main-equivalent-color: #E7441C;
-*/
+@import url(./__title/bem__title.css);
+@import url(./__title/_color_darker/bem__title_color_darker.css);
+@import url(./__title/_color_brand/bem__title_color_brand.css);
 
-  --aside-width: 100px;
-/*
-  --bg-color: #1f1f1f;
-  --bg-darker-color: #1a1a1a;
-*/
-  --section-title-size: 36px;
-  --h2-size: 32px;
-  --h3-size: 24px;
-  /*--p-size-comment: 20px;*/
-  --p-size: 20px;
-  --dynamic-grid-text-color: #1f1f1f;
-  --dynamic-grid-bg-color: #696969;
 
-  --card-bg-color: #cdcdcd;
 
- --mainpage-ti-gray-color: #e5e5e5;
+.bem {
+  /* I'm abstract BEM block */
 }
+

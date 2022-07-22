@@ -1,6 +1,6 @@
 .bem__list-heading {
   margin: 0 0 20px;
-  font-size: 18px;
+  font-size: var(--bem-h3-fontsize);
 }
 
 .bem__list-heading_page-service {
@@ -8,8 +8,3 @@
   color: #757575;
 }
 
-@media screen and (max-width: 768px) {
-  .bem__list-heading {
-    font-size: 12px;
-  }
-}

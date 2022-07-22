@@ -4,7 +4,7 @@
 
   font-style: normal;
   font-weight: 800;
-  font-size: var(--section-title-size);
+  font-size: var(--section-title-fontsize);
   line-height: 1.5;
   letter-spacing: -0.015em;
 

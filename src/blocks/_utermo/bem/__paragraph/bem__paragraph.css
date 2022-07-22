@@ -1,5 +1,5 @@
 .bem__paragraph {
-  font-size: var(--p-size);
+  font-size: var(--bem-p-fontsize);
   margin: 0;
   color: var(--theme-text-color);
   line-height: 1.4;

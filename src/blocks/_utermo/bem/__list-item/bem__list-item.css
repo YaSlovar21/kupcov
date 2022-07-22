@@ -10,7 +10,7 @@
 
 .bem__list-item::before {
   content: '↳';
-  color: var(--main-equivalent-color);
+  color: var(--brand-color-web);
   margin-right: 5px;
 }
 

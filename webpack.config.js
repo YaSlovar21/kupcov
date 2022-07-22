@@ -13,6 +13,7 @@ const canonicalURL = 'https://www.utermo.ru'
 module.exports = {
   entry: {
     index: "./src/pages/index.js",
+    dg: "./src/pages/dg.js",
   },
   output: {
     path: path.resolve(__dirname, "dist"),
@@ -158,6 +159,45 @@ module.exports = {
       template: "./src/index.html", // путь к файлу index.html
       chunks: ["index"],
     }),
+    new HtmlWebpackPlugin({
+      templateParameters: {
+        canonicalURL,
+        items: [
+          {
+            name: "Пластина ТИ025",
+            price: "425 руб",
+          },
+          {
+            name: "ТИ077",
+            price: "525 руб",
+          },
+          {
+            name: "ТИ13",
+            price: "724 руб",
+            type: "plita",
+          },
+          {
+            name: "ТИ18",
+            price: "425 руб",
+          },
+          {
+            name: "ТИ28",
+            price: "525 руб",
+          },
+          {
+            name: "ТИ45",
+            price: "724 руб",
+          },
+        ],
+      },
+
+      title: "Песочница проектов",
+      meta: { keywords: "", description: `` },
+      template: "./src/dynamic-grid.html", // путь к файлу index.html
+      filename: "dynamic-grid/index.html",
+      chunks: ["dg"],
+    }),
+
     new CleanWebpackPlugin(),
     new MiniCssExtractPlugin({
       filename: "[name].css",

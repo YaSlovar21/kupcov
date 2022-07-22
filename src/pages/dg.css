@@ -1,0 +1,23 @@
+@import url(../blocks/_root/root-utermo.css);
+
+@import url(../blocks/_utermo/dg/dg.css);
+@import url(../blocks/_utermo/dg/__list/dg__list.css);
+@import url(../blocks/_utermo/dg/__list-item/dg__list-item.css);
+
+@import url(../blocks/_utermo/dg/__title/dg__title.css);
+@import url(../blocks/_utermo/dg/__description/dg__description.css);
+
+@import url(../blocks/_utermo/dg/__popup/dg__popup.css);
+@import url(../blocks/_utermo/dg/__popup/_opened/dg__popup_opened.css);
+
+@import url(../blocks/_utermo/dg/__popup-heading/dg__popup-heading.css); /*шапка*/
+@import url(../blocks/_utermo/dg/__popup-desc/dg__popup-desc.css);
+@import url(../blocks/_utermo/dg/__popup-content/dg__popup-content.css); /*контент: слайдер + инфо*/
+
+@import url(../blocks/_utermo/dg/__popup-image-slider/dg__popup-image-slider.css);
+@import url(../blocks/_utermo/dg/__popup-image/dg__popup-image.css);
+
+@import url(../blocks/_utermo/dg/__popup-info/dg__popup-info.css);
+@import url(../blocks/_utermo/dg/__popup-info-title/dg__popup-info-title.css);
+@import url(../blocks/_utermo/dg/__popup-info-text/dg__popup-info-text.css);
+@import url(../blocks/_utermo/dg/__popup-links/dg__popup-links.css);
